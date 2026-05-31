@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Philosophy Daily: Doubt &amp; Faith · Day 13</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Times New Roman","Noto Serif",serif;background:#faf9f6;color:#2d3436;line-height:1.85}
+.container{max-width:780px;margin:0 auto;padding:24px 22px 60px}
+header{text-align:center;padding:56px 0 32px;border-bottom:1px solid #e8e3d8;margin-bottom:36px}
+header .day-tag{display:inline-block;font-size:0.78rem;letter-spacing:3px;color:#a29bfe;font-weight:600;background:#f3f0ff;padding:4px 14px;border-radius:20px;margin-bottom:14px}
+header h1{font-size:2rem;font-weight:800;color:#1a1a2e;letter-spacing:1px;line-height:1.4}
+header .meta{margin-top:14px;font-size:0.92rem;color:#636e72;font-style:italic}
+header .subtitle{margin-top:6px;font-size:0.88rem;color:#8b7355}
+.intro{background:#fff;border-radius:12px;padding:22px 26px;margin-bottom:32px;box-shadow:0 1px 8px rgba(0,0,0,0.04);border-left:3px solid #c9b27a;font-size:0.96rem;color:#4a4a4a}
+.card{background:#fff;border-radius:12px;padding:32px 30px;margin-bottom:28px;box-shadow:0 2px 12px rgba(0,0,0,0.05);position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(180deg,#c9b27a,#a29bfe)}
+.thinker{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+.thinker .name{font-size:1.4rem;font-weight:700;color:#1a1a2e;letter-spacing:0.5px}
+.thinker .tradition{font-size:0.78rem;color:#fff;background:#a29bfe;padding:3px 10px;border-radius:12px;font-weight:500}
+.thinker .tradition.east{background:#c9b27a}
+.source{font-size:0.85rem;color:#8b7355;font-style:italic;margin-bottom:18px;padding-bottom:14px;border-bottom:1px dashed #e8e3d8}
+.section{margin-top:20px}
+.section .label{display:inline-block;font-size:0.82rem;font-weight:700;color:#a29bfe;letter-spacing:1.5px;margin-bottom:8px;padding:2px 0;border-bottom:2px solid #f3f0ff}
+.section.east .label{color:#8b7355;border-color:#f5efe3}
+.section .quote{font-size:1rem;color:#2d3436;background:#faf7f0;padding:14px 18px;border-radius:8px;border-left:3px solid #c9b27a;font-style:italic;line-height:1.7}
+.section p{font-size:0.95rem;color:#4a4a4a;margin-top:4px}
+.section .scenario{margin-top:8px;padding:10px 14px;background:#f9f8f5;border-radius:6px;font-size:0.92rem;color:#555}
+.section .scenario strong{color:#1a1a2e}
+.question{background:linear-gradient(135deg,#fff8e7,#fef3d7);padding:14px 18px;border-radius:8px;font-size:0.95rem;color:#5a4a1a;font-weight:500;border-left:3px solid #d4a843}
+.question::before{content:"💭 ";margin-right:4px}
+.essence{background:#f0ece2;padding:12px 16px;border-radius:8px;font-size:0.95rem;color:#3a3528;border-left:3px solid #8b7355;font-weight:500;margin-bottom:8px}
+.wager{display:flex;justify-content:center;margin:14px 0 6px}
+.wager table{border-collapse:collapse;font-size:0.88rem;color:#3a3528;font-family:Georgia,serif}
+.wager th,.wager td{border:1px solid #c9b27a;padding:8px 14px;text-align:center;background:#faf7f0}
+.wager th{background:#f0ece2;font-weight:700}
+.resources{background:#fff;border-radius:12px;padding:26px 28px;margin-bottom:24px;box-shadow:0 1px 8px rgba(0,0,0,0.04)}
+.resources h2{font-size:1.1rem;color:#1a1a2e;margin-bottom:14px;letter-spacing:1px;padding-bottom:8px;border-bottom:1px dashed #e8e3d8}
+details{background:#fff;border-radius:8px;padding:14px 18px;margin-bottom:10px;box-shadow:0 1px 4px rgba(0,0,0,0.04);border-left:3px solid #c9b27a}
+details summary{font-size:0.96rem;font-weight:600;color:#1a1a2e;cursor:pointer;list-style:none;padding-left:22px;position:relative}
+details summary::before{content:"▸";position:absolute;left:0;color:#a87a3e;transition:transform 0.2s}
+details[open] summary::before{transform:rotate(90deg)}
+details div{margin-top:10px;font-size:0.92rem;color:#555;line-height:1.75;padding-left:22px}
+@media(max-width:600px){
+  header h1{font-size:1.45rem;letter-spacing:0.5px}
+  .container{padding:16px 14px 40px}
+  .card{padding:22px 18px}
+  .thinker .name{font-size:1.2rem}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <div class="day-tag">DAY 13</div>
+  <h1>Philosophy Daily: Doubt &amp; Faith</h1>
+  <div class="meta">May 31, 2026 · Four voices, East and West</div>
+  <div class="subtitle">When certainty crumbles, do you still place a bet?</div>
+</header>
+
+<div class="intro">
+  Science is grounded in falsifiability; in the AI era every claim must be cross-checked — doubt has become modernity's <strong>default tool</strong>. But pure doubt paralyzes action, and the absence of doubt is blind credulity. Four thinkers approach the same problem: Descartes uses doubt to find an unshakable foundation; Pascal admits reason's limits and turns faith into a <strong>decision-theoretic problem</strong>; Hume pushes doubt all the way down until even "self" and "causation" collapse; Zen reverses the move — the very state of doubt becomes the practice, and pushed to its limit becomes the gate of awakening.
+</div>
+
+<!-- 1. Descartes -->
+<div class="card">
+  <div class="thinker">
+    <div class="name">René Descartes</div>
+    <div class="tradition">West · Rationalism / Founder of Modern Philosophy</div>
+  </div>
+  <div class="source"><em>Meditations on First Philosophy</em> (1641), <em>Discourse on the Method</em> (1637); 1596–1650</div>
+
+  <div class="section">
+    <div class="label">CORE THESIS + PRIMARY TEXT</div>
+    <div class="quote">"De omnibus dubitandum est." — Everything must be doubted.<br>"I will suppose... not God, who is supremely good, but some <strong>evil demon</strong> of utmost power and cunning has used all his energy to deceive me." (<em>Meditation I</em>)<br>"<em>Ego sum, ego existo</em> — I am, I exist, is necessarily true each time I utter it or conceive it in my mind." (<em>Meditation II</em>)</div>
+  </div>
+
+  <div class="section">
+    <div class="label">HISTORICAL CONTEXT &amp; KEY INSIGHT</div>
+    <p>Descartes stood at the crossroads of collapsing scholastic theology and Galileo's trial — he needed a foundation for new science immune to every authority. His method: <strong>push doubt to its extreme so that it breaks itself</strong>. Senses, mathematics, even the existence of the external world are suspended by the demon hypothesis. What remains undoubtable: <strong>the very "I" that is doubting must exist</strong>. The point is not the slogan but the <strong>methodological inversion</strong>: doubt is the forge of certainty, and only what survives the harshest doubt earns the right to be foundation.</p>
+  </div>
+
+  <div class="section">
+    <div class="label">CROSS-DISCIPLINARY RESONANCE</div>
+    <p>This is the structure of <strong>falsifiability</strong> (Popper): a theory is only provisionally accepted after surviving the strongest refutation. In AI engineering, red-teaming, adversarial examples, and formal verification are Cartesian doubt engineered — actively construct the most hostile input to expose a system's real boundary. The "evil demon" has a concrete modern incarnation: out-of-distribution adversarial perturbations.</p>
+  </div>
+
+  <div class="section">
+    <div class="label">CONTEMPORARY APPLICATION</div>
+    <div class="scenario"><strong>BigCat scenario:</strong> Faced with a polished LLM answer, run a Cartesian interrogation — <strong>which step is it most likely fabricating?</strong> Pull that step out and verify it alone. Same for high-stakes decisions: rather than asking "is this judgment right?", ask "under what premise would it completely fail?" A judgment that survives the worst assumption is a real signal.</div>
+  </div>
+
+  <div class="section">
+    <div class="label">ONE-LINE ESSENCE + REFLECTION</div>
+    <div class="essence">Extreme doubt is not for paralysis but to sift out the truly unshakable fulcrum.</div>
+    <div class="question">For some important judgment you rely on right now — if an "evil demon" were systematically misleading you, where would it most likely attack?</div>
+  </div>
+</div>
+
+<!-- 2. Pascal -->
+<div class="card">
+  <div class="thinker">
+    <div class="name">Blaise Pascal</div>
+    <div class="tradition">West · Jansenism / Pioneer of Decision Theory</div>
+  </div>
+  <div class="source"><em>Pensées</em> (1670, posthumous); 1623–1662</div>
+
+  <div class="section">
+    <div class="label">CORE THESIS + PRIMARY TEXT</div>
+    <div class="quote">"Let us weigh the gain and the loss in wagering that God is. If you gain, you gain all; if you lose, you lose nothing. <strong>Wager, then, without hesitation, that He is.</strong>" (<em>Pensées</em> §233 / Lafuma 418)<br>"The heart has its reasons of which reason knows nothing." (§277)</div>
+    <div class="wager" aria-label="Pascal's wager payoff matrix">
+      <table>
+        <tr><th></th><th>God exists</th><th>God does not</th></tr>
+        <tr><th>Bet "believe"</th><td>+∞</td><td>finite loss</td></tr>
+        <tr><th>Bet "disbelieve"</th><td>−∞</td><td>finite gain</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="label">HISTORICAL CONTEXT &amp; KEY INSIGHT</div>
+    <p>Pascal was a <strong>founder of probability and decision theory</strong> (with Fermat, originating expected-value calculation). He faced an embarrassment squarely: reason cannot prove whether God exists. But <strong>"not betting" is itself a bet</strong> — you must live in some posture. Since betting is unavoidable, use expected value: the believing side has infinite gain, the disbelieving side has infinite loss, and any finite worldly cost shrinks to zero against infinity. This is <strong>the first time in philosophy that decision theory tackled a metaphysical question</strong>; the real point is not religious persuasion but the principle: when evidence is insufficient, act by <strong>expected utility</strong>, not by waiting "until the evidence is complete."</p>
+  </div>
+
+  <div class="section">
+    <div class="label">CROSS-DISCIPLINARY RESONANCE</div>
+    <p>Directly maps to <strong>Bayesian decision theory</strong> and <strong>risk management</strong>: under prior uncertainty, bet via the payoff matrix. It is also the core of <strong>Taleb's antifragility</strong> — what matters is not probability prediction but <strong>payoff asymmetry</strong>: bets with bounded downside and unbounded upside should be taken with eyes closed. Bostrom on AI existential risk, the precautionary principle in climate policy, and option theory in entrepreneurship are all isomorphic extensions of Pascal's wager.</p>
+  </div>
+
+  <div class="section">
+    <div class="label">CONTEMPORARY APPLICATION</div>
+    <div class="scenario"><strong>BigCat scenario:</strong> "Wait until AI matures, then go all in." Pascal tells you: <strong>"wait" is not neutral; you have already taken a side.</strong> Compute the asymmetry: if AI does deliver a productivity leap and you entered early, the return is huge; if it doesn't, you lost only a few years of learning. Long-term investment in your kid's education, your body, deep relationships with key people — all Pascalian bets: bounded downside, unbounded upside.</div>
+  </div>
+
+  <div class="section">
+    <div class="label">ONE-LINE ESSENCE + REFLECTION</div>
+    <div class="essence">Under insufficient evidence, not betting is itself a bet; the rational move is to read the asymmetry of the payoff.</div>
+    <div class="question">Something you're "waiting until it's clearer to decide" — what's the worst downside? What's the best upside? Is it really symmetric?</div>
+  </div>
+</div>
+
+<!-- 3. Hume -->
+<div class="card">
+  <div class="thinker">
+    <div class="name">David Hume</div>
+    <div class="tradition">West · Empiricism / Skepticism</div>
+  </div>
+  <div class="source"><em>A Treatise of Human Nature</em> (1739–40), <em>Enquiry Concerning Human Understanding</em> (1748); 1711–1776</div>
+
+  <div class="section">
+    <div class="label">CORE THESIS + PRIMARY TEXT</div>
+    <div class="quote">"Custom, then, is the great guide of human life." (<em>Enquiry</em> §5)<br>"When I enter most intimately into what I call <em>myself</em>, I always stumble on some particular perception... I never can catch <em>myself</em> at any time without a perception." (<em>Treatise</em> I.iv.6)</div>
+  </div>
+
+  <div class="section">
+    <div class="label">HISTORICAL CONTEXT &amp; KEY INSIGHT</div>
+    <p>Hume pushed doubt where Descartes dared not go: <strong>even "I think therefore I am" cannot be saved</strong>. First cut — at causation: we never observe "cause compelling effect," only "B always follows A"; causation is the brain's habit-projection from <strong>constant conjunction</strong>. Second cut — at self: introspection finds only a fluid bundle of perceptions, never a "self that bears them." Third cut — at induction: "the sun will rise tomorrow" has no logical guarantee. But he did not slide into nihilism. His stance is <strong>mitigated skepticism</strong> — acknowledge the limits of reason and yet keep acting via habit, sentiment, and shared life.</p>
+  </div>
+
+  <div class="section">
+    <div class="label">CROSS-DISCIPLINARY RESONANCE</div>
+    <p>"Constant conjunction" is virtually the definition of <strong>statistical learning</strong> two centuries early: models learn only from correlation and cannot see causation — exactly the gap Judea Pearl's do-calculus aims to fill. The "bundle theory" resonates strikingly with neuroscience's <strong>predictive processing</strong> (Friston, Anil Seth) and Buddhist <strong>five aggregates without self</strong>: what we call "self" is a narrative dynamically synthesized by the brain, with no independent substance. LLMs are textbook Humean systems — they extract conjunctions from massive text and never truly "understand" cause.</p>
+  </div>
+
+  <div class="section">
+    <div class="label">CONTEMPORARY APPLICATION</div>
+    <div class="scenario"><strong>BigCat scenario:</strong> When evaluating an AI "insight," remember — the model sees correlation, not causation. Ask it to list "if this is correlation rather than causation, what alternative explanations exist?" That blocks half the false insights. In investing and team management, strictly separate "what worked before" from "what must work next." <strong>Humean humility is not refusal to act, but acting with clear-eyed awareness that your induction may fail.</strong></div>
+  </div>
+
+  <div class="section">
+    <div class="label">ONE-LINE ESSENCE + REFLECTION</div>
+    <div class="essence">Reason can travel far shorter than we think; daily life is actually supported by habit, sentiment, and shared practice.</div>
+    <div class="question">Your most recent confident "I see the causation" judgment — if you only allow yourself "constant conjunction," how would the conclusion be rewritten?</div>
+  </div>
+</div>
+
+<!-- 4. Zen Great Doubt -->
+<div class="card">
+  <div class="thinker">
+    <div class="name">Zen · Great Doubt, Great Awakening</div>
+    <div class="tradition east">East · Linji School / Huatou Chan</div>
+  </div>
+  <div class="source">Dahui Zonggao, <em>Records of Chan Master Dahui Pujue</em> (12th c.); Gaofeng Yuanmiao, <em>Chan Yao</em> on "faith, doubt, fierce will"</div>
+
+  <div class="section east">
+    <div class="label">CORE THESIS + PRIMARY TEXT</div>
+    <div class="quote">"Beneath great doubt there must be great awakening. Small doubt, small awakening; no doubt, no awakening." — Dahui Zonggao<br>"Chan practice requires three essentials: great faith, great doubt, great fierce will. Lacking any one is like a tripod with a broken leg — useless." — Gaofeng Yuanmiao, <em>Chan Yao</em></div>
+  </div>
+
+  <div class="section east">
+    <div class="label">HISTORICAL CONTEXT &amp; KEY INSIGHT</div>
+    <p>Song-dynasty Chan faced a quandary: doctrine memorized, koans recited, yet the person unchanged. Dahui Zonggao invented <strong>huatou (key-phrase) Chan</strong> — pick a phrase that logic cannot resolve (e.g., "Does a dog have Buddha-nature?"), hold it as a doubt that will not be set down, until every logical tool of the mind <strong>fails</strong>. That is "great doubt" — not skepticism's "whichever is fine," but <strong>investing the whole of one's life into a question the old framework cannot answer</strong>. Doubting to the dead end, the framework collapses on its own — what is obtained at that moment is not a conclusion but <strong>the entire paradigm of questioning overturned</strong>: this is called awakening. Great faith, great doubt, great fierce will must coexist: without faith doubt becomes nihilism, without doubt faith becomes blind obedience, without fierce will both remain mere postures.</p>
+  </div>
+
+  <div class="section east">
+    <div class="label">CROSS-DISCIPLINARY RESONANCE</div>
+    <p>Isomorphic to Kuhn's <strong>paradigm shift</strong>: normal science cannot solve fundamental problems; only when anomalies accumulate beyond what the old paradigm can absorb does the whole paradigm collapse and reorganize. Brain-imaging studies of insight problems show that real insight comes from <strong>sustained high tension + sudden restructuring</strong> — exactly the structure of great doubt. It also corresponds to "emergence" in LLMs: capability jumps do not happen through small-step optimization but through whole-system phase transition when a scale threshold is crossed.</p>
+  </div>
+
+  <div class="section east">
+    <div class="label">CONTEMPORARY APPLICATION</div>
+    <div class="scenario"><strong>BigCat scenario:</strong> Real cognitive leaps come not from reading 100 more articles but from <strong>staying with a question that won't let you sit still</strong> — "What has AI really changed?" "What should I all-in on for the second half of life?" Hold it as a huatou; revisit it on waking each day. Don't rush to fill it with a ready frame — let the doubt ferment. The moment the frame collapses and reorganizes, what you receive is not an answer but <strong>a new way of asking</strong>.</div>
+  </div>
+
+  <div class="section east">
+    <div class="label">ONE-LINE ESSENCE + REFLECTION</div>
+    <div class="essence">A real breakthrough is not solving the problem but having the problem that wouldn't let you rest rewrite you.</div>
+    <div class="question">Over the past three months, which question has unsettled you while you avoided facing it? Are you willing to hold it as a huatou for a few weeks?</div>
+  </div>
+</div>
+
+<!-- Closing -->
+<div class="intro" style="border-left-color:#a29bfe;background:#fafaff">
+  Four stances: Descartes <strong>uses doubt to sift the foundation</strong>; Pascal <strong>admits reason's edge and then bets by expected value</strong>; Hume <strong>accepts that doubt has no exit</strong> and keeps acting via habit and sentiment; Zen <strong>makes the state of doubt itself the practice</strong>. Use Descartes for daily verification, Pascal for high-stakes bets, Hume for long-range humility, Zen's great doubt for cognitive leaps. Doubt and faith are not enemies — they are two faces of the same honesty.
+</div>
+
+<!-- Deeper Thought -->
+<div class="resources">
+  <h2>Deeper Thought</h2>
+
+  <details>
+    <summary>Descartes and Hume both walked the road of doubt — why do they end so differently?</summary>
+    <div>Descartes presupposed <strong>"there must be an unshakable foundation"</strong>; doubt was a probe, and once cogito was found he immediately rebuilt the edifice of knowledge. Hume had no such presupposition — empirical introspection reveals that even "self" is only a bundle of perceptions. The real fork in philosophy is here: rationalism trusts that "clear and distinct ideas" can chisel out bedrock; empiricism holds that all content arises from habituated conjunction. Both are alive in AI today — formal verification is Cartesian, statistical learning is Humean.</div>
+  </details>
+
+  <details>
+    <summary>Does Pascal's wager actually hold? What are the modern objections?</summary>
+    <div>The sharpest is the <strong>many-gods objection</strong>: if many mutually exclusive gods are possible, betting on one is to bet against all the others, and the asymmetry collapses. The second is <strong>"belief is not subject to will"</strong> — you cannot truly believe just because the payoff matrix is pretty. But the wager's <strong>decision-theoretic skeleton</strong> still stands: under highly asymmetric payoffs, act by expected utility rather than wait for evidential closure. That is the core of modern risk management and long-range decision-making. Bostrom, Taleb, and Ord are all secular variants of Pascal.</div>
+  </details>
+
+  <details>
+    <summary>Are Zen's great doubt and Descartes' methodic doubt the same kind of doubt?</summary>
+    <div>Structurally similar — both push doubt to the extreme. But their function differs. Descartes wants to find a <strong>proposition not shakable by any doubt</strong>; his doubt aims at "what is true." Zen's great doubt aims not at propositions but at <strong>the questioner</strong> — at the end of doubting it is not "I obtained the answer" but "the 'I' that was seeking has been overturned." The first is an epistemological operation; the second an ontological inversion. Use Descartes for everyday knowledge, Zen for foundational bewilderment.</div>
+  </details>
+
+  <details>
+    <summary>The "trust vs verify" tension in the AI era — how would the four advise?</summary>
+    <div>Descartes: identify <strong>unshakable claims</strong> that can be single-point verified; build the workflow on top of them. Pascal: compute the asymmetry — place "worst case of AI error" against "best case of AI gain" in a matrix and let expected value decide the delegation boundary. Hume: the model never "understands" cause; every seemingly certain judgment is just an extension of constant conjunction. Zen: what matters most is not "trust AI or not" but <strong>holding "the relationship between me and AI" as a huatou</strong>, letting it continually reshape your understanding of "what counts as human work."</div>
+  </details>
+</div>
+
+</div>
+</body>
+</html>
