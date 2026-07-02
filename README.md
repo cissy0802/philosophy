@@ -1,4 +1,4 @@
-# Philosophy Weekly 每周哲学经典
+# Philosophy 哲学经典
 
 东西方哲学经典，每日四则，跨越时空的思想对话。
 
