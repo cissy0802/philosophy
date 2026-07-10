@@ -205,12 +205,19 @@ def collect_groups(soup) -> list[tuple]:
     """
     mode = detect_page_mode(soup)
     body = soup.body or soup
-    h2s = [h for h in body.find_all("h2") if not h.find_parent(class_="mmd-controls")]
-    # Fallback: pages structured with `<div class="card">` per section instead
-    # of h2s (e.g. philosophy/thinker-panel pages). Treat cards as boundaries.
-    if not h2s:
-        h2s = [c for c in body.find_all("div", class_="card")
-               if not c.find_parent(class_="mmd-controls")]
+    # Section boundaries: h2 elements + <div class="card"> (philosophy pages
+    # use per-thinker cards, sometimes alongside a trailing h2 like 深入思考).
+    # Collect both, then sort by DOM order.
+    candidates = list(body.find_all("h2"))
+    candidates += list(body.find_all("div", class_=lambda c: c and "card" in c))
+    candidates = [el for el in candidates if not el.find_parent(class_="mmd-controls")]
+    # DOM order: use sourceline+sourcepos if available, else find_all() order
+    seen = set()
+    h2s = []
+    for el in body.find_all(True):
+        if el in candidates and id(el) not in seen:
+            seen.add(id(el))
+            h2s.append(el)
     if not h2s:
         return []  # no model boundaries — page isn't a content page
 
