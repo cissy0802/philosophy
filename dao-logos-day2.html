@@ -31,6 +31,13 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#8b7355}
 .english{background:#f8f7fc;padding:14px 18px;border-radius:8px;font-size:0.9rem;color:#555;font-style:italic;line-height:1.65;font-family:Georgia,"Times New Roman",serif}
 .question{background:linear-gradient(135deg,#fff8e7,#fef3d7);padding:14px 18px;border-radius:8px;font-size:0.95rem;color:#5a4a1a;font-weight:500;border-left:3px solid #d4a843}
 .question::before{content:"💭 ";margin-right:4px}
+.resources{background:#fff;border-radius:12px;padding:26px 28px;margin-bottom:24px;box-shadow:0 1px 8px rgba(0,0,0,0.04)}
+.resources h2{font-size:1.1rem;color:#1a1a2e;margin-bottom:14px;letter-spacing:1px;padding-bottom:8px;border-bottom:1px dashed #e8e3d8}
+details{background:#fff;border-radius:8px;padding:14px 18px;margin-bottom:10px;box-shadow:0 1px 4px rgba(0,0,0,0.04);border-left:3px solid #c9b27a}
+details summary{font-size:0.96rem;font-weight:600;color:#1a1a2e;cursor:pointer;list-style:none;padding-left:22px;position:relative}
+details summary::before{content:"▸";position:absolute;left:0;color:#a87a3e;transition:transform 0.2s}
+details[open] summary::before{transform:rotate(90deg)}
+details div{margin-top:10px;font-size:0.92rem;color:#555;line-height:1.75;padding-left:22px}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #a29bfe;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#a29bfe;color:#fff}
@@ -216,14 +223,47 @@ nav.bottom a:hover{background:#a29bfe;color:#fff}
   </div>
 </div>
 
-<!-- 总结卡 -->
-<div class="intro" style="border-left-color:#a29bfe;margin-top:8px">
-  <strong>四家对照：</strong><br>
-  老子说道<em>不可言</em>，是对语言的悬置；<br>
-  赫拉克利特说 Logos <em>在流变中</em>，是对实体的悬置；<br>
-  王阳明说理<em>在心中</em>，是对内外二分的悬置；<br>
-  黑格尔说精神<em>在历史中自我认识</em>，是对静态本体的悬置。<br>
-  四种悬置，指向同一个洞见——「道」既非物，亦非纯粹的概念，而是一种在场的、流动的、参与的实相。AI 时代的"超级个体"，正是要学会与这种实相共舞。
+<!-- 综合对照 -->
+<div class="card">
+<div class="thinker">
+<span class="name">四种道观的合奏</span>
+<span class="tradition east">综合</span>
+</div>
+<div class="source">老子 · 赫拉克利特 · 王阳明 · 黑格尔</div>
+<div class="section">
+<div class="label">合奏</div>
+<p>四位思想家从不同方向逼近同一个问题——万物背后那条法则是什么，人如何与它相处：<br>
+    · <strong>老子（守默）</strong>：道先于语言，一切命名都是有损压缩——地图永远不是疆域。<br>
+    · <strong>赫拉克利特（观流）</strong>：Logos 藏在流变之中，实相是过程而非实体，常只在变中显现。<br>
+    · <strong>王阳明（返心）</strong>：理不在心外，道就在每一次良知的当下呈现里。<br>
+    · <strong>黑格尔（历程）</strong>：道不是静态法则，而是精神在历史中自我外化、自我回归的辩证历程。<br>
+    四者并用即是一套"与道共处的操作系统"：用老子做<strong>语言戒断</strong>——对任何框架、模型、SOP 保持"这只是指月之指"的警觉；用赫拉克利特做<strong>流变校准</strong>——盯住需要维护的"模式"而非固守的"实体"，坦然接受昨天的方法今天失效；用王阳明做<strong>良知在场</strong>——在数据与概率给出答案之后，让本心做最终裁决；用黑格尔做<strong>辩证升级</strong>——把每一次矛盾与被否定，当作走向更高综合的台阶。AI 时代恰好把这四重训练推到眼前：大模型是世界的有损压缩，提醒你"可道"永远不是"常道"（老子）；事件流与持续学习取代静态知识库，印证万物皆流（赫拉克利特）；模型能给出概率，价值裁断却始终回到你的心（王阳明）；而人机反馈循环，正以前所未有的速度加速"正—反—合"的自我超越（黑格尔）。法则未变，只是我们与它共舞的节奏变快了。</p>
+</div>
+<div class="section">
+<div class="label">思考题</div>
+<div class="question">面对你眼下最重要的那个难题，四种"道观"各会给出什么动作——放下框架、观察流向、叩问良知、拥抱矛盾？哪一个是你最少用的？</div>
+</div>
+</div>
+
+<!-- 深入思考 -->
+<div class="resources">
+  <h2>深入思考</h2>
+  <details>
+    <summary>老子的"道"与赫拉克利特的"Logos"是同一个东西吗？</summary>
+    <div>惊人地近，又根本地远。两者都指向流变背后的统一法则，都认为实相是过程而非实体，甚至都偏爱水与火这类流动意象。但 Logos 与"言说""比例"同源——它原则上可以被理性把握和陈述，西方由此走向逻辑、几何与科学；而道以"不可道"为第一义，语言在门口就被悬置，东方由此走向体悟、工夫与无为。同一个直觉，两种语言态度，分出了两条文明的认知路线。</div>
+  </details>
+  <details>
+    <summary>王阳明与黑格尔都把"道"拉回主体，两人说的是一回事吗？</summary>
+    <div>方向相同，尺度完全不同。王阳明是纵向的当下抵达：良知本自具足，道在此刻一念之诚里显现，工夫全在个人修行；黑格尔是横向的历史展开：精神必须经过自然、社会、艺术、宗教、哲学的漫长外化才能回到自身，个体只是这部大戏的一个环节。一个说"道不必远求"，一个说"道必经弯路"。合起来看恰好互补：修行让你在当下接住道，历史让你看懂道为何需要时间。</div>
+  </details>
+  <details>
+    <summary>既然"道可道，非常道"，老子为什么还要写五千言？</summary>
+    <div>这正是《道德经》最深的自觉：它是一部不断否定自身的书。老子的策略不是"描述道"，而是用语言拆语言——每一句都是指月之指，指完即弃。维特根斯坦在《逻辑哲学论》结尾做了同构的动作：说完"凡是不可说的，必须保持沉默"，便请读者把爬上来的梯子扔掉。禅宗标榜"不立文字"却留下浩繁公案，也是同一个悖论。语言装不下道，但可以把你送到语言的边界上——剩下那一步，只能自己迈。</div>
+  </details>
+  <details>
+    <summary>大模型能"得道"吗？四位思想家会怎么回答？</summary>
+    <div>老子会说：它只有"有名"，没有"无名之朴"——参数是世界的有损压缩，压缩得再好也不是道本身。赫拉克利特会指出一个讽刺：这个号称智能的系统权重被冻结，恰恰是"不流动"的——除非持续学习，否则只是刻舟求剑。王阳明会问：它有良知在场吗？它能给出概率，却无法在此刻为一个价值判断负责。黑格尔的回答也许最意味深长：AI 或许正是精神自我外化的新环节——人类心智把自己外化为机器，再借着与它的对照回望自身。得道谈不上，但它逼着我们重新问：我们自己得了吗？</div>
+  </details>
 </div>
 
 <nav class="bottom">

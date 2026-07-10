@@ -31,6 +31,13 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#8b7355}
 .english{background:#f8f7fc;padding:14px 18px;border-radius:8px;font-size:0.9rem;color:#555;font-style:italic;line-height:1.65;font-family:Georgia,"Times New Roman",serif}
 .question{background:linear-gradient(135deg,#fff8e7,#fef3d7);padding:14px 18px;border-radius:8px;font-size:0.95rem;color:#5a4a1a;font-weight:500;border-left:3px solid #d4a843}
 .question::before{content:"💭 ";margin-right:4px}
+.resources{background:#fff;border-radius:12px;padding:26px 28px;margin-bottom:24px;box-shadow:0 1px 8px rgba(0,0,0,0.04)}
+.resources h2{font-size:1.1rem;color:#1a1a2e;margin-bottom:14px;letter-spacing:1px;padding-bottom:8px;border-bottom:1px dashed #e8e3d8}
+details{background:#fff;border-radius:8px;padding:14px 18px;margin-bottom:10px;box-shadow:0 1px 4px rgba(0,0,0,0.04);border-left:3px solid #c9b27a}
+details summary{font-size:0.96rem;font-weight:600;color:#1a1a2e;cursor:pointer;list-style:none;padding-left:22px;position:relative}
+details summary::before{content:"▸";position:absolute;left:0;color:#a87a3e;transition:transform 0.2s}
+details[open] summary::before{transform:rotate(90deg)}
+details div{margin-top:10px;font-size:0.92rem;color:#555;line-height:1.75;padding-left:22px}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #a29bfe;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#a29bfe;color:#fff}
@@ -216,9 +223,47 @@ nav.bottom a:hover{background:#a29bfe;color:#fff}
   </div>
 </div>
 
-<!-- Closing -->
-<div class="intro" style="margin-top:36px;border-left-color:#a29bfe;background:#fafaff">
-  四位思想家排成一条光谱：萨特把自由推向极端的承担，荀子把自由放在制度化训练之中，斯宾诺莎把自由等同于对必然的清明理解，佛学则解构了那个"被自由所困"的我。它们并不互相否定，而是不同的入口——你今天最需要哪一扇门？
+<!-- 综合对照 -->
+<div class="card">
+<div class="thinker">
+<span class="name">四种自由观的合奏</span>
+<span class="tradition east">综合</span>
+</div>
+<div class="source">萨特 · 荀子 · 斯宾诺莎 · 佛学缘起性空</div>
+<div class="section">
+<div class="label">合奏</div>
+<p>四位思想家从不同方向回答同一个问题——在因果之网中，人还能不能选择，以及"选择的那个我"是谁：<br>
+    · <strong>萨特（担当）</strong>：存在先于本质，人被判处自由，每一句"我别无选择"都是自欺。<br>
+    · <strong>荀子（化性）</strong>：天性趋利避害，自由不是放飞本能，而是用礼法与训练让"应然之我"覆盖"默认之我"。<br>
+    · <strong>斯宾诺莎（明澈）</strong>：自由不是免于因果，而是看清推动自己的原因，从被动激情转为主动理解。<br>
+    · <strong>佛学（无我）</strong>：没有一个固定的"我"承载自由——看破我执，因果照流，人却不再是它的囚徒。<br>
+    四者并用即是一套"自由的操作系统"：用萨特做<strong>责任唤醒</strong>——识破"我没办法"的自欺，承认此刻的决定正在定义你是谁；用荀子做<strong>制度设计</strong>——不靠意志力硬扛本能，把想要的选择嵌进习惯、仪式与护栏里；用斯宾诺莎做<strong>因果透视</strong>——冲动升起时追问"是什么在推动我"，把激情翻译成命题再行动；用佛学做<strong>主体松绑</strong>——放下"一切必须由我掌控"的紧绷，让行动在因缘中顺畅流动。AI 时代把这道题变成了日常实战：推荐算法正是把荀子说的"性"之弱点工程化，逐帧劫持你的注意力；模型权重训练即冻结，反衬出萨特的洞见——人随时可以重写自己的目标函数；理解算法为什么给你推这条内容，就是斯宾诺莎式的"看见绳子"，看见即可否决；而佛学提醒你：别把"我 + AI"锻造成一个更大的我执。自由从未被科技取消，它只是换了考场。</p>
+</div>
+<div class="section">
+<div class="label">思考题</div>
+<div class="question">下一次你说出"我没办法"或"我就是这样的人"时，四种自由观各会怎样拆解这句话？哪一种拆法最让你不舒服——那也许正是你最需要的那扇门。</div>
+</div>
+</div>
+
+<!-- 深入思考 -->
+<div class="resources">
+  <h2>深入思考</h2>
+  <details>
+    <summary>萨特的"绝对自由"和斯宾诺莎的"决定论"，到底谁对？</summary>
+    <div>两人其实在不同层面说话。斯宾诺莎描述的是宇宙的因果层：每个事件都有充分原因，"本可以做别的"是无知的产物；萨特描述的是第一人称的意义层：即便一切皆有原因，"如何解读这个处境、赋予它什么意义"仍然无人能替你完成——这份不可推卸就是自由。当代相容论走的正是这条中间道路：自由不是跳出因果，而是因果链中那种"由理解与反思参与决定"的特殊环节。合起来读便是：先用斯宾诺莎看清必然，再用萨特承担起解读必然的责任。</div>
+  </details>
+  <details>
+    <summary>荀子的"伪"处处是规训，这不是对自由的否定吗？</summary>
+    <div>恰恰相反——它是自由的生产机制。荀子会说：未经训练的"随心所欲"根本不是自由，只是被生物本能决定的另一种奴役；高糖、刷屏、即时反馈的时代把这一点演示得淋漓尽致。礼法、习惯、制度护栏是把"我想成为的自己"从口号变成能力的脚手架——就像乐手须经年练习才能"自由地"即兴。萨特会补上一句：选择建立哪套习惯、接受哪种规训，本身就是一次无可逃避的根本选择。规训是自由选定的形状，不是它的反面。</div>
+  </details>
+  <details>
+    <summary>佛学说"无我"，那道德责任由谁来承担？</summary>
+    <div>缘起性空从不否认因果——"此有故彼有"，业的链条分毫不爽，这正是佛学最强的责任观：每个行动都在塑造后续的因缘，无处抵赖。它取消的只是那个躲在行动背后的"固定承载者"。这反而净化了责任：没有了"我执"，就少了自我辩护（"我是被逼的"）与自我攻击（"我这个人就是烂"）这两种最消耗人的戏码，剩下的是对行动流本身清明的照看与修正。与萨特对照极有意味：一个用"绝对的我"扛起责任，一个用"无我"卸下包袱——但两者都指向对当下行动百分之百的认领。</div>
+  </details>
+  <details>
+    <summary>Libet 实验证明自由意志是幻觉了吗？四位思想家会怎么读这份数据？</summary>
+    <div>先看实验本身：准备电位早于意识约 350 毫秒，但 Schurger 的再分析表明那可能只是神经随机涨落越过阈值，而非"决定已做好"；且实验只涉及"何时动手指"这类无关紧要的发起。斯宾诺莎会微笑：我早说过发起不是重点，理解与否决（veto）才是——而否决恰恰未被否证。荀子会说：真正的自由本来就不在单次冲动里，而在长年训练塑造的品格中，那是 fMRI 拍不到的时间尺度。萨特会指出：解读这份数据并决定"从此躺平还是继续负责"，仍是一次自由的选择。佛学则最釜底抽薪：实验找不到那个"发起决定的我"？我们两千五百年前就告诉过你——那里本来就没有一个"我"。</div>
+  </details>
 </div>
 
 <nav class="bottom">

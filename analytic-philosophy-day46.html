@@ -28,6 +28,7 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#8b7355}
 .section p{font-size:0.95rem;color:#4a4a4a;margin-top:4px}
 .section .scenario{margin-top:8px;padding:10px 14px;background:#f9f8f5;border-radius:6px;font-size:0.92rem;color:#555}
 .section .scenario strong{color:#1a1a2e}
+.english{background:#f8f7fc;padding:14px 18px;border-radius:8px;font-size:0.9rem;color:#555;font-style:italic;line-height:1.65;font-family:Georgia,"Times New Roman",serif}
 .question{background:linear-gradient(135deg,#fff8e7,#fef3d7);padding:14px 18px;border-radius:8px;font-size:0.95rem;color:#5a4a1a;font-weight:500;border-left:3px solid #d4a843}
 .question::before{content:"💭 ";margin-right:4px}
 .essence{background:#f3f0ff;padding:12px 16px;border-radius:8px;font-size:0.95rem;color:#3a3a5a;border-left:3px solid #a29bfe;margin-bottom:10px}
@@ -89,6 +90,11 @@ nav.bottom a:hover{background:#a29bfe;color:#fff}
   </div>
 
   <div class="section">
+    <div class="label">English Summary</div>
+    <div class="english">Frege split meaning into two layers: reference (the object designated) and sense (the mode in which it is presented). "The morning star is the evening star" is informative even though both name Venus, because the two senses differ—information lives in that gap. The distinction founded analytic philosophy and now underlies entity resolution and the diagnosis of LLM hallucination: fluent in senses, loose on reference.</div>
+  </div>
+
+  <div class="section">
     <div class="essence">一句话精华：同一个对象可以有无数呈现方式，信息就活在「意义」与「指称」的缝隙里。</div>
     <div class="question">你团队里最常见的沟通事故，是「说的是同一件事却以为不同」，还是「以为同一件事其实指向不同」？</div>
   </div>
@@ -120,6 +126,11 @@ nav.bottom a:hover{background:#a29bfe;color:#fff}
   <div class="section east">
     <div class="label">当代启示</div>
     <div class="scenario"><strong>BigCat 场景：</strong>分布式系统里最贵的错误常是<strong>名实分离</strong>：接口叫 <code>user</code>，实际混装了账号、人、会话三种实体，字段名与语义悄悄漂移，酿成跨团队故障。公孙龙的纪律——<strong>命名前先厘清所命的是形、是色、还是二者之合</strong>——正是 schema 设计与领域建模的第一原则。</div>
+  </div>
+
+  <div class="section east">
+    <div class="label">English Summary</div>
+    <div class="english">Gongsun Long's "a white horse is not a horse" is not sophistry but conceptual surgery: "horse" names shape (a class) while "white horse" compounds shape and color (a subset), so the two concepts differ in both intension and extension. He asserts a non-identity of concepts, not that white horses fall outside the class of horses—striking, two millennia early, the same fault line between predication and reference that Frege found.</div>
   </div>
 
   <div class="section east">
@@ -157,6 +168,11 @@ nav.bottom a:hover{background:#a29bfe;color:#fff}
   </div>
 
   <div class="section">
+    <div class="label">English Summary</div>
+    <div class="english">Carnap's verification principle holds that a statement's meaning is its method of empirical test: sentences that are neither logically necessary nor in principle testable are not false but cognitively meaningless—metaphysics as "music without musical ability." Though the principle fell to Quine's critique (it cannot verify itself, and propositions face experience only as a web), it survives as a daily filter: if this claim were true, what observable difference would it make?</div>
+  </div>
+
+  <div class="section">
     <div class="essence">一句话精华：一句话的意义在于它如何被检验；无任何可检验后果的断言，是伪装成真理的情绪。</div>
     <div class="question">你最近信服的一个宏大判断，若为真会带来什么可观测的差别？如果答不上来，你信的是论证还是语气？</div>
   </div>
@@ -191,14 +207,38 @@ nav.bottom a:hover{background:#a29bfe;color:#fff}
   </div>
 
   <div class="section east">
+    <div class="label">English Summary</div>
+    <div class="english">Against Nyāya realism about universals, Dignāga's apoha doctrine holds that words mean by exclusion, not positive designation: "cow" grasps no real cow-ness but fences off everything non-cow—"not non-cow." Meaning is thus negative and differential, defined by what a concept is not. Fifteen centuries later, contrastive learning and word embeddings realize exactly this: representations learned by pushing away negatives, meaning as difference.</div>
+  </div>
+
+  <div class="section east">
     <div class="essence">一句话精华：概念不靠正面指认而靠排除他者成立——你「不是什么」，划定了你「是什么」。</div>
     <div class="question">若「意义即差异、即排除」，那么一个从不设边界、什么都想要的人或产品，还拥有可辨认的意义吗？</div>
   </div>
 </div>
 
-<!-- Closing -->
-<div class="intro" style="margin-top:36px;border-left-color:#a29bfe;background:#fafaff">
-  四人做的是同一件事——<strong>给语言做手术</strong>。弗雷格劈开意义与指称，公孙龙厘清名与实，卡尔纳普切除无可检验的伪命题，陈那揭示意义靠排除而立。西方走向逻辑符号的精密，东方在名实之辩与因明遮诠中抵达相似洞见：<strong>许多困惑不是世界的难题，而是语言的迷雾。</strong>在 AI 每秒量产流畅句子的时代，能分辨「有意义」与「像有意义」，就是最稀缺的清醒。
+<!-- 综合对照 -->
+<div class="card">
+  <div class="thinker">
+    <span class="name">四种意义观的合奏</span>
+    <span class="tradition east">综合</span>
+  </div>
+  <div class="source">弗雷格 · 公孙龙 · 卡尔纳普 · 陈那</div>
+
+  <div class="section">
+    <div class="label">合奏</div>
+    <p>四位思想家做的是同一件事——给语言做手术，追问一句话凭什么有意义：<br>
+    · <strong>弗雷格（劈分）</strong>：同一指称可有无数意义呈现，信息就活在「意义」与「指称」的缝隙里。<br>
+    · <strong>公孙龙（正名）</strong>：「白马」与「马」指向重叠而概念不同——命名前先厘清所命的是形、是色、还是其合。<br>
+    · <strong>卡尔纳普（切除）</strong>：无任何可检验后果的断言不是错，而是无认知意义——伪装成真理的情绪。<br>
+    · <strong>陈那（遮诠）</strong>：概念不靠正面指认而靠排除他者成立——「不是什么」划定「是什么」。<br>
+    西方走向逻辑符号的精密，东方在名实之辩与因明遮诠中抵达相似洞见：许多困惑不是世界的难题，而是语言的迷雾。四者并用便是一套「语言的操作系统」：用弗雷格做<strong>错位排查</strong>——沟通失灵时先问是指称不同还是呈现方式不同；用公孙龙做<strong>命名纪律</strong>——每个术语、指标、接口名定期核对名与实是否已脱钩；用卡尔纳普做<strong>胡话过滤</strong>——凡说不出「若为真世界有何可观测差别」的漂亮话一律降权；用陈那做<strong>边界塑形</strong>——定义一个概念、一个产品、一个自己时，先明确坚决排除什么。AI 每秒量产语法完美的句子的今天，这套手术刀恰是日用品：大模型对意义敏感而指称不牢（弗雷格）、名实漂移是系统故障之源（公孙龙）、流畅胡诌须靠可检验性滤除（卡尔纳普）、而它学会「猫」的方式正是工程化的「非非牛」（陈那）。能分辨「有意义」与「像有意义」，就是这个时代最稀缺的清醒。</p>
+  </div>
+
+  <div class="section">
+    <div class="label">思考题</div>
+    <div class="question">你最近一次被一段「漂亮话」说服——它能过哪几关：指称清楚吗、名实相符吗、可检验吗、边界明确吗？四关全过的话，它还只是漂亮话吗？</div>
+  </div>
 </div>
 
 <div class="card" style="background:#fbfaf7">

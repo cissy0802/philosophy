@@ -34,6 +34,13 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#8b7355}
 .diagram{margin:14px 0 4px;padding:18px 16px;background:#fdfcf8;border:1px dashed #d8cfb6;border-radius:8px;text-align:center}
 .diagram svg{max-width:100%;height:auto}
 .diagram .caption{font-size:0.82rem;color:#8b7355;margin-top:6px;font-style:italic}
+.resources{background:#fff;border-radius:12px;padding:26px 28px;margin-bottom:24px;box-shadow:0 1px 8px rgba(0,0,0,0.04)}
+.resources h2{font-size:1.1rem;color:#1a1a2e;margin-bottom:14px;letter-spacing:1px;padding-bottom:8px;border-bottom:1px dashed #e8e3d8}
+details{background:#fff;border-radius:8px;padding:14px 18px;margin-bottom:10px;box-shadow:0 1px 4px rgba(0,0,0,0.04);border-left:3px solid #c9b27a}
+details summary{font-size:0.96rem;font-weight:600;color:#1a1a2e;cursor:pointer;list-style:none;padding-left:22px;position:relative}
+details summary::before{content:"▸";position:absolute;left:0;color:#a87a3e;transition:transform 0.2s}
+details[open] summary::before{transform:rotate(90deg)}
+details div{margin-top:10px;font-size:0.92rem;color:#555;line-height:1.75;padding-left:22px}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #a29bfe;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#a29bfe;color:#fff}
@@ -241,6 +248,27 @@ nav.bottom a:hover{background:#a29bfe;color:#fff}
     <div class="label">思考题</div>
     <div class="question">下次面对一个棘手的道德困境，试着依次用这四种视角各审一遍——你最容易忽略的是哪一种？补上它，决定会更稳健。</div>
   </div>
+</div>
+
+<!-- 深入思考 -->
+<div class="resources">
+  <h2>深入思考</h2>
+  <details>
+    <summary>孟子说良知是先天的种子，亚里士多德说德性靠后天习惯——道德到底是天生还是练成的？</summary>
+    <div>两人的分歧比表面上小。孟子的"四端"只是"端"——萌芽而非成品，必须扩而充之才能成德，否则会被物欲覆盖；亚里士多德也承认人天生具有接受德性的潜能，习惯化只是把潜能变为现实。所以两者其实共享同一个结构：先天倾向加后天训练，缺一不可。现代道德心理学恰好印证了这种合流：Haidt 与 Hamlin 的实验支持孟子的先天直觉，而"美德即技能"的训练观支持亚里士多德。真正的对立面是第三种立场——道德纯属社会建构——而这恰是两人都反对的。</div>
+  </details>
+  <details>
+    <summary>康德和墨子都反对"偏爱"，他们的"不偏不倚"是同一种吗？</summary>
+    <div>形似而根异。康德的普遍性是形式的：一条准则必须能被所有理性存在者无矛盾地采纳，重点在动机与行为本身，且"人是目的"设定了不可跨越的底线——不能为了多数人的福利牺牲一个人。墨子的无差等是计算的：每个人的利益在总账中权重相同，重点在后果总量，理论上允许"杀一人以存天下"式的取舍（墨家以"天志"来约束这种滑坡）。所以面对电车难题，"康德式的墨者"不可能存在：一个不许拉杆，一个几乎必须拉杆。两人共同的敌人是儒家式的差等之爱，但给出的替代方案分属义务论与后果论两个家族。</div>
+  </details>
+  <details>
+    <summary>凶手在门口问你朋友藏在哪里——这一页的四位思想家会分别怎么做？</summary>
+    <div>康德最尴尬：普遍化测试禁止说谎，他本人真的主张不可对凶手撒谎，这成为义务论"僵硬"的著名罪证。墨子算得最快：说谎的代价近乎零，救人的收益极大，兼爱要求你毫不犹豫地骗。孟子根本不会进入计算：恻隐之心在 0.2 秒内已经启动，保护朋友是四端的直接发用，理由是事后才补的。亚里士多德则会问：诚实是德性，但它的中道从来相对于情境——对一个以杀人为目的的提问者，坦白不是诚实而是实践智慧的"不及"。这个思想实验之所以经典，正因为它逼出四种范式的真实排序：你在压力下实际服从的那一种，才是你的元伦理。</div>
+  </details>
+  <details>
+    <summary>四种伦理范式各对应哪条 AI 对齐路径？哪一条最可行？</summary>
+    <div>对应关系惊人整齐：康德对应宪法 AI——用一组可普遍化原则约束模型行为；墨子对应效用函数优化与 Stuart Russell 的协助博弈——让 AI 最大化人类整体福利而非单个主人的指令；亚里士多德对应 RLHF 式的习惯养成——通过海量案例反馈把"好判断"训练成模型的第二天性；孟子则点出了最深的缺口——人类道德的稳健性部分来自先天的"价值锚点"（恻隐之心），而这恰是当前大模型缺失的层。工程实践给出的答案与本页综合卡片一致：任何单一范式都不够——规则防底线、后果算权衡、训练养直觉，而三者叠加仍替代不了那个天生会为"孺子入井"而颤动的锚。这可能正是对齐问题真正困难的地方。</div>
+  </details>
 </div>
 
 <nav class="bottom">

@@ -32,6 +32,13 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#8b7355}
 .english{background:#f8f7fc;padding:14px 18px;border-radius:8px;font-size:0.9rem;color:#555;font-style:italic;line-height:1.65;font-family:Georgia,"Times New Roman",serif}
 .question{background:linear-gradient(135deg,#fff8e7,#fef3d7);padding:14px 18px;border-radius:8px;font-size:0.95rem;color:#5a4a1a;font-weight:500;border-left:3px solid #d4a843}
 .question::before{content:"💭 ";margin-right:4px}
+.resources{background:#fff;border-radius:12px;padding:26px 28px;margin-bottom:24px;box-shadow:0 1px 8px rgba(0,0,0,0.04)}
+.resources h2{font-size:1.1rem;color:#1a1a2e;margin-bottom:14px;letter-spacing:1px;padding-bottom:8px;border-bottom:1px dashed #e8e3d8}
+details{background:#fff;border-radius:8px;padding:14px 18px;margin-bottom:10px;box-shadow:0 1px 4px rgba(0,0,0,0.04);border-left:3px solid #c9b27a}
+details summary{font-size:0.96rem;font-weight:600;color:#1a1a2e;cursor:pointer;list-style:none;padding-left:22px;position:relative}
+details summary::before{content:"▸";position:absolute;left:0;color:#a87a3e;transition:transform 0.2s}
+details[open] summary::before{transform:rotate(90deg)}
+details div{margin-top:10px;font-size:0.92rem;color:#555;line-height:1.75;padding-left:22px}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #a29bfe;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#a29bfe;color:#fff}
@@ -225,9 +232,49 @@ nav.bottom a:hover{background:#a29bfe;color:#fff}
   </div>
 </div>
 
-<!-- Closing -->
-<div class="intro" style="margin-top:36px;border-left-color:#a29bfe;background:#fafaff">
-  The four thinkers together sketch a "reverse map of wisdom": Socrates marks the honest coordinate of "I do not know"; Confucius sets an internal ruler that refuses to confuse knowing with not-knowing; Kant traces the transcendental boundary of human cognitive structure; Chan/Zen turns the arrow from concept toward experience itself. In an era when AI has commoditized information, the real scarcity is the combination of these four postures: know your edge, calibrate honestly, identify your categories, and ground knowing in action.
+<!-- Synthesis -->
+<div class="card">
+  <div class="thinker">
+    <span class="name">Four Views of Knowledge in Chorus</span>
+    <span class="tradition east">Synthesis</span>
+  </div>
+  <div class="source">Socrates · Confucius · Kant · Chan/Zen</div>
+
+  <div class="section">
+    <div class="label">Chorus</div>
+    <p>Four thinkers answer the same question from different directions — what counts as truly "knowing," and where does wisdom part ways with information?<br>
+    · <strong>Socrates (boundary)</strong>: wisdom begins with confessed ignorance — marking "I do not know" clearly on one's cognitive map.<br>
+    · <strong>Confucius (integrity)</strong>: to know is to know what you know — the core of knowledge is not content but attitude, an honest calibration inward and outward.<br>
+    · <strong>Kant (framework)</strong>: we know only phenomena filtered by a priori categories; wisdom is seeing the filter itself and its limits.<br>
+    · <strong>Chan/Zen (embodiment)</strong>: words are only the finger pointing at the moon; real knowing must land in direct experience beyond language.<br>
+    Used together they form an "operating system for knowledge": use Socrates for <strong>boundary marking</strong> — attaching to every important judgment a confidence level and "the most likely ways it is wrong"; Confucius for <strong>honest calibration</strong> — strictly separating "I have read it," "I understand it," and "I can do it," and never blurring the three; Kant for <strong>category audit</strong> — asking what filter you bring to the data and deliberately switching to another set of categories for cross-validation; Chan for <strong>grounded translation</strong> — turning a concept into one real action and daily ritual, so that knowledge grows into the body. The AI era has made all four trainings a necessity: a model's "hallucination" is exactly the disease Confucius diagnosed — treating not-knowing as knowing; calibration research is the Socratic elenchus engineered; inductive bias is the a priori category of a silicon mind (Kant); and large models learn only what can be written down — tacit knowledge and embodied experience remain humanity's deepest moat (Chan). The cheaper information becomes, the more this operating system is worth: let AI know everything, while you know the boundary, keep the honesty, see the filter, and live what you know.</p>
+  </div>
+
+  <div class="section">
+    <div class="label">Reflection</div>
+    <div class="question">Take the piece of "knowledge" you are proudest of right now — how many gates does it pass? Can you mark its limits (Socrates)? Admit which part is hearsay (Confucius)? See the filter behind it (Kant)? Have you practiced it in your body (Chan)?</div>
+  </div>
+</div>
+
+<!-- Going Deeper -->
+<div class="resources">
+  <h2>Going Deeper</h2>
+  <details>
+    <summary>Socrates and Confucius, oceans apart yet nearly contemporaries — why did they give almost the same answer?</summary>
+    <div>They faced structurally identical social diseases: in Athens the sophists charged fees for eloquence; among the officers of the Spring and Autumn courts, respect went to whoever "spoke most impressively" — in both worlds, "knowing" had degenerated into social capital, so both teachers pulled wisdom back from content to attitude. But their entry points differ. Socrates works outward: the elenchus publicly surfaces the contradictions in an interlocutor's opinions, founding the West's tradition of logical debate. Confucius works inward: before speaking, the student must run an honest calibration on himself, founding the East's tradition of self-cultivation. One dismantles other people's illusions; the other guards against one's own. Together they complete metacognition: the capacity to interrogate the world, and to interrogate oneself.</div>
+  </details>
+  <details>
+    <summary>Kant says the thing-in-itself is forever unknowable; Zen claims one can "see one's nature" — do they contradict each other?</summary>
+    <div>It depends on what "knowing" means. Kant seals off the conceptual road: whatever passes through time, space, and the categories is only phenomenon; reaching for the thing-in-itself with concepts produces nothing but transcendental illusion. Zen entirely agrees that language and concepts cannot touch reality — "no reliance on words" says exactly this — but it claims there is a non-conceptual road: direct realization in which the subject–object split is dropped. So the two do not collide head-on; they part ways at the same wall. Kant proves where the wall stands, then stays inside it doing rigorous science of phenomena; Zen claims there is a path beyond the wall — but that path cannot be argued, only walked. This fork is precisely the watershed between philosophy and practice.</div>
+  </details>
+  <details>
+    <summary>If AI already "knows" everything, what is human learning still for?</summary>
+    <div>All four thinkers would answer in chorus: what AI holds is only the thinnest face of the coin of knowledge — retrievable information. The point of learning therefore migrates: no longer to possess information (a race humans have already lost), but to train what AI cannot hand you — Socratic calibration (knowing how much to trust which answer), Confucian integrity (not mistaking the model's fluency for your own understanding), Kantian category-awareness (recognizing the biases both the model and you carry), and Zen embodiment (living concepts into muscle memory — riding a bike, sitting in meditation, staying calm on a crash day; none of it can be outsourced). In one line: let AI remember the world, while you judge and live it. This is not the devaluation of learning but its liberation — for the first time, learning sheds the porter's job and returns to wisdom itself.</div>
+  </details>
+  <details>
+    <summary>If the four thinkers reviewed a ChatGPT answer, what would each of them ask?</summary>
+    <div>Socrates would ask: did it give a confidence level and counterexamples? Does it know which paragraph of its own answer is most likely wrong? Confucius would ask: is it "knowing what it knows," or fluently "treating not-knowing as knowing" — for hallucination is precisely probability-splicing presented as fact. Kant would ask: what a priori filter have its training data and inductive biases installed, and what has that filter systematically excluded? Zen would strike the final blow: behind this text no experience is present — and you, the reader, are you mistaking "having read it" for "having done it"? Together, the four questions form the output-review checklist everyone should carry in the age of AI.</div>
+  </details>
 </div>
 
 <nav class="bottom">

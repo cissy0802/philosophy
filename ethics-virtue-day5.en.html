@@ -32,6 +32,13 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#8b7355}
 .english{background:#f8f7fc;padding:14px 18px;border-radius:8px;font-size:0.9rem;color:#555;font-style:italic;line-height:1.65;font-family:Georgia,"Times New Roman",serif}
 .question{background:linear-gradient(135deg,#fff8e7,#fef3d7);padding:14px 18px;border-radius:8px;font-size:0.95rem;color:#5a4a1a;font-weight:500;border-left:3px solid #d4a843}
 .question::before{content:"💭 ";margin-right:4px}
+.resources{background:#fff;border-radius:12px;padding:26px 28px;margin-bottom:24px;box-shadow:0 1px 8px rgba(0,0,0,0.04)}
+.resources h2{font-size:1.1rem;color:#1a1a2e;margin-bottom:14px;letter-spacing:1px;padding-bottom:8px;border-bottom:1px dashed #e8e3d8}
+details{background:#fff;border-radius:8px;padding:14px 18px;margin-bottom:10px;box-shadow:0 1px 4px rgba(0,0,0,0.04);border-left:3px solid #c9b27a}
+details summary{font-size:0.96rem;font-weight:600;color:#1a1a2e;cursor:pointer;list-style:none;padding-left:22px;position:relative}
+details summary::before{content:"▸";position:absolute;left:0;color:#a87a3e;transition:transform 0.2s}
+details[open] summary::before{transform:rotate(90deg)}
+details div{margin-top:10px;font-size:0.92rem;color:#555;line-height:1.75;padding-left:22px}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #a29bfe;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#a29bfe;color:#fff}
@@ -247,6 +254,27 @@ nav.bottom a:hover{background:#a29bfe;color:#fff}
     <div class="label">Question to Sit With</div>
     <div class="question">Next time you face a knotted moral dilemma, run all four lenses in turn. Which is the one you most often skip? Add it back — the decision will become more robust.</div>
   </div>
+</div>
+
+<!-- Going Deeper -->
+<div class="resources">
+  <h2>Going Deeper</h2>
+  <details>
+    <summary>Mencius says conscience is innate; Aristotle says virtue is habituated — so is morality born or made?</summary>
+    <div>The disagreement is smaller than it looks. Mencius's "four sprouts" are only sprouts — beginnings, not finished virtues; they must be extended and cultivated, or desire will bury them. Aristotle likewise grants that humans are born with the potential to receive virtue; habituation merely actualizes it. Both therefore share one structure: innate disposition plus deliberate training, neither sufficient alone. Modern moral psychology confirms the convergence — Haidt's and Hamlin's findings support Mencius's innate intuitions, while the "virtue as skill" training view supports Aristotle. The real opponent of both is a third position, that morality is pure social construction, which each of them rejects.</div>
+  </details>
+  <details>
+    <summary>Kant and Mozi both reject partiality — is their impartiality the same?</summary>
+    <div>Similar in shape, different at the root. Kant's universality is formal: a maxim must be adoptable by all rational beings without contradiction; the focus is the motive and the act itself, and the Formula of Humanity sets an inviolable floor — no individual may be sacrificed for aggregate welfare. Mozi's impartiality is computational: everyone's welfare carries equal weight in the total ledger; the focus is aggregate consequence, which in principle permits trading one life for many (Mohism leans on "Heaven's will" to brake that slide). Facing a trolley problem, a "Kantian Mohist" cannot exist: one may not pull the lever, the other almost must. They share an enemy — Confucian graded love — but their alternatives belong to two different families: deontology and consequentialism.</div>
+  </details>
+  <details>
+    <summary>A murderer at the door asks where your friend is hiding — what would each of the four do?</summary>
+    <div>Kant is the most awkward: the universalization test forbids lying, and he notoriously argued you may not lie even to the murderer — the classic exhibit for deontology's rigidity. Mozi calculates fastest: the cost of the lie is near zero, the gain is a life; impartial care commands you to deceive without hesitation. Mencius never enters the calculation: compassion fires within 200 milliseconds, protecting the friend is the direct exercise of the sprouts, and reasons come afterward. Aristotle asks a different question: honesty is a virtue, but its mean is always contextual — candor toward a questioner bent on murder is not honesty but a deficiency of practical wisdom. The case is classic precisely because it forces the four paradigms into a real ranking: the one you actually obey under pressure is your meta-ethics.</div>
+  </details>
+  <details>
+    <summary>Which AI alignment strategy does each of the four paradigms map to — and which is most viable?</summary>
+    <div>The mapping is uncannily neat. Kant maps to Constitutional AI — constraining model behavior by a set of universalizable principles. Mozi maps to welfare-function optimization and Stuart Russell's assistance games — AI maximizing aggregate human welfare rather than a single principal's instructions. Aristotle maps to RLHF-style habituation — training "good judgment" into second nature through massed case feedback. And Mencius names the deepest gap: the robustness of human morality draws partly on innate "value anchors" such as compassion, precisely the layer current large models lack. Engineering practice reaches the same verdict as this page's synthesis: no single paradigm suffices — rules guard the floor, consequences weigh the trade-offs, training grows the intuitions — and even all three together do not replace the anchor that trembles, unbidden, at the child by the well. That may be where alignment is genuinely hard.</div>
+  </details>
 </div>
 
 <nav class="bottom">

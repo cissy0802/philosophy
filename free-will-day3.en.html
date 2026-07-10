@@ -32,6 +32,13 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#8b7355}
 .english{background:#f8f7fc;padding:14px 18px;border-radius:8px;font-size:0.9rem;color:#555;font-style:italic;line-height:1.65;font-family:Georgia,"Times New Roman",serif}
 .question{background:linear-gradient(135deg,#fff8e7,#fef3d7);padding:14px 18px;border-radius:8px;font-size:0.95rem;color:#5a4a1a;font-weight:500;border-left:3px solid #d4a843}
 .question::before{content:"💭 ";margin-right:4px}
+.resources{background:#fff;border-radius:12px;padding:26px 28px;margin-bottom:24px;box-shadow:0 1px 8px rgba(0,0,0,0.04)}
+.resources h2{font-size:1.1rem;color:#1a1a2e;margin-bottom:14px;letter-spacing:1px;padding-bottom:8px;border-bottom:1px dashed #e8e3d8}
+details{background:#fff;border-radius:8px;padding:14px 18px;margin-bottom:10px;box-shadow:0 1px 4px rgba(0,0,0,0.04);border-left:3px solid #c9b27a}
+details summary{font-size:0.96rem;font-weight:600;color:#1a1a2e;cursor:pointer;list-style:none;padding-left:22px;position:relative}
+details summary::before{content:"▸";position:absolute;left:0;color:#a87a3e;transition:transform 0.2s}
+details[open] summary::before{transform:rotate(90deg)}
+details div{margin-top:10px;font-size:0.92rem;color:#555;line-height:1.75;padding-left:22px}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #a29bfe;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#a29bfe;color:#fff}
@@ -225,9 +232,49 @@ nav.bottom a:hover{background:#a29bfe;color:#fff}
   </div>
 </div>
 
-<!-- Closing -->
-<div class="intro" style="margin-top:36px;border-left-color:#a29bfe;background:#fafaff">
-  The four thinkers form a spectrum: Sartre pushes freedom into total responsibility; Xunzi locates freedom inside institutional training; Spinoza identifies freedom with lucid understanding of necessity; Buddhism deconstructs the very self that feels trapped by the question. They do not refute one another — they are different doorways. Which door do you most need today?
+<!-- Synthesis -->
+<div class="card">
+  <div class="thinker">
+    <span class="name">Four Views of Freedom in Chorus</span>
+    <span class="tradition east">Synthesis</span>
+  </div>
+  <div class="source">Sartre · Xunzi · Spinoza · Dependent Origination</div>
+
+  <div class="section">
+    <div class="label">Chorus</div>
+    <p>Four thinkers answer the same question from different directions — within the web of causes, can we still choose, and who is the "I" that chooses?<br>
+    · <strong>Sartre (responsibility)</strong>: existence precedes essence; we are condemned to be free, and every "I had no choice" is bad faith.<br>
+    · <strong>Xunzi (cultivation)</strong>: nature runs toward appetite; freedom is not unleashing instinct but the training by which the self you ought to be overwrites the self you default to.<br>
+    · <strong>Spinoza (lucidity)</strong>: freedom is not exemption from causality but seeing what moves you — turning passive passion into active understanding.<br>
+    · <strong>Buddhism (no-self)</strong>: there is no fixed "I" to bear the freedom; see through self-grasping and the causal stream flows on, but you are no longer its prisoner.<br>
+    Used together they form an "operating system for freedom": use Sartre for <strong>waking responsibility</strong> — unmasking the self-deception of "I can't help it" and admitting that this very decision is defining who you are; Xunzi for <strong>institutional design</strong> — not fighting instinct with raw willpower but embedding your chosen self in habits, rituals, and guardrails; Spinoza for <strong>causal transparency</strong> — when an impulse rises, asking "what is driving me," translating passion into proposition before acting; Buddhism for <strong>loosening the subject</strong> — releasing the tense grip of "I must control everything" so that action can flow within conditions. The AI era turns this into daily combat: recommendation algorithms are Xunzi's weaknesses of "nature" industrialized, hijacking attention frame by frame; a model's weights freeze at training's end, sharpening Sartre's point that a human can rewrite its own objective function at any moment; understanding why the algorithm served you this content is Spinoza's "seeing the strings" — and to see them is to regain the veto; and Buddhism warns against forging "me + AI" into an even larger ego. Technology has not abolished freedom; it has only changed the examination hall.</p>
+  </div>
+
+  <div class="section">
+    <div class="label">Reflection</div>
+    <div class="question">Next time you say "I have no choice" or "that's just who I am," how would each of the four views dismantle the sentence? The dismantling that stings most may be the very door you need.</div>
+  </div>
+</div>
+
+<!-- Going Deeper -->
+<div class="resources">
+  <h2>Going Deeper</h2>
+  <details>
+    <summary>Sartre's radical freedom versus Spinoza's determinism — who is right?</summary>
+    <div>They are speaking at different levels. Spinoza describes the causal order of the universe: every event has sufficient cause, and "I could have done otherwise" is a child of ignorance. Sartre describes the first-person level of meaning: even if everything has causes, no one can take over for you the task of interpreting your situation and deciding what it means — that unshirkable task is freedom. Contemporary compatibilism walks exactly this middle path: freedom is not stepping outside causality but being the special kind of causal link in which understanding and reflection participate. Read them together: first use Spinoza to see necessity clearly, then use Sartre to shoulder the responsibility of interpreting it.</div>
+  </details>
+  <details>
+    <summary>Xunzi's "artifice" is discipline through and through — isn't that the negation of freedom?</summary>
+    <div>Quite the opposite: it is freedom's production mechanism. Xunzi would say that untrained "doing as one pleases" is not freedom at all, only a different enslavement — being determined by biological instinct; the age of sugar, infinite scroll, and instant reward demonstrates this daily. Ritual, habit, and institutional guardrails are the scaffolding that turns "the self I want to become" from slogan into capacity — just as a musician earns the freedom to improvise only through years of practice. Sartre would add: choosing which habits to build, which discipline to accept, is itself an inescapable fundamental choice. Discipline is the shape freedom chooses, not its opposite.</div>
+  </details>
+  <details>
+    <summary>If Buddhism teaches no-self, who bears moral responsibility?</summary>
+    <div>Dependent origination never denies causality — "this being, that is"; the chain of karma is exact to the last link, which makes it one of the strongest accounts of responsibility: every action shapes the conditions that follow, with nowhere to hide. What is dissolved is only the fixed "bearer" crouching behind the action. This actually purifies responsibility: without self-grasping, the two most exhausting dramas fall away — self-justification ("I was forced") and self-attack ("I'm just rotten") — leaving a clear-eyed tending and correcting of the stream of action itself. The contrast with Sartre is delicious: one shoulders responsibility with an absolute self, the other lays down the burden through no-self — yet both point to one hundred percent ownership of the present act.</div>
+  </details>
+  <details>
+    <summary>Did the Libet experiments prove free will an illusion? How would the four read the data?</summary>
+    <div>First, the experiment itself: the readiness potential precedes awareness by roughly 350 ms, but Schurger's reanalysis suggests it may be random neural fluctuation crossing a threshold rather than a decision already made — and the task concerned only trivial initiations like "when to flex a finger." Spinoza would smile: I always said initiation was never the point; understanding and the veto are — and the veto stands unrefuted. Xunzi would say real freedom never lived in a single impulse anyway, but in character shaped by years of training — a timescale no fMRI can photograph. Sartre would note that interpreting this data and deciding whether to resign or to keep taking responsibility is itself another free act. Buddhism cuts deepest: the experiment cannot find the "I" that initiates the decision? We told you twenty-five centuries ago — there never was one.</div>
+  </details>
 </div>
 
 <nav class="bottom">

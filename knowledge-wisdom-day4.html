@@ -31,6 +31,13 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#8b7355}
 .english{background:#f8f7fc;padding:14px 18px;border-radius:8px;font-size:0.9rem;color:#555;font-style:italic;line-height:1.65;font-family:Georgia,"Times New Roman",serif}
 .question{background:linear-gradient(135deg,#fff8e7,#fef3d7);padding:14px 18px;border-radius:8px;font-size:0.95rem;color:#5a4a1a;font-weight:500;border-left:3px solid #d4a843}
 .question::before{content:"💭 ";margin-right:4px}
+.resources{background:#fff;border-radius:12px;padding:26px 28px;margin-bottom:24px;box-shadow:0 1px 8px rgba(0,0,0,0.04)}
+.resources h2{font-size:1.1rem;color:#1a1a2e;margin-bottom:14px;letter-spacing:1px;padding-bottom:8px;border-bottom:1px dashed #e8e3d8}
+details{background:#fff;border-radius:8px;padding:14px 18px;margin-bottom:10px;box-shadow:0 1px 4px rgba(0,0,0,0.04);border-left:3px solid #c9b27a}
+details summary{font-size:0.96rem;font-weight:600;color:#1a1a2e;cursor:pointer;list-style:none;padding-left:22px;position:relative}
+details summary::before{content:"▸";position:absolute;left:0;color:#a87a3e;transition:transform 0.2s}
+details[open] summary::before{transform:rotate(90deg)}
+details div{margin-top:10px;font-size:0.92rem;color:#555;line-height:1.75;padding-left:22px}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #a29bfe;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#a29bfe;color:#fff}
@@ -216,9 +223,47 @@ nav.bottom a:hover{background:#a29bfe;color:#fff}
   </div>
 </div>
 
-<!-- Closing -->
-<div class="intro" style="margin-top:36px;border-left-color:#a29bfe;background:#fafaff">
-  四位思想家共同绘制了一张"智慧的反地图"：苏格拉底标出"我不知道"的诚实坐标，孔子立下"知与不知不混"的内在尺度，康德画出人类认知结构的先验边界，禅宗则把箭头从概念射向体验本身。在 AI 把"信息"廉价化的时代，真正的稀缺是这四种姿态的结合：知道边界、诚实校准、识别范畴、落地为行。
+<!-- 综合对照 -->
+<div class="card">
+<div class="thinker">
+<span class="name">四种知识观的合奏</span>
+<span class="tradition east">综合</span>
+</div>
+<div class="source">苏格拉底 · 孔子 · 康德 · 禅宗</div>
+<div class="section">
+<div class="label">合奏</div>
+<p>四位思想家从不同方向回答同一个问题——什么才算真正的"知道"，智慧与信息的分界在哪里：<br>
+    · <strong>苏格拉底（知界）</strong>：智慧始于承认无知，把"我不知道"清晰地标在自己的认知地图上。<br>
+    · <strong>孔子（立诚）</strong>：知之为知之——知识的核心不是内容而是态度，是对内对外的诚实校准。<br>
+    · <strong>康德（识框）</strong>：我们只能认识被先天范畴过滤后的现象，智慧是看清滤镜本身及其边界。<br>
+    · <strong>禅宗（体证）</strong>：文字只是指月之指，真知必须落在语言之外的直接体验里。<br>
+    四者并用即是一套"知识的操作系统"：用苏格拉底做<strong>边界标注</strong>——每个重要判断都附上置信度与"它最可能错的方式"；用孔子做<strong>诚实校准</strong>——严格区分"我读过、我懂得、我做到"三个层级，绝不混淆；用康德做<strong>范畴自省</strong>——追问自己带着什么滤镜在看数据，主动换一组范畴交叉验证；用禅宗做<strong>落地转译</strong>——把概念翻译成一次真实的动作与日常仪式，让知识长进身体。AI 时代恰好把四重训练变成了刚需：模型的"幻觉"正是孔子诊断的"不知为知"，校准研究是苏格拉底诘问法的工程化，归纳偏置是硅基心智的先验范畴（康德），而大模型只学得会"可被写下的文本"——默会知识与具身体验仍是人类最深的护城河（禅宗）。信息越廉价，这套操作系统越值钱：AI 负责"知道一切"，你负责知道边界、保持诚实、看清滤镜、活出所知。</p>
+</div>
+<div class="section">
+<div class="label">思考题</div>
+<div class="question">你此刻最引以为傲的一项"知识"，过得了几关——能标出它的边界（苏格拉底）？敢承认哪部分只是听说（孔子）？看得见它背后的滤镜（康德）？在身体里练过它吗（禅宗）？</div>
+</div>
+</div>
+
+<!-- 深入思考 -->
+<div class="resources">
+  <h2>深入思考</h2>
+  <details>
+    <summary>苏格拉底与孔子相隔万里、几乎同时代，为何给出了近乎相同的答案？</summary>
+    <div>两人面对的是同构的社会病：雅典的智者派靠雄辩收费，春秋的士人靠"说得头头是道"博取尊敬——"知"在两地都沦为社会资本，于是两位老师不约而同地把智慧从"内容"拉回"态度"。但入手处不同：苏格拉底向外，用诘问法当众翻出对话者意见中的矛盾，开出了西方的逻辑论辩传统；孔子向内，要求学生在开口前先对自己做一次诚实校准，开出了东方的修身传统。一个拆别人的幻觉，一个防自己的幻觉——合起来才是完整的元认知：既能审问世界，也能审问自己。</div>
+  </details>
+  <details>
+    <summary>康德说物自体永远不可知，禅宗却说可以"见性"——两者矛盾吗？</summary>
+    <div>要看"知"指什么。康德封死的是概念之路：凡经过时间、空间、范畴过滤的，都只是现象；用概念去够物自体，只会产生先验幻象。禅宗完全同意语言与概念够不到实相——"不立文字"正是这个意思——但它主张还有一条非概念的路：放下能所对立的直接体证。所以两者不是正面冲突，而是在同一堵墙前分手：康德证明了墙在哪里，然后守在墙内做严谨的现象科学；禅宗声称墙外有路，但那条路无法被论证，只能被走。这道分岔，正是哲学与修行的分水岭。</div>
+  </details>
+  <details>
+    <summary>AI 已经"知道"一切，人类学习还有什么意义？</summary>
+    <div>四位思想家会齐声说：AI 拥有的只是"知识"这枚硬币最薄的一面——可检索的信息。学习的意义因此发生迁移：不再是占有信息（这场竞赛人类已经输了），而是训练那些 AI 给不了你的东西——苏格拉底式的校准能力（知道该信哪个回答几分）、孔子式的诚实人格（不把模型的流畅当作自己的懂得）、康德式的范畴自觉（识别模型和自己各带着什么偏置）、禅宗式的具身转化（把概念活成肌肉记忆——骑车、冥想、临盘不慌，这些永远无法外包）。一句话：AI 负责记住世界，你负责判断与活出。这不是学习的贬值，而是学习第一次卸下了搬运工的角色，回到智慧本身。</div>
+  </details>
+  <details>
+    <summary>如果让四位思想家审查一段 ChatGPT 的回答，他们各自会问什么？</summary>
+    <div>苏格拉底会问：它给出置信度和反例了吗？它知道这个回答里哪一段最可能错吗？孔子会问：它是在"知之为知之"，还是在流畅地"不知为知"——幻觉的本质正是把概率拼接当作事实陈述。康德会问：它的训练数据和归纳偏置给了它怎样的先验滤镜？被这套滤镜系统性排除在外的是什么？禅宗会最后敲一记：这段文字背后没有任何体验在场——而你，读的人，是否正把"读到了"误当作"做到了"？四问合起来，恰好是 AI 时代每个人都该随身携带的"输出审查清单"。</div>
+  </details>
 </div>
 
 <nav class="bottom">
