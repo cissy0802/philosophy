@@ -75,7 +75,6 @@ def normalize_for_tts(text: str) -> str:
         r"[\U0001F300-\U0001FAFF\u2600-\u27BF\u2B00-\u2BFF\uFE0F\u200D]",
         "", text,
     )
-    text = _re.sub(r"[ \t]{2,}", " ", text)
     return text
 
 
