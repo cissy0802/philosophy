@@ -71,7 +71,7 @@ def normalize_for_tts(text: str) -> str:
     # Strip decorative icons. Azure narrates them by name (🌀 → "龙卷风"),
     # which derails a heading like "🌀 越界 · 跨学科的联想". Runs AFTER the
     # ✓/✗/⚠ replacements above, which need those glyphs intact.
-    text = _re.sub(
+    text = re.sub(
         r"[\U0001F300-\U0001FAFF\u2600-\u27BF\u2B00-\u2BFF\uFE0F\u200D]",
         "", text,
     )
@@ -498,8 +498,15 @@ def main():
     if args.files:
         files = [Path(f) if Path(f).is_absolute() else REPO_DIR / f for f in args.files]
     else:
+        # Discover by exclusion, not by a name pattern: a positive pattern
+        # silently matches zero files when a page adopts a new naming scheme,
+        # and the workflow still goes green.
         files = sorted(
-            p for p in REPO_DIR.iterdir() if re.match(r".+-day\d+\.html$", p.name)
+            p for p in REPO_DIR.iterdir()
+            if p.suffix == ".html"
+            and not p.name.endswith(".en.html")
+            and not p.name.startswith("index.")
+            and not p.name.endswith("-index.html")
         )
 
     for path in files:
