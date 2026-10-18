@@ -50,6 +50,18 @@ details summary{font-size:0.96rem;font-weight:600;color:#c1c1d5;cursor:pointer;l
 details summary::before{content:"▸";position:absolute;left:0;color:#c39559;transition:transform 0.2s}
 details[open] summary::before{transform:rotate(90deg)}
 details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;padding-left:22px}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -231,6 +243,30 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
 <div class="label">思考题</div>
 <div class="question">在你正经营的团队或家庭里，护栏（规则）、礼（关系）、社会事实（文化）、我执（边界）——哪一环最薄弱？若本周只修一环，你会先用哪一位思想家的处方？</div>
 </div>
+</div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>生物进化 · 演化的重大转变（John Maynard Smith 与 Eörs Szathmáry，1995）</b>：单细胞结成多细胞时，每个细胞放弃独立繁殖，换来整体的存续，还得有机制压住只顾自己复制的「叛徒」，癌细胞就是背约者。这像霍布斯的让渡权利换和平；不像在：没有谁坐下来订约，是选择压力把合作写进了基因组。</li>
+<li><b>经济学 · 奥斯特罗姆的公地治理（Elinor Ostrom，1990）</b>：她考察渔场、草场和灌溉社群，发现许多群体既不靠利维坦也不靠私有化，而是自定规则、互相监督、分级惩罚，长期守住公地。像霍布斯在承认秩序需要执行；不像在：执行者长在群体内部，更接近孔子的礼。</li>
+<li><b>心理学 · 社会联结与死亡率（Julianne Holt-Lunstad，2010）</b>：一项汇总 148 项研究的荟萃分析发现，社会关系更强的人存活几率约高 50%。像涂尔干：整合度改写个体的结局；不像在：涂尔干看的是群体比率，这里落到了每个人的身体上。</li>
+<li><b>神经科学 · 共情痛苦与慈悲（Olga Klimecki 与 Tania Singer，2014）</b>：受试者先练共情，负面情绪上升，前脑岛等「感同身受」脑区更活跃；再练慈悲，负面情绪回落，腹侧纹状体等奖赏相关区增强。像在：自他相换不是陪着一起痛，而是转成温暖的关切；不像在：实验只是短期训练，菩萨道讲的是一生的修行。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>孔子主张个体的自我实现只能在关系中完成，成就他人正是成就自己的路径。</li>
+<li>礼若失去仁这个内在的共情灵魂就只是空壳；理想群体是差异之上的协调，而非抹平差异。</li>
+<li>霍布斯认为，没有令众人敬畏的共同权力，自利的平等个体就会陷入一切人对一切人的战争。</li>
+<li>社会契约论把社会看作人为建构而非天性：个体把自然权利让渡给主权者，以换取和平。</li>
+<li>秩序只有被强制执行才能存续，所以设计多 agent 系统或团队治理时不能假设善意会自发涌现。</li>
+<li>涂尔干主张把社会事实当作物来研究：道德、语言、宗教都外在于个体，并对个体施加强制力。</li>
+<li>《自杀论》显示，连最私密的自杀，其稳定的群体比率也由社会整合度决定，而非纯个人意志。</li>
+<li>社会是自成一类的实在，涌现出个体层面没有的属性，正如分子随机而系统有稳定的温度。</li>
+<li>大乘佛学认为执着独立自我是苦的根源，利他正是消解我执、成就觉悟的修行路径；无我消解的是自私执取，不是责任。</li>
+<li>群己光谱上，契约论在个体一端，社会事实论在社会一端，佛学则溶解了这条轴本身。</li>
+</ol>
 </div>
 <!-- 深入思考 -->
 <div class="resources">

@@ -47,6 +47,18 @@ details summary{font-size:0.96rem;font-weight:600;color:#c1c1d5;cursor:pointer;l
 details summary::before{content:"▸";position:absolute;left:0;color:#c39559;transition:transform 0.2s}
 details[open] summary::before{transform:rotate(90deg)}
 details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;padding-left:22px}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -219,6 +231,31 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
 <div class="question">这四种时间视角中，你目前默认使用哪一种？最被忽视的是哪一种？如果用一周时间补齐它，你的日程结构会发生哪一处最显著的变化？</div>
 </div>
 </div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>神经科学 · 约三秒的「主观当下」</b>：Ernst Pöppel 等人的实验发现，大脑倾向于把两三秒内的事件捆成一个「现在」。这像奥古斯丁说的当下有厚度；不像在它只是几秒的整合窗口，撑不到记忆与期望跨越一生的延展。</li>
+<li><b>分布式系统 · Lamport 逻辑时钟</b>：Lamport 1978 年指出，分布式系统没有可信的全局时钟，先后只能由事件间「谁先发生」的关系排定。这像龙树把三时还原为关系网；不像在这种关系有方向、可计算，龙树连关系也不许有自性。</li>
+<li><b>生物进化 · 重放生命的磁带</b>：古尔德在《奇妙的生命》（1989）里设想，把进化磁带倒回重放，长出来的会是另一个世界。这像柏格森说时间不可逆地创生新事物；不像在古尔德讲偶然，柏格森讲内在的生命冲力。</li>
+<li><b>生物学 · 昼夜节律</b>：2017 年诺贝尔生理学或医学奖表彰了生物钟的分子机制：细胞里的蛋白质每天涨落一轮，把地球自转内化为身体的节拍。这像不易就在变易之中；不像在生物钟会漂移，每天要靠光照校准。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>奥古斯丁认为时间不在外部世界，而是心灵在记忆、注意、期望三重张力中的延展（distentio animi）。</li>
+<li>问上帝在创世「之前」做什么是个错问题：时间随被造物一同出现，上帝处在时间之外的永恒里。</li>
+<li>过去事物的现在是记忆，现在事物的现在是直观，未来事物的现在是期望，三者都在当下的意识中。</li>
+<li>龙树用四句否定反驳「三世实有」：过去、现在、未来只在相互参照中成立，没有一个具有独立自性。</li>
+<li>时间不是被消耗的容器，而是缘起的关系网；「我没时间」这句话里藏着把时间实体化的假设。</li>
+<li>钟表时间是被空间化的、均质可分的刻度，绵延（durée）才是质性的、不可分割的真实时间。</li>
+<li>在绵延中上一刻的意识不被取代，而是渗入当下、组织成新整体，所以时间不可逆地创生新事物。</li>
+<li>《周易》的「易」含三义：变易指万象流转不停，不易指变化的法则恒定，简易指法则可被简明把握。</li>
+<li>西方的永恒在时间之外，《周易》的不易却内在于变化本身，是变化自己的节律。</li>
+<li>四种时间观互补而非互斥：心灵的延展、关系的网络、质性的绵延、变中的不易，合成一套时间操作系统。</li>
+</ol>
+</div>
+
 <!-- 深入思考 -->
 <div class="resources">
 <h2 data-tts="1fe89321ed8e0319">深入思考</h2>

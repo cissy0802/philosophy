@@ -45,6 +45,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(201,178,122,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#8b7355}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#4a4a4a;line-height:1.8}
+.crossx b{color:#8b7355}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.35);border-radius:12px;background:rgba(162,155,254,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.18);font-size:0.93rem;line-height:1.75;color:#2d3436}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -220,6 +232,31 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 <div class="label">思考题</div>
 <div class="question">你所在的领域此刻更缺哪一样：孔子式的深度温故、库恩式的换框勇气、尼采式的价值审计，还是禅宗式的敢破敢立？而你自己最习惯躲在哪一种里？</div>
 </div>
+</div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>神经科学 · 记忆再巩固（Nader、Schafe 与 LeDoux，2000）</b>：大鼠每次被唤起一段恐惧记忆，这段记忆都会暂时变得不稳定，需要重新存回去，存回去时已被改写。像在：「温故」本身就在改造「故」，每次重温都是一次轻微的「损益」。不像在：再巩固是无意识的生化过程，孔子的「温」是有意识地反复体味，并且以出新解为目标。</li>
+<li><b>商业 · 创新者的窘境（Clayton Christensen，1997）</b>：领先企业越把现有客户的指标做到极致，越容易错过起初更粗糙的颠覆性技术，像常规科学把反常当噪声。不像在：颠覆靠的是成本和新市场，库恩的新范式靠的是解释力和科学共同体的转向。</li>
+<li><b>分布式系统 · 绞杀者模式（Martin Fowler，2004）</b>：迁移老系统时不推倒重写，让新服务沿旧接口一点点长出来，旧模块逐个退役，正是「损益」式革新。不像在：工程迁移以行为兼容为硬约束，库恩式革命恰恰不保证新旧可通约。</li>
+<li><b>心理学 · 认知疗法的核心信念（Aaron Beck，1960 年代）</b>：贝克让来访者从自动冒出的念头一路追到早年形成的核心信念，再逐条检验，很像对继承来的价值做谱系审计。不像在：认知疗法问这条信念与事实符不符，尼采问的是它服务于哪一种生命。</li>
+<li><b>生物进化 · 扩展适应（Gould 与 Vrba，1982）</b>：羽毛最初可能为保暖或展示而生，后来被挪去飞行；新功能常从旧结构里借道而来，印证传统是革新的母体。不像在：进化没有意图，禅宗的「舍筏」是一个人自觉放下工具。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>革新不是凭空创造，而是在对传统的反复涵泳中生出新解，「温故」方能「知新」。</li>
+<li>孔子的「述而不作」本身含着改革：三代之礼代代相因，又各有「损益」。</li>
+<li>人类文化靠「棘轮效应」累积，创新本质上是对既有知识库的重组。</li>
+<li>库恩认为科学在「常规科学」的解谜与反常累积引发的「革命」之间交替，而非线性累积。</li>
+<li>新旧范式之间不可通约，范式转移换掉的不只是答案，而是连「问题」本身也被重新定义。</li>
+<li>尼采的谱系学揭示，被视为天经地义的价值都有历史与出身，革新始于追问一个价值的价值。</li>
+<li>重估一切价值不是虚无主义的终点：破旧偶像是为自我立法、创造新价值腾出空间。</li>
+<li>临济「逢佛杀佛」不是毁佛，而是斩断对一切权威概念的执着，连最高权威也不可成为偶像。</li>
+<li>传统是渡河之筏、指月之指，最深的承传在于把它活成判断力，而非供奉其文字。</li>
+<li>传统不是革新的对立面而是它的母体，关键在于以多深的理解去损益、去超越。</li>
+</ol>
 </div>
 <div class="deep">
 <h2 data-tts="7979000ec68f761f">深入思考</h2>

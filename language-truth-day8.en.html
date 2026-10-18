@@ -45,6 +45,18 @@ details summary{font-size:0.96rem;font-weight:600;color:#c1c1d5;cursor:pointer;l
 details summary::before{content:"▸";position:absolute;left:0;color:#c39559;transition:transform 0.2s}
 details[open] summary::before{transform:rotate(90deg)}
 details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;padding-left:22px}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem}
   .container{padding:16px 14px 40px}
@@ -229,6 +241,31 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
     <div class="label">Reflection</div>
     <div class="question">Among these four views, which do you wield most fluently by default? Which is most neglected? Restoring it — how would it change the way you collaborate with AI?</div>
   </div>
+</div>
+
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Psychology · Russian blues</b>: Russian treats light blue (goluboy) and dark blue (siniy) as two basic color words. In 2007 Winawer, Boroditsky and colleagues found that Russian speakers told apart two blues faster when they straddled that boundary, while English speakers showed no such edge; a concurrent task of rehearsing digits erased the advantage. Like Gongsun Long: how names cut is how eyes sort. Unlike: language only sped up responses a little; it did not change which colors people can see.</li>
+<li><b>Investing · Goodhart's law</b>: In 1975 the economist Charles Goodhart observed that a statistical regularity tends to collapse once it is used as a control target. This is "mistaking the finger for the moon" in institutional form: KPIs, P/E ratios and growth rates are all fingers. Unlike Chan, a manager cannot throw the finger away, only rotate fingers and go look at the moon in person.</li>
+<li><b>Evolution · population thinking</b>: Ernst Mayr attacked "typological thinking" in biology, the idea that each species has an ideal essence and individuals are flawed copies of it; for him a species simply is a population of varied individuals. Same structure as family resemblance: no shared essence, only overlapping similarities. Unlike: species still have common ancestry and the hard line of interbreeding, while the word "game" has no family tree.</li>
+<li><b>Quantum physics · relational interpretation</b>: In 1996 the physicist Carlo Rovelli proposed that a quantum system has definite properties only relative to another system; there is no absolute state apart from all relations. Like Derrida: no self-present final signified, only relations. Unlike: physics still demands that perspectives be checked against experiment and yield testable numbers, whereas diff&eacute;rance defers meaning forever, with no point of settlement.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>"A white horse is not a horse" is not sophistry: "horse" names a shape, "white horse" names shape plus color, so the two terms pick out different sets of properties.</li>
+<li>Names and realities do not map one-to-one; how a language classifies sets the boundaries of what we can see.</li>
+<li>In the Chan image of the finger and the moon, words point toward truth, and whoever takes the finger for the moon loses both.</li>
+<li>"Not established on words" is not anti-intellectual; it warns that words, once worshipped, degrade from tools into idols.</li>
+<li>The later Wittgenstein overturned his own picture theory, holding that the meaning of a word is its use in the language.</li>
+<li>Games share no common essence, only overlapping family resemblances, yet the rules inside each language game remain strict.</li>
+<li>Derrida's diff&eacute;rance fuses differing and deferring: meaning arises only from differences between signifiers and is forever postponed.</li>
+<li>"There is nothing outside the text" does not deny the world exists; it says we have no standpoint outside language from which to grasp it.</li>
+<li>Large language models run purely on differences within language and have never seen the world, which makes them a reverse test of all four views.</li>
+<li>A metric turned into a target stops working (Goodhart's law), the management and investing version of mistaking the finger for the moon.</li>
+</ol>
 </div>
 
 <!-- Deeper Reflections -->

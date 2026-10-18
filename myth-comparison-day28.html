@@ -52,6 +52,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -236,6 +248,30 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 <div class="label">思考题</div>
 <div class="question">你最近一次「发现规律」，走到了这四步中的哪一步？那个规律的适用边界，你划过吗？</div>
 </div>
+</div>
+<div class="crossx">
+  <div class="label">越界 · 跨学科的联想</div>
+  <ul>
+    <li><b>生物进化 · 同源与趋同</b>：章鱼和人各自长出相机眼，是相似处境下的趋同；鲸鳍和人手骨骼同构，是同出一源的同源。弗雷泽的解释走趋同，杜梅齐尔的三功能走同源。不像在于：生物学有 DNA 来分辨两者，神话学长期只能靠论证；直到 Jamshid Tehrani 等人把建系统发育树的方法用到民间故事上，2016 年推测《铁匠与魔鬼》可上溯到原始印欧时代。</li>
+    <li><b>复杂性科学 · 普适性</b>：液体的临界点和磁铁的居里点，微观成分完全不同，临界指数却相同，细节在大尺度上被抹掉了。这像「异在表面、同在结构」。不像在于：物理的普适类能用数字检验，神话的深层结构常常是解读者读出来的。</li>
+    <li><b>心理学 · 叙事认同（Dan McAdams）</b>：许多中年美国人把一生讲成「救赎故事」：受苦、转化、回馈他人，几乎就是英雄之旅。不像在于：McAdams 自己强调这套剧本带着浓厚的美国文化印记，正好印证了对单一神话普世性的批评。</li>
+    <li><b>投资 · 样本外失效</b>：在一个市场回测里屡试不爽的规律，换个市场或年代常常失灵，因为它学到的是那段样本的特性。杜梅齐尔给求同装的刹车，就是先问样本的边界。不像在于：市场规律会因被人利用而消失，神话结构不会因被发现而改变。</li>
+  </ul>
+</div>
+<div class="tk">
+  <div class="label">十条要点</div>
+  <ol class="takeaways">
+    <li>相隔万里、从无往来的民族，讲着结构相同的「死而复生之神」的故事。</li>
+    <li>弗雷泽用「心理同源」解释神话的相似：相似的处境让人类心智生出相似的想象。</li>
+    <li>比较法的风险在于把神话抽离语境，把不同的故事硬塞进同一个模板。</li>
+    <li>坎贝尔的「单一神话」认为，一切英雄故事共享启程、启蒙、归来的三幕骨架。</li>
+    <li>大禹治水的英雄是集体的、治理型的，重心在公共秩序而不在个人的内在转化。</li>
+    <li>列维-斯特劳斯认为，神话是人类心智调解生与死、自然与文化等无解矛盾的工具。</li>
+    <li>结构主义把异同之争翻转过来：神话之异在表面，神话之同在深层结构。</li>
+    <li>三功能结构（主权、武力、丰饶）只属于印欧语族，神话的相似往往是有边界的家族相似。</li>
+    <li>中国神话很早被历史化，神祇成了圣王，这是另一种编码秩序的方式而不是缺失。</li>
+    <li>比较任何事物可分四步：大胆求同、提炼模型、下潜一层追问矛盾、最后划定边界。</li>
+  </ol>
 </div>
 <div class="deep">
 <h2 data-tts="c4c3f57dd17bda0e">深入思考</h2>

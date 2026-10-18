@@ -49,6 +49,18 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -216,6 +228,31 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
     · <strong>墨子（功利/后果论）</strong>：好行为来自最大化全局福利——回答"行为带来什么后果"。<br/>
     它们不是互斥选项，而是同一个伦理决策的不同视角。成熟的伦理判断常常需要四者同时启动：先用康德测试是否突破底线，再用墨子估算后果分布，用孟子检查良知不被压抑，最后用亚里士多德决定在此情境的中道。AI 对齐研究今天面临的也正是这种"伦理多元集成"的难题——任何单一范式都不够。</p>
 </div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>心理学 · 刻意练习（Ericsson 等，1993）</b>：专家水平主要来自多年有反馈、专挑弱项的刻意练习，正是「做公正的事而成为公正的人」那条习惯化路径。不像在：刻意练习磨的是一项技能，亚里士多德要练的是整个人，连「想要什么」都得被调校对。</li>
+<li><b>生物进化 · 卷尾猴拒收黄瓜（Brosnan 与 de Waal，2003）</b>：同伴换到葡萄、自己只得黄瓜时，卷尾猴会拒收甚至扔掉报酬——不公平感在演化上早于理性论证，像孟子「是非之心」的远祖。不像在：猴子只在自己吃亏时抗议，四端首先是为他人而动。</li>
+<li><b>神经科学 · 道德判断的双过程（Joshua Greene 等，2001）</b>：fMRI 显示，「亲手推人下桥救五人」比「拉杆让电车转向」更强地激活情绪相关脑区，人也更多拒绝。Greene 据此认为义务论式的「不许」多由情绪驱动、功利计算靠控制性推理——反讽在于，康德恰恰要把道德从情感里剥离出来。</li>
+<li><b>佛学 · 舍无量心</b>：四无量心里的「舍」要求平等看待一切众生、不分亲疏，和墨子「视人之身若视其身」一样拆掉了差等之爱。不像在：墨子的理由是「交相利」，是一笔算得清的账；佛教的理由是放下我执，靠禅修把平等心练成真实的感受。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>亚里士多德把德性定义为过度与不及之间的中道，由实践智慧在具体情境中逐次校准。</li>
+<li>德性靠反复练习养成：做公正的事，人才成为公正的人，好品格是被训练出的第二天性。</li>
+<li>中庸不是平庸的折中，而是随对象、时机和强度而变的情境化最优点。</li>
+<li>孟子的四端说认为恻隐、羞恶、辞让、是非之心是人人先天具有的道德萌芽。</li>
+<li>「孺子入井」思想实验剥离一切外部动机，剩下那一下未经计算的颤动就是良知。</li>
+<li>道德修养不是从外注入，而是扩充先天的萌芽，把被物欲覆盖的本心找回来。</li>
+<li>康德的绝对命令要求行为准则能被普遍化而不自相矛盾，并把人当作目的而非仅仅手段。</li>
+<li>义务论的长处是不为「大局」牺牲个体，代价是遇上「凶手在门口」这类难题时显得僵硬。</li>
+<li>墨子的兼爱主张把他人之利与自己之利等量齐观，把差等之爱看作天下纷争的根源。</li>
+<li>德性、直觉、规则、后果四种伦理范式不是互斥选项，成熟的伦理判断往往四者并用。</li>
+</ol>
+</div>
+
 <!-- 深入思考 -->
 <div class="resources">
 <h2 data-tts="04e213b593b159a9">深入思考</h2>

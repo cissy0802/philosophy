@@ -46,6 +46,18 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(201,178,122,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#8b7355}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#4a4a4a;line-height:1.8}
+.crossx b{color:#8b7355}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.35);border-radius:12px;background:rgba(162,155,254,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.18);font-size:0.93rem;line-height:1.75;color:#2d3436}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -260,6 +272,31 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
   </div>
 </div>
 
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Psychology · the illusion of explanatory depth</b>: Rozenblit and Keil (2002) had people rate their grasp of zippers, then explain how one works; the ratings dropped. Like the elenchus, one round of questioning exposes "I understand." Unlike it, your own explanation pops the illusion, no questioner needed.</li>
+<li><b>Neuroscience · the split-brain "interpreter"</b>: Gazzaniga found that a split-brain patient's left hemisphere, blind to what the right one was told, instantly invents a reason for the body's action. Confucius's "claiming to know what you don't" has hardware roots; unlike his fixable attitude, here it is the brain's default.</li>
+<li><b>Evolutionary biology · Umwelt</b>: Uexküll (1934) described a tick living in just three signals: butyric acid, body warmth, the touch of hair. This mirrors Kant's filtered phenomena. Unlike Kant's forms, an Umwelt varies by species and is shaped by evolution, whereas Kant held his forms necessary for all human cognition.</li>
+<li><b>Psychology · when experts overthink</b>: Sian Beilock found that skilled golfers told to attend to their wrist movements putted worse, while novices did not. Like Chan, words block knowing that is already in the body; unlike Chan, beginners genuinely need words.</li>
+<li><b>Investing · circle of competence</b>: Buffett and Munger say the size of your circle of competence matters little; knowing its edge matters a lot. That turns "knowing what you don't know" into betting discipline. Unlike the philosopher, an investor who sees the edge can simply sit out.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>Socrates' "knowing that I know nothing" is an epistemic stance: most so-called knowledge is unexamined opinion posing as truth.</li>
+<li>The elenchus aims not to defeat an opponent but to expose contradictions inside an opinion, showing it rests on sand.</li>
+<li>"Know what you know, admit what you don't" moves knowledge from content to attitude: knowing is first a matter of honesty.</li>
+<li>People deceive themselves most of all, so "I have read it," "I understand it," and "I can do it" must be kept strictly apart.</li>
+<li>Kant's Copernican turn holds that objects conform to the mind's cognitive structure, not the other way round.</li>
+<li>Space, time, and causality are a priori forms of the mind, so we can know phenomena firmly but never reach the thing-in-itself.</li>
+<li>Chan's "no reliance on words" rejects not words but their self-sufficiency: language points at the moon, and real knowing lies in direct experience.</li>
+<li>A practiced skill stalls when broken back into verbal instructions, showing that knowledge already in the body needs no words to hold it up.</li>
+<li>The AI era makes all four trainings essential: hallucination is claiming to know what you don't, and inductive bias is a silicon mind's a priori category.</li>
+<li>As information gets cheaper, wisdom gets scarcer: let AI know everything while you know the limits, stay honest, see the filter, and live what you know.</li>
+</ol>
+</div>
 <!-- Going Deeper -->
 <div class="resources">
   <h2>Going Deeper</h2>

@@ -44,6 +44,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -221,6 +233,30 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 </div>
 </div>
 <!-- 深入思考 -->
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>分布式系统 · 排队论与利用率</b>：排队论里，服务器利用率越逼近 100%，平均等待时间越陡峭地飙升（M/M/1 模型中与 ρ/(1−ρ) 成正比），留出空闲系统才转得动，正像「当其无，有车之用」。不像在：排队论的空闲只是可计算的余量，老子的无还是万物生成的本源。</li>
+<li><b>神经科学 · 默认模式网络（Marcus Raichle 等，2001）</b>：大脑在「什么都不做」时并不空闲，一组脑区反而更活跃，与回忆、走神、自我联想有关，看似空白的时间在做整理。不像在：默认模式网络是一种忙碌，并不是老子说的无。</li>
+<li><b>神经科学 · 缺失刺激反应</b>：一串规律节拍里少掉一拍，大脑会在那一拍本该出现的时刻产生明显的电反应：缺席是被直接「感到」的，正如萨特说咖啡馆里皮埃尔的不在不是事后推断。不像在：大脑的反应是自动的预测误差，萨特却从缺席里推出意识的自由。</li>
+<li><b>心理学 · 敬畏研究（Dacher Keltner 与 Jonathan Haidt，2003）</b>：两人把敬畏界定为面对「浩大」、不得不调整既有认知的情绪，常伴随自我变小的感觉，和海德格尔那种跳出日常、惊异于存在的体验相近。不像在：敬畏多由星空、山海这类巨大之物引发，海德格尔的惊异恰在一切存在者滑落之后才出现。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>老子说「无之以为用」：车毂中空才能转，器皿中空才能盛，真正起作用的是那个空。</li>
+<li>《道德经》的「无」有两层：宇宙论上未分化的道生出万有，器物层面上中空提供功能。</li>
+<li>龙树的空不是「没有」，而是「无自性」：事物没有固定本质，才能依缘生起、变化。</li>
+<li>「空亦复空」：连空性这个见解也要放下，不落有、不落无，才是中观的中道。</li>
+<li>关系性量子力学主张量子对象的性质只在相互作用中显现，与无自性的空性逐字呼应。</li>
+<li>在「畏」这种基本情绪中存在者整体滑落，人才惊异于竟然有存在者而不是无。</li>
+<li>萨特说意识「是其所不是，不是其所是」，与石头那种充实饱满的自在存在根本不同。</li>
+<li>意识能对现状说「不」，这个虚无化的缺口就是人的自由之根，也是自我创造的重负。</li>
+<li>同样面对无自性，佛学的无我导向放下，萨特的虚无导向承担，是两种相反的存在姿态。</li>
+<li>老子、龙树、海德格尔、萨特共享一个命题：无不等于缺失，而是让「有」成立的条件。</li>
+</ol>
+</div>
 <div class="deep">
 <h2 data-tts="b577107e893c3ce6">深入思考</h2>
 <details>

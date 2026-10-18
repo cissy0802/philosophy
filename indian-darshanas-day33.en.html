@@ -43,6 +43,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(143,120,64,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(136,113,57,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#ab9375}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(23,16,115,.35);border-radius:12px;background:rgba(23,16,115,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(23,16,115,.18);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -231,6 +243,32 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
     <div class="label">Reflection</div>
     <div class="question">Nyāya teaches you to audit knowledge, Sāṃkhya to separate witness from mechanism, Yoga to still the waves, Vedānta to recognize what you already are — as AI amplifies your "mechanism" without limit, which discipline will you take up first to guard the "witness"?</div>
   </div>
+</div>
+
+<div class="crossx">
+  <div class="label">Crossovers</div>
+  <ul>
+    <li><b>Buddhism · Non-self (anattā)</b>: Sāṃkhya assigns thought, emotion and the sense of self to nature and says "these are not the witness"; the Buddha goes through the five aggregates one by one and says "this is not my self." The difference: Sāṃkhya's elimination leaves an eternal puruṣa standing, while Buddhism keeps no witness at all, since awareness too is a dependently arisen aggregate.</li>
+    <li><b>Psychology · Decentering in MBCT</b>: Teasdale and colleagues' mindfulness-based cognitive therapy teaches people at risk of depressive relapse to see thoughts as passing mental events, not facts, the same move as Yoga's seer no longer swept along by the mind's fluctuations. Unlike Yoga, MBCT only aims not to be carried off; it posits no pure consciousness waiting to return home.</li>
+    <li><b>Causal inference · Confounders</b>: In analyzing pervasion, Nyāya names the "extra condition" (upādhi): fire need not bring smoke, since smoke needs wet fuel, so "wherever there is fire there is smoke" fails. A statistical confounder is the same kind of hidden condition behind a correlation. The difference: Nyāya rules it out by hunting counterexamples, modern causal inference by randomization and modeling.</li>
+    <li><b>Evolutionary psychology · Error management theory</b>: Haselton and Buss (2000) argue that mistaking a rope for a snake costs far less than mistaking a snake for a rope, so selection tuned the brain to err that way. Alike: both treat the rope-snake error as systematic, not accidental. Unlike: in evolution the error keeps you alive, while Advaita wants it seen through entirely.</li>
+  </ul>
+</div>
+
+<div class="tk">
+  <div class="label">Ten takeaways</div>
+  <ol class="takeaways">
+    <li>The orthodox Indian schools accept the authority of the Vedas and share one concern: cutting through ignorance with right knowledge to reach liberation.</li>
+    <li>Sāṃkhya splits reality into puruṣa, pure consciousness that only watches, and prakṛti, the source of all bodily and mental activity.</li>
+    <li>In Sāṃkhya, suffering comes from mistaking the witness for the body-mind, and liberation is the discriminating insight that sees through it.</li>
+    <li>The Yoga Sūtras define yoga as stilling the mind's fluctuations, after which the seer abides in its own nature.</li>
+    <li>Patañjali's eight limbs calm the mind step by step, from moral restraint to samādhi; liberation comes by subtraction, not acquisition.</li>
+    <li>Nyāya certifies four valid means of knowing (perception, inference, comparison, testimony) and first asks how you know what you claim.</li>
+    <li>Nyāya's five-membered syllogism must anchor to a real example, which keeps it closer to induction than to pure deduction.</li>
+    <li>Śaṅkara's Advaita Vedānta holds that only Brahman is real, the world is māyā, and the individual self is none other than Brahman.</li>
+    <li>A rope mistaken for a snake in the dark is Advaita's image for how the many-sided world misreads the one Brahman.</li>
+    <li>Running from dualism to non-dualism, the four schools share one thread: liberation means seeing through the error of taking the witness for the mechanism.</li>
+  </ol>
 </div>
 
 <div class="deep">

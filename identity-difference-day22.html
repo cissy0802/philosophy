@@ -45,6 +45,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(143,120,64,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(136,113,57,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#ab9375}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(23,16,115,.35);border-radius:12px;background:rgba(23,16,115,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(23,16,115,.18);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -221,6 +233,33 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 <div class="question">过去一周你最「重复」的一件事——用四种眼光重看：哪里被你误当成了「同一」（标签、整体、旧我、复制），哪里其实藏着一条可以放大的差异？</div>
 </div>
 </div>
+<div class="crossx">
+  <div class="label">越界 · 跨学科的联想</div>
+  <ul>
+    <li><b>分布式系统 · 值对象与实体</b>：领域驱动设计把对象分两类：值对象全部属性相同就算同一个，正是不可分辨者同一律；实体却靠一个与属性无关的 ID 认人，属性全改了还是它。不像在：莱布尼茨不承认这种「光秃秃的身份标签」，软件里却离不开它。</li>
+    <li><b>神经科学 · 模式分离</b>：海马齿状回会把两段很相似的经历编码成差异更大的神经表征，免得记忆互相覆盖——大脑主动「制造差异」来守住个体。像莱布尼茨，差异是「成为两个」的根据；不像在：这里的差异是大脑加工出来的，不是事物本有的。</li>
+    <li><b>心理学 · 错觉结合</b>：特雷斯曼的特征整合理论认为，颜色、形状先被分开登记，要靠注意力才「粘」成一个对象；注意力被占满时，人会把看到的红色 O 和蓝色 X 报成红色 X（Treisman &amp; Schmidt, 1982）。这是「离坚白」的实验版：合一是额外的工序，而且会出错。不像在：公孙龙说坚白本来相离，心理学只说加工上先分后合。</li>
+    <li><b>意识 · 变化盲视</b>：西蒙斯和莱文 1998 年的实验里，问路的人在交谈中途被换成另一个人，约一半被试没察觉。「还是同一个人」是大脑的默认假设，不是每刻核实的结论。像僧肇：持续是缝合出来的；不像在：变化盲视漏掉的是真实的变化，僧肇则说本无一物在变。</li>
+    <li><b>投资 · 差异化认知</b>：斯坦哈特讲 variant perception：超额收益只来自与市场共识不同、且最终被证明对的判断，跟着共识重复只能拿到平均。像德勒兹，价值出在差异而非复制；不像在：投资里的差异必须「对」才算数，德勒兹的差异本身就有生产力。</li>
+  </ul>
+</div>
+
+<div class="tk">
+  <div class="label">十条要点</div>
+  <ol class="takeaways">
+    <li>不可分辨者同一律：两物若一切属性完全相同，它们就不是两物而是同一物。</li>
+    <li>莱布尼茨用不可分辨者同一律反驳牛顿的绝对空间：把整个宇宙平移一段，结果无从分辨。</li>
+    <li>量子力学的全同粒子没有可供区分的内在属性，是不可分辨者同一律在微观的反例。</li>
+    <li>公孙龙的「离坚白」指出：石头的坚与白由不同感官把握，「浑然一体」是知觉的建构。</li>
+    <li>神经科学的绑定问题与离坚白同构：颜色、形状分区处理，合成一个对象反而需要解释。</li>
+    <li>僧肇「物不迁论」主张昔物不至今：每一刹那的事物自足于该刹那，过去从不迁移到现在。</li>
+    <li>所谓持续存在的同一物，只是前后相似的刹那相续，并没有贯穿始终的实体。</li>
+    <li>德勒兹颠倒西方传统：差异先于同一，同一与相似只是差异生产出来的次生效果。</li>
+    <li>真正的重复不是同一物的复现，而是每一次都生产出一点不可替代的差异。</li>
+    <li>算法召回同类、均值化输出是在工业化地制造相似，辨识并守护差异是不可外包的人类工序。</li>
+  </ol>
+</div>
+
 <div class="deep">
 <h2 data-tts="22128b527f7ecfd3">深入思考</h2>
 <details><summary>莱布尼茨说「没有两片相同的叶子」，量子力学却说两个电子完全不可分辨——同一与差异的边界，在物理实在里，还是在我们的描述方式里？</summary><div>莱布尼茨预设每个个体有可穷尽区分的内在属性，这在宏观成立。量子全同粒子打破的正是这一前提——基本粒子没有「这一个／那一个」的身份标签。或许两者都对：差异在宏观是实在的个体根据，在微观则连个体性都消解。边界既在实在的尺度，也在我们的描述能力。</div></details>

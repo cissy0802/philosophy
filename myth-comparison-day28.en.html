@@ -50,6 +50,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -246,6 +258,30 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
   </div>
 </div>
 
+<div class="crossx">
+  <div class="label">Crossovers</div>
+  <ul>
+    <li><b>Evolutionary biology · Homology vs. convergence</b>: Octopuses and humans each evolved camera eyes under similar pressures, which is convergence; a whale flipper and a human hand share bones because they share an ancestor, which is homology. Frazer's explanation is convergence; Dumézil's three functions are homology. The difference: biology can tell the two apart with DNA, while myth studies long had only argument, until Jamshid Tehrani and colleagues applied phylogenetic tree-building to folktales and in 2016 traced "The Smith and the Devil" back, plausibly, to Proto-Indo-European times.</li>
+    <li><b>Complexity science · Universality</b>: Liquids at their critical point and magnets at their Curie point are made of utterly different stuff, yet share the same critical exponents; the details wash out at large scales. That is "difference on the surface, sameness in structure." Unlike physics, though, where universality classes are checked against numbers, a myth's deep structure is often read in by the interpreter.</li>
+    <li><b>Psychology · Narrative identity (Dan McAdams)</b>: Many midlife Americans tell their lives as redemption stories of suffering, transformation, and giving back, which is nearly the hero's journey. The twist: McAdams himself stresses that this script is distinctly American, which supports the critique of the monomyth's universality.</li>
+    <li><b>Investing · Out-of-sample failure</b>: A rule that backtests beautifully in one market often breaks in another market or decade, because it learned the quirks of that sample. Dumézil's brake on universalism is the same discipline: ask where the sample ends. Unlike markets, though, where a pattern fades once traders exploit it, a mythic structure does not change because someone discovered it.</li>
+  </ul>
+</div>
+<div class="tk">
+  <div class="label">Ten takeaways</div>
+  <ol class="takeaways">
+    <li>Peoples who lived far apart and never met tell structurally identical stories of a dying-and-rising god.</li>
+    <li>Frazer explained mythic resemblance as psychic unity: like circumstances lead human minds to like imaginings.</li>
+    <li>The risk of the comparative method is tearing myths from context and forcing different stories into one template.</li>
+    <li>Campbell's monomyth holds that every hero story shares one three-act skeleton: departure, initiation, return.</li>
+    <li>Yu the Great, who tamed the flood, is a collective, governing hero focused on public order, not inner transformation.</li>
+    <li>Lévi-Strauss treated myth as the mind's tool for mediating unsolvable oppositions such as life and death, nature and culture.</li>
+    <li>Structuralism flips the debate: myths differ on the surface and share their sameness at the level of deep structure.</li>
+    <li>The trifunctional structure of sovereignty, war, and fertility belongs to the Indo-European family, so mythic resemblance is often bounded.</li>
+    <li>Chinese myth was historicized early, turning gods into sage-kings: a different way of encoding order, not an absence of myth.</li>
+    <li>Comparing anything can follow four steps: boldly seek sameness, distill a model, dive a layer deeper, then draw the boundary.</li>
+  </ol>
+</div>
 <div class="deep">
   <h2>Going Deeper</h2>
   <details><summary>Every civilization has a flood myth — diffusion, or independent invention?</summary>

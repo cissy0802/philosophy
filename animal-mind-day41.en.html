@@ -50,6 +50,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 .deep details{margin-bottom:12px;border-bottom:1px solid #202020;padding-bottom:10px}
 .deep summary{cursor:pointer;font-weight:600;color:#9383b3;font-size:0.96rem}
 .deep details div{margin-top:8px;font-size:0.92rem;color:#a6a6a6;line-height:1.75}
+.crossx{border:1px solid rgba(143,120,64,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(136,113,57,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#ab9375}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(23,16,115,.35);border-radius:12px;background:rgba(23,16,115,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(23,16,115,.18);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem}
   .container{padding:16px 14px 40px}
@@ -256,6 +268,30 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
   </div>
 </div>
 
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Neuroscience · Human echolocation</b>: Nagel chose sonar because it is so far from us. Yet blind echolocators such as Daniel Kish navigate by tongue clicks, and a 2011 fMRI study by Thaler and colleagues found that such experts recruit visual cortex when processing echoes. Alike: a human brain can grow a kind of sonar point of view. Unlike: it is still sonar inside a human body, a whole body away from being a bat.</li>
+<li><b>Distributed systems · Two Generals' Problem</b>: Huizi's doubt resembles the Two Generals: over an unreliable channel every acknowledgment needs its own acknowledgment, so common knowledge is never reached. Alike: "you are not me" recurses without end. Unlike: engineers use timeouts and retries and act once it is reliable enough, just as Zhuangzi stops asking: "I knew it here above the Hao."</li>
+<li><b>Psychology · Dimensions of mind perception</b>: In a 2007 Science paper, Heather Gray, Kurt Gray and Daniel Wegner found that people perceive minds along two axes, agency and experience, and judge who must not be harmed mainly by experience. Alike: intuition already follows Singer's sentience criterion. Unlike: these are intuitive ratings, not measures of a being's real capacity to feel.</li>
+<li><b>Consciousness science · Cambridge Declaration on Consciousness</b>: In 2012 a group of neuroscientists at Cambridge declared that all mammals, birds and creatures such as octopuses possess the neurological substrates of consciousness. Alike: it moves "who has a mind" onto a list of evidence, making Singer's threshold empirical. Unlike: it speaks of substrates, and by Nagel's lights still says nothing about what it is like to be an octopus.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>An organism is conscious if and only if there is something it is like, for that organism, to be it.</li>
+<li>Science grows objective by erasing viewpoint, so exhausting the data about a mind never amounts to entering its experience.</li>
+<li>Nagel's bat returns as the AI question: reading every weight of a model still cannot tell us whether it experiences anything.</li>
+<li>Singer moves the threshold of moral status from reason and language to sentience: whatever can suffer has interests.</li>
+<li>Speciesism has the same shape as racism, discounting interests merely for species; it demands equal consideration, not equal treatment.</li>
+<li>"You are not me, so how do you know I don't know?" shows that doubt about other minds recurses endlessly and would cancel all communication.</li>
+<li>Zhuangzi's knowing the joy of the fish rests not on inference but on co-presence, where self and world merge.</li>
+<li>Rebirth across the six realms and universal Buddha-nature dissolve human-centeredness; compassion flows from seeing all beings as one.</li>
+<li>The boundary of mind poses two questions, can we know other minds and should they count; the West cuts the boundary finely, the East dissolves it.</li>
+<li>Mind-perception research shows people decide who must not be harmed mainly by capacity for experience, not by intelligence or competence.</li>
+</ol>
+</div>
 <div class="deep">
   <h2>Going Deeper</h2>
   <details><summary>Nagel says other minds are unknowable, Zhuangzi says the Hao makes knowing possible — where is the root of the disagreement?</summary><div>The split is not in conclusions but in the <strong>definition of "knowing."</strong> Nagel treats knowing as objective grasp: to know, you must translate experience into a third-person description — and the subjective viewpoint evaporates in that translation, so failure is guaranteed. Zhuangzi treats knowing as embodied co-presence: knowing the fish's joy is not to "represent" it but to resonate with it in a moment where self and world are undivided, so it is had at once. One word, "know," conceals two epistemologies.</div></details>

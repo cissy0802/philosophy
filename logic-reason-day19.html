@@ -45,6 +45,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -220,6 +232,30 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 <div class="label">思考题</div>
 <div class="question">下一次 AI 递给你一个流畅的结论，你会先抽骨架、先找反例、先追理由，还是先验后果？回想你最近一次判断失误——四步之中，你跳过的是哪一步？</div>
 </div>
+</div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>心理学 · 沃森选择任务</b>：1966 年沃森的规则检验实验里，多数人只翻能证实规则的牌，翻出潜在反例的通常不到一成。因明的异品遍无性像是预先纠正这一盲点；不像在：实验揭示的是本能，因明把找反例立成了硬规则。</li>
+<li><b>分布式系统 · TLA+ 形式化验证</b>：亚马逊工程师 2015 年撰文介绍，用兰波特的 TLA+ 给分布式协议建模、穷举所有状态，在 DynamoDB 等设计中查出测试难以触及的深层 bug。像亚里士多德：不看内容，只验结构；不像在：模型是否贴合真实系统，正如前提真假，形式管不了。</li>
+<li><b>神经科学 · 裂脑「解释者」</b>：加扎尼加发现，裂脑病人的左脑会为自己不知情的动作当场编出流畅理由。像充足理由律：大脑也容不下「没有理由」；不像在：莱布尼茨要真实的所以然，解释者只要一个说得通的故事。</li>
+<li><b>生物进化 · 适应度与真</b>：自然选择只按后果打分，与墨家第三表「用之」同一逻辑。不像在：认知科学家霍夫曼据此论证，被选中的知觉未必反映真实，「有用」和「为真」可以分家；墨家则默认利民之效足以为真背书。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>推理的必然性来自形式而非内容：结构正确时，换掉任何词项结论依然成立。</li>
+<li>亚里士多德用变量 A、B、C 代替具体词项，第一次把论证的骨架从血肉中剥离。</li>
+<li>许多 AI「幻觉」不是事实错误，而是形式无效：前提为真，结论却并不随之而来。</li>
+<li>因明要求一个推理具备宗、因、喻三支，每一步都要有现实实例托底。</li>
+<li>因明的异品遍无性要求理由在一切反例中缺席：有效不靠正例之多，而靠反例之无。</li>
+<li>充足理由律主张：任何事实为真，都必须有「为何如此而非别样」的理由。</li>
+<li>莱布尼茨「让我们来算一算」的梦想，要把一切争论化为计算，是计算机科学与 AI 的奠基幻想。</li>
+<li>墨家三表法用历史先例、直接经验和实际后果三重标尺检验一个主张的真伪。</li>
+<li>四种逻辑可接成一条对付「似是而非」的流水线：抽骨架、找反例、追根因、验后果。</li>
+<li>大脑的「解释者」会为不知原因的行为流畅地编造理由，再次说明流畅不等于有效。</li>
+</ol>
 </div>
 <div class="deep">
 <h2 data-tts="4fee434f687427a5">深入思考</h2>

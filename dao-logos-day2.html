@@ -46,6 +46,18 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -217,6 +229,30 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 <div class="label">思考题</div>
 <div class="question">面对你眼下最重要的那个难题，四种"道观"各会给出什么动作——放下框架、观察流向、叩问良知、拥抱矛盾？哪一个是你最少用的？</div>
 </div>
+</div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>心理学 · 言语遮蔽效应（Schooler 与 Engstler-Schooler，1990）</b>：让人先用语言描述一张刚见过的脸，之后从照片里认出这张脸的成绩反而变差——命名把整体知觉压成了几个词，丢掉的恰是认出它所需的东西。像「道可道，非常道」：言说是有损的；不像在：这是一个可测的记忆效应，老子说的是本体先于语言。</li>
+<li><b>心理学 · 朴素实在论（Lee Ross 与 Andrew Ward，1996）</b>：人人默认自己看到的就是世界本身，与自己看法不同的人则是有偏见。像赫拉克利特说的 Logos 人人共有、多数人却像各守一份私见的沉睡者；不像在：心理学只描述这种偏差，赫拉克利特却相信确有一条共同的 Logos 等人醒来。</li>
+<li><b>神经科学 · 躯体标记假说（Antonio Damasio，《笛卡尔的错误》，1994）</b>：前额叶腹内侧受损的病人智力测验正常、推理头头是道，却在日常小事上迟迟定不下来，因为失去了标记好坏的身体情绪信号。像「心即理」：价值裁断离不开主体的感受；不像在：躯体标记是后天习得的身体反应，王阳明的良知是本来具足的道德本心。</li>
+<li><b>商业 · 创造性破坏（Joseph Schumpeter，1942）</b>：熊彼特认为资本主义靠新组合不断摧毁旧产业来前进，危机与淘汰是增长的发动机而非故障。像黑格尔辩证法里「否定即动力」；不像在：市场的更替没有终点，也没有一个借此认识自己的精神。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>老子认为能被言说、被命名的道都已不是永恒的常道，语言只能指向道，装不下道。</li>
+<li>任何模型、框架和 SOP 都只是地图而非疆域，是对世界的有损压缩。</li>
+<li>赫拉克利特以流变为世界的根本特征，又看到流变背后有一条稳定的法则 Logos。</li>
+<li>世界的实相是过程而不是实体，真正值得维护的是持续流动中保持下来的模式。</li>
+<li>王阳明在龙场悟出「心即理」：理不在外物之中，而本来具足于能知能觉的本心。</li>
+<li>「心即理」反对朱熹向外格物穷理的路径，把道放回每一次良知的当下呈现。</li>
+<li>黑格尔把宇宙历史看作绝对精神自我外化、再回到自身以认识自己的辩证过程。</li>
+<li>按辩证法的眼光，矛盾与被否定不是缺陷，而是走向更高综合的发展动力。</li>
+<li>四种道观可以并用：语言戒断、流变校准、良知在场、辩证升级。</li>
+<li>躯体标记研究显示，失去情绪信号的人能推理却难以决定，价值裁断离不开主体的感受。</li>
+</ol>
 </div>
 <!-- 深入思考 -->
 <div class="resources">

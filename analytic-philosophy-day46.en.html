@@ -42,6 +42,18 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#a6a6a6;line-height:1.75}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(143,120,64,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(136,113,57,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#ab9375}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.35);border-radius:12px;background:rgba(162,155,254,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.18);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:0.5px}
   .container{padding:16px 14px 40px}
@@ -224,6 +236,31 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
   </div>
 </div>
 
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Neuroscience · Capgras delusion</b>: the patient recognizes his wife's face yet insists she is an impostor; Ellis and Young (1990) proposed that the visual-recognition route is intact while the affective route that supplies familiarity is cut. Like Frege: one reference, one mode of presentation missing, and cognition changes entirely. Unlike: Frege's sense is public, not a private feeling.</li>
+<li><b>Psychology · The conjunction fallacy (Tversky and Kahneman, 1983)</b>: subjects judge "Linda is a bank teller and a feminist" more probable than "Linda is a bank teller," though the first is a subset of the second. That is exactly white horse versus horse: richer intension, narrower extension. The difference runs the other way: Gongsun Long guards the distinction on purpose, while subjects follow the vivid intension and forget the extension. Same fault line, logical rigor on one side, intuitive shortcut on the other.</li>
+<li><b>Evolutionary biology · Species as individuals (Ghiselin 1974, Hull 1978)</b>: these two philosophers of biology argued that a species such as the horse is not a class but a lineage with a beginning and a possible extinction, more like a concrete individual than an eternal universal. Like Gongsun Long's question: no free-standing horseness. Unlike: the answer comes from evolutionary history, not from analyzing language.</li>
+<li><b>Quantum mechanics · Heisenberg's 1925 matrix mechanics</b>: he dropped unobservable electron orbits and rebuilt the theory from observable spectral frequencies and intensities alone, the same move as "meaning is the method of test." Unlike: by Heisenberg's own account, Einstein countered that it is the theory that decides what we can observe; observation depends on theory, the same wall the verification principle later hit in holism.</li>
+<li><b>Neuroscience · Lateral inhibition (Hartline, Nobel Prize 1967)</b>: each receptor in the horseshoe crab's eye damps its neighbors, so edges are amplified and outlines are drawn by suppressing what lies beside them. Like apoha: a boundary made by excluding others. Unlike: the neuron still responds positively to light, while Dignāga denies any positive referent at all.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>The twentieth-century linguistic turn diagnosed many ancient problems as diseases of language: not wrong answers but meaningless questions.</li>
+<li>Frege split meaning into two layers: reference is the object designated, sense is the mode in which it is presented.</li>
+<li>"The morning star is the evening star" is informative and "the morning star is the morning star" is not, because both refer to Venus through different senses.</li>
+<li>"A white horse is not a horse" asserts a non-identity of concepts, differing in intension and extension, not that white horses fall outside the class of horses.</li>
+<li>Gongsun Long's white-horse argument and Frege's split between concept and object hit the same fault line: predication versus reference.</li>
+<li>The verification principle holds that a statement's meaning is its method of empirical test; in-principle untestable sentences are not false but cognitively meaningless.</li>
+<li>Carnap held that metaphysics expresses an attitude toward life that belongs to art, yet wears the costume of statements of truth.</li>
+<li>The verification principle cannot be verified by its own standard, and holism shows that no single proposition faces experience in isolation.</li>
+<li>Dignāga's apoha doctrine holds that words mean by excluding others and universals are not real: "cow" means "not non-cow."</li>
+<li>Fine talk can be tested at four gates: is the reference clear, does the name match reality, is it testable, are its boundaries explicit?</li>
+</ol>
+</div>
 <div class="card" style="background:#0c0a1d">
   <div class="label" style="color:#a29bfe;font-size:0.95rem">Going Deeper</div>
 

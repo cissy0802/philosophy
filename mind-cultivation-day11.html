@@ -61,6 +61,18 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -248,6 +260,30 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 <div class="label">思考题</div>
 <div class="question">检视你此刻的修心工夫：最薄弱的是哪一环——设不了边界（戒）、静不下心（定）、积累不足（格物）、还是知而不行（致良知）？明天的第一个小时，你打算先补哪一环？</div>
 </div>
+</div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>复杂性科学 · 沙堆模型（Bak、汤超、Wiesenfeld，1987）</b>：沙粒一颗颗落下，坡面悄悄逼近临界，某一颗忽然引发贯穿全局的崩塌。像朱熹的「积之既久，豁然贯通」：突变来自长期积累；不像在：沙堆崩塌的规模不可预测，也不导向理解，贯通却是零散之理拼成一个整体。</li>
+<li><b>神经科学 · 躯体标记假说（Antonio Damasio，1994）</b>：腹内侧前额叶受损的病人做推理测验照样过关，日常却连定个约会日期都反复权衡、拿不定主意——判断离不开身体发出的情绪信号。像「良知当下知善恶」：明觉先于推演；不像在：躯体标记是从经验里学来的，良知被说成人人本具。</li>
+<li><b>分布式系统 · 抖动与准入控制（Peter Denning，1968）</b>：同时塞进太多进程，内存来回换页，系统忙得团团转却几乎不出活；解法是先限制并发数。像戒定慧的次第：先挡住输入，「定」才有稳定的吞吐；不像在：限流只为恢复效率，戒定之后生起的「慧」是质变，不只是做得更快。</li>
+<li><b>投资 · 结果论（Annie Duke《Thinking in Bets》，2018）</b>：前职业扑克牌手 Duke 提醒，别拿一手牌的输赢评判决策好坏，该看的是决策当时的信息与推理。像爱比克泰德的控制二分：只为可控的判断负责；不像在：Duke 仍在追求长期期望收益，斯多葛则认为外在结果本身无所谓好坏。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>朱熹的「格物」是即物穷理：通过读书、应事、观物，逐一穷究事物之理。</li>
+<li>豁然贯通不是一次顿见，而是渐进积累到一定程度后，零散之理忽然连成整体。</li>
+<li>王阳明格竹七日一无所得，后在龙场悟出理不在外物，本在吾心。</li>
+<li>致良知是拂去私欲的遮蔽，让本自知善知恶的明觉显现出来。</li>
+<li>知行合一认为真知必已在行动中，知道却不去做，只能算还没真知。</li>
+<li>佛学戒定慧三学是有依赖关系的阶梯：由戒生定，由定发慧，次序不可颠倒。</li>
+<li>戒收摄身口的扰动使心安静，定让心专注，慧是照见无常与无我的洞见。</li>
+<li>爱比克泰德的控制二分法：判断、欲求与回应在我之内，身体、名声与结果不在。</li>
+<li>扰动人的不是事物本身，而是人对事物的看法；掌握判断就掌握了唯一属己的疆域。</li>
+<li>四种修养观的共同前提是心靠训练塑造，分歧只在从积累、行动、次第还是收束下手。</li>
+</ol>
 </div>
 <!-- 深入思考 -->
 <div class="resources">

@@ -46,6 +46,18 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(201,178,122,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#8b7355}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#4a4a4a;line-height:1.8}
+.crossx b{color:#8b7355}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.35);border-radius:12px;background:rgba(162,155,254,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.18);font-size:0.93rem;line-height:1.75;color:#2d3436}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -217,6 +229,31 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 <div class="label">思考题</div>
 <div class="question">你此刻最引以为傲的一项"知识"，过得了几关——能标出它的边界（苏格拉底）？敢承认哪部分只是听说（孔子）？看得见它背后的滤镜（康德）？在身体里练过它吗（禅宗）？</div>
 </div>
+</div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>心理学 · 解释深度错觉</b>：Rozenblit 与 Keil（2002）让人先给自己对拉链的理解打分，再写出原理，分数随即下跌。像苏格拉底诘问：一追问，"我懂"就露底；不像在于，戳破幻觉的是自己的解释，不需要街头提问者。</li>
+<li><b>神经科学 · 裂脑"解释器"</b>：Gazzaniga 发现裂脑病人的左脑看不到右脑收到的指令，却会立刻为身体动作编出理由，毫不迟疑。孔子防的"不知为知"在脑中有硬件来源；不像的是，孔子视之为可修的态度，这里却是大脑的默认行为。</li>
+<li><b>生物进化 · 环境界（Umwelt）</b>：Uexküll（1934）笔下的蜱虫只活在三个信号里：丁酸气味、体温、皮毛触感。这和康德"只认识被自身形式过滤的现象"同构；不像在于，环境界因物种而异、由进化塑成，康德的先天形式却是一切人类认识共有的必然条件。</li>
+<li><b>心理学 · 高手的"想太多"</b>：Sian Beilock 让熟练的高尔夫球手推杆时留意手腕动作，成绩反而变差，新手不受影响。像禅宗说文字挡住真知；不像的是，新手恰恰需要文字拆解。</li>
+<li><b>投资 · 能力圈</b>：巴菲特和芒格常说：能力圈多大不要紧，要紧的是清楚边界在哪。这把"知道自己不知道"变成了下注纪律；不像在于，投资者看清边界后可以不出手，哲学家的无知之知没有这个选项。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>苏格拉底的"无知之知"是一种认识论立场：大多数所谓知识，只是未经检验的意见冒充真知。</li>
+<li>诘问法的目的不是驳倒对方，而是翻出意见内部的矛盾，让人看见自己站在沙地上。</li>
+<li>"知之为知之，不知为不知"把知识从内容层提到态度层：知首先是对内对外的诚实。</li>
+<li>人最常欺骗的是自己，所以必须严格区分"我读过、我懂得、我做到"三个层级。</li>
+<li>康德的哥白尼革命主张：不是认识符合对象，而是对象符合我们心智的认识结构。</li>
+<li>时间、空间与因果等范畴是心智的先天形式，人能确知现象界，却永远够不到物自体。</li>
+<li>禅宗"不立文字"不反对文字，只否定文字的自足性：语言是指月之指，真知落在直接体验里。</li>
+<li>熟练的技能被重新拆成语言指令反而会卡壳，说明已长进身体的知识并不需要文字来托住。</li>
+<li>AI 时代把四重训练变成刚需：模型幻觉就是"不知为知"，归纳偏置就是硅基心智的先验范畴。</li>
+<li>信息越廉价，智慧越稀缺：AI 负责知道一切，人负责知道边界、保持诚实、看清滤镜、活出所知。</li>
+</ol>
 </div>
 <!-- 深入思考 -->
 <div class="resources">

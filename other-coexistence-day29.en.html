@@ -43,6 +43,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(201,178,122,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#8b7355}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#4a4a4a;line-height:1.8}
+.crossx b{color:#8b7355}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.35);border-radius:12px;background:rgba(162,155,254,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.18);font-size:0.93rem;line-height:1.75;color:#2d3436}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -231,6 +243,30 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 </div>
 </div>
 
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Distributed systems · The actor model (Carl Hewitt, 1973)</b>: each actor's internal state is sealed off; no one can read or modify it, only send it a message and wait for a reply. That resembles Levinas's Other, who can never be fully absorbed into my model. The difference: actors are peers following a protocol, while Levinas's Other commands me from above, in a relation that is not symmetrical.</li>
+<li><b>Evolution · Kin selection and reciprocal altruism (Hamilton 1964, Trivers 1971)</b>: evolutionary biology says altruism persisted because it paid off at the level of genes, while Mencius carefully rules out every self-interested motive for saving the child. Both can hold at once: Tinbergen separated proximate from ultimate causes, and Mencius describes the proximate jolt, while evolution explains why such a heart was kept. So "no calculation" holds only psychologically; but Mencius wants this heart nurtured, and that does not require its origins to be selfless.</li>
+<li><b>Psychology · The still-face experiment (Edward Tronick, 1978)</b>: when a mother suddenly goes blank and stops responding, the infant shifts within minutes from coaxing to withdrawal and crying; the infant's self-regulation is held up by responsiveness, much like Buber's "I generated in relation." The difference: the experiment measures whether interaction is in sync, while Buber's I-You needs no measurable reply; he could say "You" to a tree.</li>
+<li><b>Neuroscience · The rubber hand illusion (Botvinick &amp; Cohen, 1998)</b>: watch a fake hand being stroked in sync with your hidden real one, and within minutes it feels like your own. The boundary of "me" is something the brain assembles on the fly, a bodily hint for the Buddhist claim that the self-other line is not given. The difference: the illusion only moves the boundary; Buddhism aims to see through the boundary itself.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>Levinas holds that ethics precedes ontology: my responsibility to the Other exists before I make any choice.</li>
+<li>The face of the Other cannot be reduced to my concepts; turning people into things I can grasp and use is ontological violence.</li>
+<li>Treating empathy as simulating someone in your head can reduce the Other to a projection of the self.</li>
+<li>The thought experiment of the child at the well rules out motives like favor, reputation, or dislike of the cries, showing compassion precedes calculation.</li>
+<li>Mencius sees morality as an innate sprout to be nurtured and extended, not something imposed from outside.</li>
+<li>Buber distinguishes two basic stances: I-It treats the other as an object to experience and use; I-You is an unmediated, whole encounter.</li>
+<li>The "I" is not an entity prior to relation but is generated within it; the I that says "You" differs from the I that uses an "It."</li>
+<li>Mahayana compassion rests on dependent origination and emptiness: the line between self and other is a product of grasping.</li>
+<li>Empathy that shares another's pain tends toward burnout, while compassion engages care circuits and lets one care without drowning.</li>
+<li>Modern philosophy, starting from the isolated self, was missing from the outset the "You" who precedes the "I."</li>
+</ol>
+</div>
 <div class="deep">
   <h2>Going Deeper</h2>
   <details><summary>Levinas says the Other is "irreducible," yet Mencius says compassion extends from oneself to others—is "empathy" a bridge to the Other, or a trap that reduces the Other to the self?</summary><div>Mencius's "extension" presupposes that I and others share one kind of heart, so I can reach others from myself; what Levinas guards against is precisely that "measuring others by myself" can flatten the Other's uniqueness. Yet the two need not conflict: Mencius's compassion is "triggered" by another's suffering (first the child, then the alarm), structurally akin to Levinas's "the face calls me first." A healthy ethics needs both: begin with compassion, and stay alert with "the Other exceeds me."</div></details>

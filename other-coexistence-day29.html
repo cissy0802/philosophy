@@ -45,6 +45,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(201,178,122,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#8b7355}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#4a4a4a;line-height:1.8}
+.crossx b{color:#8b7355}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.35);border-radius:12px;background:rgba(162,155,254,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.18);font-size:0.93rem;line-height:1.75;color:#2d3436}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -220,6 +232,30 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 <div class="label">思考题</div>
 <div class="question">回想你今天最重要的一次人际互动：你是在履行列维纳斯的责任、顺着孟子的恻隐、进入布伯的相遇，还是练习佛学的慈悲？哪一种视角的缺席，最让这段关系受损？</div>
 </div>
+</div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>分布式系统 · Actor 模型（Carl Hewitt，1973）</b>：每个 actor 的内部状态对外封闭，别人读不到、改不了，只能发消息、等它回应；这像列维纳斯的他者，永远不能被「我」的模型完整收编。不像在于：actor 之间是对等的协议，列维纳斯的他者却从高处向我下命令，关系不对称。</li>
+<li><b>生物进化 · 亲缘选择与互惠利他（Hamilton 1964，Trivers 1971）</b>：进化生物学说，利他之所以留下来，是因为在基因层面「算得过账」；孟子则逐一排除了救孺子的功利动机。两者可以并存：按 Tinbergen 的近因/终极因之分，孟子讲的是当下那一震的近因，进化讲的是这颗心为何被留下。「没有算计」只在心理层面成立，但养护这颗心并不需要它来历无私。</li>
+<li><b>心理学 · 静止脸实验（Edward Tronick，1978）</b>：母亲突然面无表情、不再回应，婴儿几分钟内就从逗引转为退缩、哭闹；婴儿的自我调节靠回应来撑着，像布伯说的「我在关系中生成」。不像在于：实验测的是互动是否同步，布伯的「我-你」却不靠任何可测量的回应，对一棵树也能说「你」。</li>
+<li><b>神经科学 · 橡胶手错觉（Botvinick &amp; Cohen，1998）</b>：看着假手和真手被同步轻刷，几分钟后人就觉得假手是自己的；可见「我」的边界是大脑临时拼出来的，佛学说自他界限并非本有，这里有个身体版的旁证。不像在于：错觉只是把边界挪了位置，佛学要看穿的是边界本身。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>列维纳斯主张伦理学先于本体论：我对他者的责任，在我做出任何选择之前就已成立。</li>
+<li>他者的面容不可还原为我的概念，把他人化约成可理解、可使用之物是一种本体论的暴力。</li>
+<li>把共情理解为在脑中模拟对方，恰恰可能把他者还原成自我的投射。</li>
+<li>孺子入井的思想实验排除了结交、求名、厌恶哭声等动机，说明恻隐之心先于利益盘算。</li>
+<li>孟子认为道德有本具的端芽，要养护、扩充，不是从外面灌输进去。</li>
+<li>布伯区分两种基本姿态：「我-它」把对方当作经验和使用的客体，「我-你」是无中介的整全相遇。</li>
+<li>「我」不是先于关系的实体，而在关系中生成；说「你」的我和用「它」的我是两个不同的我。</li>
+<li>大乘佛学的慈悲建立在缘起性空之上：自他之间的分界本是执着的产物。</li>
+<li>同理心共享他人之痛容易耗竭，慈悲激活关怀回路，能关切而不被痛苦淹没。</li>
+<li>以孤立自我为起点的近代哲学，从一开始就缺了那个先于「我」的「你」。</li>
+</ol>
 </div>
 <div class="deep">
 <h2 data-tts="0939f2b72da0ad00">深入思考</h2>

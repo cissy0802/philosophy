@@ -48,6 +48,18 @@ details summary{font-size:0.96rem;font-weight:600;color:#c1c1d5;cursor:pointer;l
 details summary::before{content:"▸";position:absolute;left:0;color:#c39559;transition:transform 0.2s}
 details[open] summary::before{transform:rotate(90deg)}
 details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;padding-left:22px}
+.crossx{border:1px solid rgba(201,178,122,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(201,178,122,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#8b7355}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#4a4a4a;line-height:1.8}
+.crossx b{color:#8b7355}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.35);border-radius:12px;background:rgba(162,155,254,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.18);font-size:0.93rem;line-height:1.75;color:#2d3436}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:0.5px}
   .container{padding:16px 14px 40px}
@@ -242,6 +254,30 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
   </div>
 </div>
 
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Buddhism · Non-self and dependent origination</b>: Spinoza makes each human a mode of the one substance, no "kingdom within a kingdom"; Buddhism likewise denies the self any independent essence, calling it a gathering of conditions. The difference: for Spinoza every mode strives to persist in its being (conatus), and that striving is our very essence; for Buddhism, clinging to one's own persistence is the root of suffering.</li>
+<li><b>Investing · The index fund (John Bogle, 1976)</b>: stop picking stocks and timing the market, hold the whole market and let it price itself, close to Laozi's "assist the self-so of all things and dare not act." The difference: Grossman and Stiglitz showed in 1980 that prices become efficient only because someone trades actively, so the index fund's non-action rides on others' action.</li>
+<li><b>Distributed systems · Chaos engineering (Netflix's Chaos Monkey)</b>: engineers stop hoping servers never fail and treat failure as Heaven's constant course, designing systems to absorb it: Xunzi's "know the constant, then master and use it." The difference: Xunzi's Heaven runs on its own, outside us, while Chaos Monkey has engineers injecting failures into production by hand.</li>
+<li><b>Psychology · Social comparison theory (Leon Festinger, 1954)</b>: we judge ourselves by comparing with others, which, like Rousseau's amour-propre, hands the yardstick of desire to other people. The difference: Festinger treats comparison as an innate drive, while Rousseau says it appears only once humans enter society, a product of civilization.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>The "nature" in "the Dao follows nature" is not scenery but ziran: the spontaneous state of being self-so, without outside force.</li>
+<li>Laozi's wu wei is not inaction but refusing to force: design constraints and feedback, then let the system unfold by its own tendencies.</li>
+<li>God or Nature: there is only one substance, and all things, human minds included, are merely its modes.</li>
+<li>Humanity is no kingdom within a kingdom; our passions and desires obey natural necessity and can be studied like geometry.</li>
+<li>For Spinoza, freedom is not exemption from necessity but understanding the necessity one is embedded in.</li>
+<li>Xunzi sees Heaven as a neutral, constant natural process that persists for no sage king and perishes for no tyrant.</li>
+<li>Dividing Heaven from human means separating given constraints from what human effort must do: know the regularities first, then master them.</li>
+<li>Rousseau traces inequality to private property and social comparison, so the progress of civilization is also the progress of alienation.</li>
+<li>The four views form a spectrum from retreat and accord to active transformation, and together they make an operating system for living with nature.</li>
+<li>Chaos engineering designs systems around failure as a constant, an engineering version of knowing the constant first and putting it to use.</li>
+</ol>
+</div>
 <!-- Going Deeper -->
 <div class="resources">
   <h2>Going Deeper</h2>

@@ -45,6 +45,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(201,178,122,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#8b7355}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#4a4a4a;line-height:1.8}
+.crossx b{color:#8b7355}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.35);border-radius:12px;background:rgba(162,155,254,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.18);font-size:0.93rem;line-height:1.75;color:#2d3436}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -233,6 +245,32 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
     <div class="label">Reflection</div>
     <div class="question">Facing your greatest present uncertainty, which is your default posture — yielding, resting, loving, or transforming? Re-view it through the other three lenses: which step are you most missing right now?</div>
   </div>
+</div>
+
+<div class="crossx">
+  <div class="label">Crossovers</div>
+  <ul>
+    <li><b>Psychology · Locus of control</b>: In 1966 Julian Rotter described locus of control: internals believe outcomes depend on themselves, externals credit luck and others. Alike in sorting the world into "mine to decide" and "not mine"; unlike in that the Stoics refuse to put outcomes on the inside at all — only judgment and will are up to us, and results always belong to the cart.</li>
+    <li><b>Leadership · The Stockdale Paradox</b>: In <i>Good to Great</i> Jim Collins records the lesson of Vietnam POW James Stockdale: the prisoners who broke were often optimists sure they would be "out by Christmas"; survivors faced the brutal facts yet never lost faith in the end. Like Confucius knowing fate yet doing his duty; unlike him in that Confucius does not even bet on prevailing — duty is reason enough.</li>
+    <li><b>Evolutionary biology · Replaying the tape of life</b>: In <i>Wonderful Life</i> (1989) Stephen Jay Gould imagined rewinding life's tape to the Cambrian and replaying it, concluding the result would differ every time — evolution is steeped in contingency; Simon Conway Morris countered with convergent evolution, arguing the broad shape would recur. Nietzsche's eternal recurrence stands at Gould's opposite pole: replay the tape and every frame comes back identical. Alike in using a replay as the thought experiment; unlike in purpose — Gould uses it to argue for chance, Nietzsche to force you to take a stand on necessity. One asks "would it be the same?", the other "do you want it to be?"</li>
+    <li><b>Quantum mechanics · Deterministic evolution, probabilistic measurement</b>: The Schrödinger equation evolves the wavefunction with full determinism, yet measurement yields only probabilities under the Born rule — two layers stacked, neither pure destiny nor pure chance. Like karma's Middle Way; unlike it in that quantum randomness is thought to have no deeper "seed," whereas karma insists no fruit is without a cause.</li>
+  </ul>
+</div>
+
+<div class="tk">
+  <div class="label">Ten takeaways</div>
+  <ol class="takeaways">
+    <li>The Stoic dichotomy of control holds that only judgment and desire are up to us; body, property and reputation are not.</li>
+    <li>The image of the dog tied to a cart shows that the destination is the same either way; freedom lies only in running willingly rather than being dragged.</li>
+    <li>Stoic acceptance of fate is not resignation but recalling all energy to the one domain we control: our own response.</li>
+    <li>Confucius assigns success and circumstance to ming (fate) and doing what is right to yi (duty): the noble person fulfills duty within and rests in fate without.</li>
+    <li>"Doing what one knows to be impossible" means judging a life by the quality of its process, not by single outcomes settled by luck.</li>
+    <li>Eternal recurrence is not a cosmological claim but a touchstone: would you will this exact life to repeat countless times?</li>
+    <li>Nietzsche's amor fati goes beyond the Stoics: not merely accepting necessity but actively willing it to return exactly as it is.</li>
+    <li>Buddhist karma takes a Middle Way: fate is past action ripening when conditions converge, neither iron destiny nor blind chance.</li>
+    <li>Karma preserves agency: while receiving the fruit of the past, every present act sows the causes of the future.</li>
+    <li>The four postures of yielding, resting, loving and transforming work together as control partition, evaluation decoupling, long-range sowing and a final filter.</li>
+  </ol>
 </div>
 
 <div class="deep">

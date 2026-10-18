@@ -46,6 +46,18 @@ details summary{font-size:0.96rem;font-weight:600;color:#c1c1d5;cursor:pointer;l
 details summary::before{content:"▸";position:absolute;left:0;color:#c39559;transition:transform 0.2s}
 details[open] summary::before{transform:rotate(90deg)}
 details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;padding-left:22px}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:0.5px}
   .container{padding:16px 14px 40px}
@@ -237,6 +249,30 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
   </div>
 </div>
 
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Distributed systems · Byzantine fault tolerance (Lamport, Shostak, Pease, 1982)</b>: Descartes' evil demon is the Byzantine fault model: nodes don't merely fail, some lie to you on purpose. Alike in assuming the worst adversary first; unlike in that distributed systems don't hunt for one undoubtable foundation but rely on redundant voting: with traitors under a third of the nodes, the honest ones still reach agreement.</li>
+<li><b>Investing · The Kelly criterion (John Kelly, 1956)</b>: Pascal bets on expected value; Kelly showed that chasing expected value alone bets you into ruin, and that stake size should maximize long-run logarithmic growth. Both turn uncertainty into arithmetic; but Pascal's infinite payoff makes going all-in always rational, while Kelly insists you always keep the stake for the next round.</li>
+<li><b>Psychology · Michotte's perception of causality (Albert Michotte, 1946)</b>: one square hits another, stops, the other moves off, and viewers simply "see" a collision, even knowing it is an animation. Alike in making causation something the mind adds to the world; unlike in that Hume has it grow from repeated constant conjunction, whereas Michotte's viewers needed a single showing, as if the perceptual system came with it built in.</li>
+<li><b>Complexity science · Simulated annealing (Kirkpatrick et al., 1983)</b>: when an optimizer is stuck in a local optimum, you raise the "temperature" and allow worse moves so it can escape, then cool slowly to converge. Great doubt resembles that heating: it loosens the old frame instead of polishing it in place. Unlike annealing's random jitter, Chan doubt pours all its force into a single huatou.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>Descartes flips doubt into method: it is not paralysis but a forge for certainty, and only what survives the harshest doubt may serve as foundation.</li>
+<li>Once the evil demon hypothesis suspends the senses, mathematics and the outside world, the one undoubtable fact is that the doubting "I" exists.</li>
+<li>Reason cannot prove whether God exists, yet not betting is itself a bet, because everyone must live in some posture.</li>
+<li>Pascal's wager is the first use of decision theory on metaphysics: with thin evidence, act on the asymmetry of payoffs rather than wait for proof.</li>
+<li>We never observe a cause forcing its effect; causation is a habit the mind projects from constant conjunction.</li>
+<li>Introspection finds only a flowing bundle of perceptions and no self that holds them, and induction has no logical guarantee either.</li>
+<li>Hume's mitigated skepticism admits that reason's reach is short and that habit, sentiment and shared life carry us forward.</li>
+<li>Chan huatou practice turns doubt into the practice itself: hold an unanswerable question until the old framework collapses on its own.</li>
+<li>Great faith, great doubt and great resolve must coexist: without faith doubt turns nihilistic, without doubt faith turns blind.</li>
+<li>Doubt and faith are two faces of one honesty: doubt carried through honestly sifts out a faith worth staking.</li>
+</ol>
+</div>
 <!-- Deeper Thought -->
 <div class="resources">
   <h2>Deeper Thought</h2>

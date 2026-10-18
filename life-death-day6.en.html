@@ -48,6 +48,18 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -254,6 +266,31 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
   </div>
 </div>
 
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Psychology · the impact bias (Daniel Gilbert and Timothy Wilson)</b>: people overestimate how hard and how long a bad event will hurt, underrating the mind's power to recover; Epicurus likewise says the dreaded feeling of loss rarely shows up on schedule. The difference: for Gilbert the pain does come, only smaller and shorter; for Epicurus, at death no one is left to bear it.</li>
+<li><b>Developmental biology · apoptosis (named by Kerr, Wyllie and Currie, 1972)</b>: an embryo's fingers separate only because the cells between them die on schedule, so "dying even as it is born" is literal in development: without local death there is no whole form. The difference: apoptosis serves the organism's survival, while Zhuangzi refuses to make death a servant of life.</li>
+<li><b>Psychology · terror management theory (Greenberg, Pyszczynski and Solomon, 1986)</b>: hundreds of experiments show that people reminded of their own death defend their group's worldview harder and grow more hostile to outsiders. That matches Heidegger's "the They": we hide from death inside the crowd. The difference: Heidegger wants facing death to pull us out of the They, while the experiments find death reminders push people deeper into it.</li>
+<li><b>Business · the premortem (Gary Klein, 2007)</b>: before a project starts, assume it has already failed completely and have the team work backward to the causes, surfacing risks nobody dared to name. Like running ahead into death, it looks at the present from the end. The difference: a premortem aims to avoid failure, while Heidegger's death cannot be avoided, only owned.</li>
+<li><b>Distributed systems · Chaos Monkey (Netflix)</b>: Netflix deliberately kills random servers in production so the system never depends on any single machine, and the service persists while nodes keep arising and ceasing, much like "no self, yet continuity." The difference: engineers want the service never to stop, while Buddhism wants exactly the clinging that drives the cycle to stop.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>Epicurus argues that while we exist death is absent, and when death arrives we no longer exist, so death is nothing to us.</li>
+<li>Fearing death is a category error: it pictures non-existence as a pain that someone is still there to suffer.</li>
+<li>Lucretius's symmetry argument: no one grieves the long absence before birth, and the absence after death is the same kind of absence.</li>
+<li>Zhuangzi drumming on a basin is not coldness: he first admits his grief, then sees life and death as qi gathering into form and dispersing again, like the seasons.</li>
+<li>"Dying even as it is born": at every moment part of you is dying and part is being born, so life and death are two phases of one process.</li>
+<li>Heidegger calls death Dasein's ownmost, non-relational, unsurpassable possibility, certain yet indefinite as to when.</li>
+<li>Running ahead into death calls a person back from the numbness of "the They" and forces choices that are truly one's own.</li>
+<li>Buddhist rebirth is not an unchanging soul changing bodies but a pattern of aggregates, driven by ignorance and clinging, that keeps restarting.</li>
+<li>Nirvana is not another place but the extinguishing of clinging as a driving force, which is why the Mahayana says samsara is nirvana.</li>
+<li>The four postures can be used in sequence: dissolve the fear, widen the view, add the pressure of finitude, then let go even of these views.</li>
+</ol>
+</div>
 <!-- Going Deeper -->
 <div class="resources">
   <h2>Going Deeper</h2>

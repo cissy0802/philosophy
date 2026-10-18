@@ -46,6 +46,18 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(143,120,64,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(136,113,57,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#ab9375}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(23,16,115,.35);border-radius:12px;background:rgba(23,16,115,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(23,16,115,.18);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -256,6 +268,32 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
     <div class="label">Reflection</div>
     <div class="question">Of these four answers to "what is real," which is your default? Next time you are swept up by the feed, by identity anxiety, or by emotion — how would each of the other three rewrite your response?</div>
   </div>
+</div>
+
+<div class="crossx">
+  <div class="label">Crossovers</div>
+  <ul>
+    <li><b>Evolution · Hoffman's interface theory of perception</b>: Cognitive scientist Donald Hoffman uses evolutionary game simulations to argue that "fitness beats truth": natural selection tunes perception like desktop icons, built to be useful, not accurate. Like the cave's shadows, what we see is not reality itself. Unlike Plato, who thought one could climb out and see the Forms, Hoffman holds there is no place outside the interface to stand.</li>
+    <li><b>Distributed systems · The Byzantine Generals Problem (Lamport et al., 1982)</b>: Assume nodes may lie arbitrarily, then ask what can still be known — the same move as Descartes' demon: design against the worst adversary. The difference: Byzantine fault tolerance trusts an honest majority (at least 3f+1 nodes to survive f traitors); Descartes is a single node and must bootstrap from "I am doubting."</li>
+    <li><b>Psychology · The rubber hand illusion (Botvinick &amp; Cohen, 1998)</b>: Stroke a hidden real hand and a visible rubber hand in sync, and within minutes people feel the rubber hand is theirs. The body's boundary can be rewritten, much like Zhuangzi's transformation of things. Unlike it, the lab treats this as an error to correct; Zhuangzi treats fluid boundaries as the start of free wandering.</li>
+    <li><b>Complexity science · Prigogine's dissipative structures (Nobel Prize in Chemistry, 1977)</b>: A vortex or convection cell keeps its shape on a steady inflow of energy; the water molecules change constantly while the form holds — "process, not substance." Unlike it, a vortex has no clinging to break; what the five aggregates teaching empties is precisely the mind's grasping at this process as "me."</li>
+  </ul>
+</div>
+
+<div class="tk">
+  <div class="label">Ten takeaways</div>
+  <ol class="takeaways">
+    <li>The Allegory of the Cave splits the world in two: the changing realm of appearances is shadow; the eternal realm of Forms is real.</li>
+    <li>For Plato, knowing is an ascent: turning away from sensory shadows toward the light of the Forms.</li>
+    <li>The Butterfly Dream is no sophistry: dream and waking cannot be told apart from inside, so the subject–object split loosens.</li>
+    <li>"The transformation of things" means everything turns into everything else; the self is a passing form in that flow.</li>
+    <li>Descartes doubted everything and found that the act of doubting cannot itself be doubted: I think, therefore I am.</li>
+    <li>The cogito moved philosophy's foundation from the outer world to inner consciousness, launching modernity's turn to the subject.</li>
+    <li>The five aggregates teaching breaks the "I" into form, sensation, perception, mental formations and consciousness — processes with no fixed self.</li>
+    <li>Buddhist emptiness does not mean nothing exists; it means nothing has an essence independent of other things.</li>
+    <li>The four views combine into one toolkit: doubting appearances, minimal anchoring, loosening identity, and decomposing processes.</li>
+    <li>Descartes' demon and Byzantine fault tolerance share one strategy: assume an adversary who lies at will, then see what still stands.</li>
+  </ol>
 </div>
 
 <!-- Going Deeper -->

@@ -44,6 +44,18 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#a6a6a6;line-height:1.75}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -211,6 +223,30 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 <div class="label">思考题</div>
 <div class="question">下一次 AI 给你一个自信满满的结论时，四道工序——查来源、过三表、找证伪、审范式——你会先做哪一道？哪一道你从来没做过？</div>
 </div>
+</div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>心理学 · 沃森选择任务（Wason，1966）</b>：桌上四张牌 E、K、4、7，规则是「一面是元音，另一面就是偶数」，该翻哪几张来检验？答案是 E 和 7，答对的人不到一成，多数人去翻 4 找证实。像波普尔：人脑天生爱找证实、不会找证伪。不像在：Cosmides（1989）把同一逻辑换成「谁占了便宜没守约」的社会契约情境，正确率大幅上升——证伪也许不是通用逻辑，而是进化出的「抓骗子」本能。</li>
+<li><b>生物进化 · 间断平衡（Eldredge 与 Gould，1972）</b>：化石里的物种长期几乎不变，又在地质上很短的时间里迅速分化。像库恩：漫长的常规科学被短促的革命打断，变化不是匀速累积。不像在：新物种多从边缘小种群里分出来，旧物种不必被「说服」，只是并存或灭绝。</li>
+<li><b>分布式系统 · 拜占庭将军问题（Lamport 等，1982）</b>：节点只能靠互相传话，其中混有说谎者时，至少要 3f+1 个节点才能容忍 f 个叛徒。像墨家「原察百姓耳目之实」：不信单个证人，靠多方众证求可靠。不像在：共识协议不评判谁更可信、只数票；正理派的圣言量恰恰要看言说者本人是否可靠。</li>
+<li><b>投资 · 索罗斯的「可错性」</b>：索罗斯在伦敦政经学院受过波普尔的影响，把每个投资论点当成待证伪的假说，先想好什么信号说明自己错了，错了就认赔离场。像波普尔：亮出证伪条件才算判断。不像在：市场有反身性，参与者的信念会改变价格本身，被检验的对象会回应检验，自然界不会。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>科学的标志不是被证实而是可证伪：原则上无法被任何观察推翻的理论，没有科学内容。</li>
+<li>再多白天鹅也证明不了「天鹅皆白」，一只黑天鹅却能证伪它，归纳无法确立普遍命题。</li>
+<li>波普尔式的判断要先问「什么证据会证明我错」，这是确认偏误的直接解药。</li>
+<li>科学家大多数时候在范式内做常规解谜，遇到反常先搁置或修补，而不是抛弃理论。</li>
+<li>反常累积成危机才爆发科学革命，新范式整体替换旧范式，如同格式塔翻转。</li>
+<li>库恩所说的不可通约，是新旧范式之间没有中立的观察语言可供裁决，转变更像改宗。</li>
+<li>墨家三表要求一句话过三关：本（有无历史前例）、原（能否经众人耳目核验）、用（实行后是否真有利）。</li>
+<li>正理派列出四种有效认知手段：现量（感知）、比量（推理）、譬喻量（类比）、圣言量（可靠证词）。</li>
+<li>大模型几乎没有现量兜底，输出多是转述与类比，语料证词出错时无从校正，幻觉由此而生。</li>
+<li>四把标尺合成一套流程审视任何断言：查来源、过三表、找证伪、审范式。</li>
+</ol>
 </div>
 <div class="card" data-tts="587e793baf01b405" style="background:#0c0a1d">
 <div class="label" style="color:#a29bfe;font-size:0.95rem">深入思考</div>

@@ -45,6 +45,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(201,178,122,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#8b7355}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#4a4a4a;line-height:1.8}
+.crossx b{color:#8b7355}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.35);border-radius:12px;background:rgba(162,155,254,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.18);font-size:0.93rem;line-height:1.75;color:#2d3436}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -220,6 +232,30 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 <div class="label">思考题</div>
 <div class="question">AI 帮你省下的时间与心力，你默认换成了更多"占有"，还是更多"卓越活动"？今天最耗你心力的那件事里，有没有一支是你自己射出的第二支箭？</div>
 </div>
+</div>
+<div class="crossx">
+  <div class="label">越界 · 跨学科的联想</div>
+  <ul>
+    <li><b>复杂性科学 · 耗散结构</b>：幸福是活动不是状态，像普里戈金（1977 年诺贝尔化学奖）讲的耗散结构——旋涡、火焰、细胞，秩序只在能量持续流过时存在，一停就散。不像在：耗散结构只求维持下去，亚里士多德的活动还要“卓越”，有高下之分。</li>
+    <li><b>分布式系统 · 安全性与活性</b>：Lamport 1977 年把系统性质分成两类：安全性（坏事永不发生）和活性（好事终会发生）。叔本华的幸福是纯安全性，痛苦缺席就够；亚里士多德要的是活性，好的活动持续发生。妙在判定方式：违反安全性在有限一段里就能抓到，活性却要看整条执行，正如“一只燕子造不成夏天”。不像在：人生不是无限执行，终点本身也要被评价。</li>
+    <li><b>生物进化 · 不满足的设计</b>：叔本华说意志盲目、永不满足；演化给出不带形而上学的版本——满足若一直持续，个体就不再觅食求偶，自然选择偏爱“得到后很快又想要”的心智。像在：不满是机制而非故障；不像在：演化没有意志，只是筛选的结果，推不出“人生本质是苦”。</li>
+    <li><b>神经科学 · 默认模式网络</b>：Raichle 等人 2001 年描述的默认模式网络，在走神、想自己时活跃，专注外部任务时活动下降。孔子“乐以忘忧”的忘我，像这张网络暂时安静；佛学的第二支箭，则像它在反刍里空转。不像在：脑区只说明“少想自己”，说不出投入的事是否值得。</li>
+  </ul>
+</div>
+<div class="tk">
+  <div class="label">十条要点</div>
+  <ol class="takeaways">
+    <li>幸福是灵魂合乎德性的实现活动：它是动词不是名词，只能践行，无法占有。</li>
+    <li>亚里士多德的功能论证：人的善在于卓越地运用理性这一特有功能，且要用完整的一生来衡量。</li>
+    <li>孔子式的幸福不是没有忧愁，而是有一件让人发愤忘食、乐以忘忧的意义投入。</li>
+    <li>“孔颜之乐”不系于境遇顺逆：颜回身居陋巷仍不改其乐，乐在道中。</li>
+    <li>在叔本华看来，幸福本质上是消极的，只是痛苦的暂时缺席，痛苦才是积极的。</li>
+    <li>一切欲求出于匮乏：得不到是痛苦，得到后是无聊，人生像钟摆在两者间来回。</li>
+    <li>箭经把苦分两层：身受是世界射来的第一支箭，心受是因执取而自己射出的第二支箭。</li>
+    <li>离苦得乐不是消灭第一支箭，而是在两支箭之间插入觉察，不再射出第二支。</li>
+    <li>四种幸福观可串成一套操作系统：排除占有幻觉、止损第二支箭、投入卓越活动、为活动定方向。</li>
+    <li>只求痛苦缺席的幸福像系统的“安全性”，要好活动持续发生的幸福像“活性”，后者只能看整段人生判断。</li>
+  </ol>
 </div>
 <div class="deep">
 <h2 data-tts="dd59c1a046c8cbf2">深入思考</h2>

@@ -43,6 +43,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(201,178,122,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#8b7355}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#4a4a4a;line-height:1.8}
+.crossx b{color:#8b7355}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.35);border-radius:12px;background:rgba(162,155,254,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.18);font-size:0.93rem;line-height:1.75;color:#2d3436}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -231,6 +243,31 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
     <div class="label">Reflection</div>
     <div class="question">If tomorrow AI could optimize everything computable for you, what is the one "incomputable thing" you would keep for yourself — and can it pass Tillich's idol test and deserve Kierkegaard's leap?</div>
   </div>
+</div>
+
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Distributed systems · single point of failure</b>: Making a finite thing ultimate is like routing a whole system's load through one node: when it goes down, everything collapses, which is exactly Tillich's warning that idols end in disillusion. Unlike: engineering answers with redundancy and spread risk; Tillich does not tell you to bet on several finite things, but to see which one truly deserves to be unconditional.</li>
+<li><b>Psychology · terror management theory</b>: Proposed in 1986 by Greenberg, Solomon and Pyszczynski, building on Ernest Becker's The Denial of Death, it finds that reminders of death make people cling harder to their worldview and sources of self-esteem. Like Confucius, it ties the ultimate to death; unlike him, it treats worldviews as shields against death, while hearing the Way makes death acceptable rather than denied.</li>
+<li><b>Investing · Knightian uncertainty</b>: In 1921 the economist Frank Knight separated risk, which can be assigned probabilities, from uncertainty, which cannot, and argued that entrepreneurial profit comes from bearing the latter. Like Kierkegaard, commitment begins where calculation ends; unlike him, the entrepreneur stakes a finite return, while the knight of faith stakes the whole self.</li>
+<li><b>Psychology · the hedonic treadmill</b>: Brickman and colleagues found in 1978 that lottery winners were, after a while, not markedly happier than other people; satisfaction is quickly adapted to and craving resets. It is the same loop Buddhism calls insatiable craving; unlike Buddhism, evolution treats the treadmill as a design that drives survival, whereas Buddhism holds it can be seen through and blown out.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>Everyone has an ultimate concern; the question is not whether you believe, but what you hold as ultimate.</li>
+<li>Raising a finite concern to unconditional ultimacy is what Tillich calls idolatry, and it must turn into anxiety and disillusion.</li>
+<li>"Having heard the Way at dawn, one may die at dusk" means a life is measured by hearing the Way, not by its length.</li>
+<li>The Confucian ultimate lies not in a heaven beyond but in a Way practiced within this-worldly human relations.</li>
+<li>Kierkegaard holds that subjectivity is truth: the ultimate cannot be proven by reason, only embraced through a leap of faith.</li>
+<li>The gravest commitments begin exactly where objective calculation runs out, and no amount of data can make that leap for you.</li>
+<li>Nirvana literally means "blowing out": the extinction of greed, hatred, delusion and craving, not the gaining of an infinite object.</li>
+<li>The Buddhist ultimate is a negative transcendence, subtraction rather than addition: freedom lies in stilling craving, not satisfying it.</li>
+<li>The four views work together as idol testing, this-worldly anchoring, drawing the line of decision, and shutting off the engine of craving.</li>
+<li>Holding a finite thing as ultimate is like putting all the load on a single point: one failure brings everything down.</li>
+</ol>
 </div>
 
 <div class="deep">

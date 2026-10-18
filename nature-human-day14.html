@@ -50,6 +50,18 @@ details summary{font-size:0.96rem;font-weight:600;color:#c1c1d5;cursor:pointer;l
 details summary::before{content:"▸";position:absolute;left:0;color:#c39559;transition:transform 0.2s}
 details[open] summary::before{transform:rotate(90deg)}
 details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;padding-left:22px}
+.crossx{border:1px solid rgba(201,178,122,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(201,178,122,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#8b7355}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#4a4a4a;line-height:1.8}
+.crossx b{color:#8b7355}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.35);border-radius:12px;background:rgba(162,155,254,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.18);font-size:0.93rem;line-height:1.75;color:#2d3436}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -231,6 +243,30 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
 <div class="label">思考题</div>
 <div class="question">面对 AI 与气候这两个"新自然"，你的默认姿态最接近哪一位？在你当前最重要的一件事上，把另外三种姿态各走一遍——先制、再放、后省——你的决策会有什么不同？</div>
 </div>
+</div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>佛学 · 无我与缘起</b>：斯宾诺莎说人只是唯一实体的一个样态，不是自然里的「国中之国」；佛学也说「我」没有独立自性，只是因缘聚合。不像在于：斯宾诺莎认为每个样态都努力保持自身存在（conatus），这份努力就是人的本质；佛学却把对自身存续的执取看作苦的根源。</li>
+<li><b>投资 · 指数基金（John Bogle，1976）</b>：不去挑股票、择时机，持有整个市场、让它自己定价，近乎老子的「辅万物之自然而不敢为」。不像在于：Grossman 与 Stiglitz 1980 年指出，价格要靠有人主动交易才变得有效，指数基金的「无为」搭的是别人「有为」的便车。</li>
+<li><b>分布式系统 · 混沌工程（Netflix 的 Chaos Monkey）</b>：工程师不指望服务器永不宕机，而把故障当作「有常」的天行，提前设计系统扛住它，正是荀子先知常、再制而用之。不像在于：荀子的天在人之外自行运转，Chaos Monkey 却是工程师亲手往线上系统里注入故障。</li>
+<li><b>心理学 · 社会比较理论（Leon Festinger，1954）</b>：人靠和他人比较来评估自己，跟卢梭说的自尊心（amour-propre）一样，把衡量欲望的尺子交到了别人手里。不像在于：Festinger 把比较看作人天生的驱力，卢梭却说它在人进入社会之后才出现，是文明的产物。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>「道法自然」的「自然」不是山水草木，而是不假外力、自己如此的自发状态。</li>
+<li>老子的无为不是不动，而是不强行干预：设计好约束与反馈，再让系统按内在倾向展开。</li>
+<li>神即自然：世界只有一个实体，万物包括人的心灵，都只是这个实体的样态。</li>
+<li>人不是自然中的「国中之国」，人的情感和欲望同样遵循自然必然律，可以像几何对象一样被理解。</li>
+<li>在斯宾诺莎看来，自由不是豁免于必然，而是理解自己所嵌入的必然。</li>
+<li>荀子把天看作中性、有常的自然运行，不因圣君而存，也不因暴君而亡。</li>
+<li>明于天人之分，就是分清自然给定的约束与人该尽力的本分，先认识规律，再驾驭利用。</li>
+<li>卢梭认为不平等始于私有制与社会比较，文明的进步同时也是异化的进步。</li>
+<li>四种自然观从退回顺应排到主动改造，彼此并不互斥，合起来是一套与自然相处的操作系统。</li>
+<li>混沌工程把故障当作必然的常态来设计系统，是「先知常、再制用」在工程上的版本。</li>
+</ol>
 </div>
 <!-- 深入思考 -->
 <div class="resources">

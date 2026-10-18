@@ -43,6 +43,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(143,120,64,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(136,113,57,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#ab9375}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(23,16,115,.35);border-radius:12px;background:rgba(23,16,115,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(23,16,115,.18);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -229,6 +241,33 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 <div class="label">Reflection</div>
 <div class="question">Take the most "repeated" thing you did this past week — reviewed through these four lenses, where have you mistaken something for "the same" (a label, a whole, an old self, a copy), and where is a difference hiding that deserves to be amplified?</div>
 </div>
+</div>
+
+<div class="crossx">
+  <div class="label">Crossovers</div>
+  <ul>
+    <li><b>Distributed systems · value objects vs. entities</b>: Domain-Driven Design splits objects in two. Value objects with all attributes equal count as the same one: the Identity of Indiscernibles in code. Entities carry an ID independent of their attributes and stay themselves even if every attribute changes. Unlike Leibniz, who denies such bare identity tags, software cannot do without them.</li>
+    <li><b>Neuroscience · pattern separation</b>: the hippocampal dentate gyrus encodes two very similar experiences as more distinct neural patterns, so the memories do not overwrite each other: the brain actively manufactures difference to keep individuals apart. Like Leibniz, difference grounds "being two"; unlike him, this difference is produced by the brain, not given in things.</li>
+    <li><b>Psychology · illusory conjunctions</b>: Treisman's feature integration theory holds that color and shape are registered separately and only glued into one object by attention; when attention is overloaded, people shown a red O and a blue X report a red X (Treisman &amp; Schmidt, 1982). This is "hard and white apart" in the lab: unification is an extra step, and it can fail. Unlike Gongsun Long, who says the properties really are apart, psychology only says processing separates first and binds later.</li>
+    <li><b>Consciousness · change blindness</b>: in Simons and Levin's 1998 study, a stranger asking for directions was swapped for another person mid-conversation, and about half the participants never noticed. "Still the same person" is the brain's default assumption, not a moment-by-moment check. Like Sengzhao, continuity is stitched together; unlike him, change blindness misses real change, while Sengzhao says nothing is there to change.</li>
+    <li><b>Investing · variant perception</b>: Michael Steinhardt's idea that excess returns come only from a view that differs from market consensus and turns out right; repeating the consensus earns the average. Like Deleuze, value lies in difference rather than copying; unlike him, an investor's difference counts only if it is correct, while Deleuze's difference is productive in itself.</li>
+  </ul>
+</div>
+
+<div class="tk">
+  <div class="label">Ten takeaways</div>
+  <ol class="takeaways">
+    <li>The Identity of Indiscernibles: if two things share every property, they are not two things but one.</li>
+    <li>Leibniz used the Identity of Indiscernibles against Newton's absolute space: shifting the whole universe would make no detectable difference.</li>
+    <li>Identical particles in quantum mechanics have no intrinsic property to tell them apart, a microscale counterexample to the Identity of Indiscernibles.</li>
+    <li>Gongsun Long's "hard and white apart" holds that different senses grasp a stone's hardness and whiteness, so the seamless whole is built by perception.</li>
+    <li>The binding problem in neuroscience mirrors Gongsun Long: color and shape are processed separately, so it is the unified object that needs explaining.</li>
+    <li>Sengzhao's "things do not shift" holds that each thing abides in its own instant and the past never migrates into the present.</li>
+    <li>What looks like one thing persisting through time is only a succession of similar moments, with no entity running through them.</li>
+    <li>Deleuze inverts the Western tradition: difference comes before identity, and identity and resemblance are its secondary effects.</li>
+    <li>Genuine repetition is not the same thing recurring but a fresh, irreplaceable difference produced each time.</li>
+    <li>Recommendation algorithms and averaged outputs mass-produce resemblance, so spotting and guarding real difference is work humans cannot outsource.</li>
+  </ol>
 </div>
 
 <div class="deep">

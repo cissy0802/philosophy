@@ -45,6 +45,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(201,178,122,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#c9b27a}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#b4b4c4;line-height:1.8}
+.crossx b{color:#c9b27a}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.35);border-radius:12px;background:rgba(162,155,254,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.18);font-size:0.93rem;line-height:1.75;color:#c1c1d5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -220,6 +232,30 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 <div class="label">思考题</div>
 <div class="question">你默认的宇宙图景是哪一种——物、数、关系，还是过程？换用另外三种底层假设重看你此刻最重要的一个决定，结论会有什么不同？</div>
 </div>
+</div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>神经科学 · 数感</b>：迪昂（Stanislas Dehaene）在《数感》（1997）里汇集的证据显示，婴儿和猴子都能分辨数量多少，大脑顶叶有专门处理数量的区域，「离开数就无法认识」在神经层面有了影子。不像在：天生的数感是近似的，分得清 8 和 16，分不清 8 和 9；毕达哥拉斯要的是精确的整数比。</li>
+<li><b>生物进化 · 受精卵卵裂</b>：受精卵一分为二、二分为四、四分为八，和「两仪生四象，四象生八卦」是同一条倍增级数，一个细胞递归分裂出整个身体。不像在：光靠分裂只得到一团相同的细胞，形态要靠基因调控和位置信号让细胞分化；易经的每一次二分本身就带出新的性质。</li>
+<li><b>分布式系统 · 全副本节点</b>：区块链里每个全节点都存着完整账本，任取一个节点就能还原全网历史，像帝网里每颗珠子都映出整张网。不像在：副本只是同一份数据的拷贝，要靠共识协议在网络延迟中慢慢对齐，总有先后；帝网的珠子是同时互相映现、影中复有影，没有哪一颗是「原件」。</li>
+<li><b>复杂性科学 · 耗散结构</b>：普里高津因耗散结构理论获 1977 年诺贝尔化学奖：漩涡、火焰、生命这类有序结构只在能量和物质持续流过时才存在，流一停就散，这正是「存在由生成构成」。不像在：耗散结构是热力学描述，没有内在视角；怀特海的每个现实际遇都在主动「摄入」过往。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>毕达哥拉斯学派主张数不是数物的工具，而是万物的本原，宇宙因按数与比例构成而可知。</li>
+<li>和谐的乐音对应简单整数比（八度 2:1、五度 3:2），这是「万物皆数」的出发点。</li>
+<li>深度学习把图像、语言、声音编码为高维向量，是「万物皆数」的当代版，但意义和伦理拒绝被压进向量。</li>
+<li>《易经》说太极经阴阳层层二分生成万象，1→2→4→8 是一条二进制倍增级数。</li>
+<li>无穷的复杂可以从一条极简规则的递归迭代中生成，强健的系统也靠可组合的极简原语。</li>
+<li>华严宗用因陀罗网比喻法界：每颗宝珠映出所有宝珠，一即一切，一切即一。</li>
+<li>法界缘起是一种关系本体论：没有能独立自存的物，实在的基本单位是相互含摄的关系。</li>
+<li>怀特海认为宇宙的终极单元是瞬间生成又消逝的「现实际遇」，存在即生成。</li>
+<li>把世界看成一堆静止对象，是过程哲学所批评的「具体性误置」。</li>
+<li>数、生成、关系、过程四种宇宙观共同反对一个常识：宇宙是一堆孤立、静止、现成的「物」。</li>
+</ol>
 </div>
 <div class="deep">
 <h2 data-tts="e3728953ac8f91fe">深入思考</h2>

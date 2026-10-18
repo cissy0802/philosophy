@@ -45,6 +45,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem}
   .container{padding:16px 14px 40px}
@@ -235,6 +247,30 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
   </div>
 </div>
 
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Neuroscience · reward prediction error (Wolfram Schultz, 1997)</b>: dopamine neurons fire on the gap between what was expected and what happened, and barely respond to the predictable; learning runs on error. Socratic questioning manufactures exactly that gap. The difference: the brain updates silently, while elenchus forces a person to admit, wide awake, that they do not know.</li>
+<li><b>Buddhism · the Chan image of "peck and tap at once"</b>: the chick pecks from inside the shell as the hen taps from outside, and a moment too early or too late fails; that is the timing logic of waiting for the student to strain. The difference: the Chan master waits for one sudden break through conceptual thinking, Confucius for a student who can take one corner and work out the other three.</li>
+<li><b>Evolution · the long human childhood (Alison Gopnik)</b>: the developmental psychologist Gopnik argues that our unusually long childhood is a protected period for exploration: children behave like simulated annealing at high temperature, trying things at random and casting wide hypotheses, and only adults settle into efficient exploitation. This gives Rousseau's "wasted time" an evolutionary rationale. The difference: Rousseau calls nature good; Gopnik only calls it useful to the species, with no moral verdict.</li>
+<li><b>Business · the lean startup's build-measure-learn loop (Eric Ries, 2011)</b>: ship a minimum viable product, test the hypothesis against real feedback, then adjust course, which is nearly the same loop as Dewey's perplexity, hypothesis, testing in action, reflection. The difference: the startup loop tests a market, while Dewey wants to reconstruct the experience of the person doing the work.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>Socratic midwifery casts the teacher as a midwife who produces no truth of their own but uses questioning to help learners deliver and test their understanding.</li>
+<li>Understanding is actively rebuilt by the learner; knowledge never delivered from within is merely memorized opinion that fails in a new setting.</li>
+<li>Teaching to the student's aptitude began with opposite answers to one question: hold back the rash Zilu, push forward the hesitant Ran You.</li>
+<li>Confucius stepped in only when a student was striving but stuck, so education starts from the learner's readiness rather than the teacher's pace.</li>
+<li>Rousseau's negative education works by subtraction: the child is no miniature adult, so protect nature and prevent vices instead of rushing to instill.</li>
+<li>Aimless play and daydreaming have educational value, while overpacked schedules and premature optimization kill curiosity.</li>
+<li>For Dewey, education is not preparation for life but life itself, and learning is inquiry: perplexity, hypothesis, testing in action, reflection.</li>
+<li>Learning by doing is not hands-on play but making experience meaningful by solving real problems, a step no person or AI can do for you.</li>
+<li>Together the four views form an operating system for learning: questioning sets direction, struggle sets timing, blank space sets rhythm, real projects set the vehicle.</li>
+<li>When answers are everywhere, information loses value and personal puzzlement and hands-on work become scarce, so AI should be midwife and scaffold, not a substitute learner.</li>
+</ol>
+</div>
 <div class="deep">
   <h2>Deeper Reflections</h2>
   <details><summary>Socrates' "delivery" and Dewey's "learning by doing" both reject transmission — where do they differ?</summary>

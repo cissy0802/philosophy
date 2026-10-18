@@ -44,6 +44,18 @@ details summary{font-size:0.96rem;font-weight:600;color:#c1c1d5;cursor:pointer;l
 details summary::before{content:"▸";position:absolute;left:0;color:#c39559;transition:transform 0.2s}
 details[open] summary::before{transform:rotate(90deg)}
 details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;padding-left:22px}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:0.5px}
   .container{padding:16px 14px 40px}
@@ -236,6 +248,31 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
   </div>
 </div>
 
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Neuroscience · Predictive coding (Rao &amp; Ballard, 1999)</b>: the brain keeps testing predictions against sensory input, and what travels upward to revise the model is the mismatch, the prediction error, much as Hegel makes contradiction the engine that drives a concept forward. Unlike it: the brain aims to minimize error and settle, while Hegelian contradiction pushes the whole frame up a level.</li>
+<li><b>Complexity science · Predator-prey oscillation (Lotka 1925, Volterra 1926)</b>: more foxes mean fewer rabbits, fewer rabbits starve the foxes, then rabbits rebound; the two curves rise and fall forever out of phase, the rhythm of extremes turning into their reverse. Unlike it: these are two species checking each other from outside, while the Yijing says yin already contains yang.</li>
+<li><b>Business · Theory of Constraints (Goldratt, <i>The Goal</i>, 1984)</b>: a production line's output is set by its single bottleneck, so effort spent elsewhere is mostly wasted; once the bottleneck is cleared, the constraint moves and must be found again. That is nearly the principal contradiction, with its flipping principal aspect, on the factory floor. Unlike it: a bottleneck can be measured in units of capacity, whereas a principal contradiction is a tension between forces that takes judgment, and often lies in relations of production rather than machines.</li>
+<li><b>Psychology · Cognitive defusion (Steven Hayes's Acceptance and Commitment Therapy)</b>: instead of arguing with a thought, you practice noticing "I am having the thought that..." and loosen your grip on it; like Nāgārjuna, it offers no fifth position, aiming at release rather than victory. Unlike it: ACT changes your relationship to thoughts without claiming they lack self-nature.</li>
+<li><b>Distributed systems · From CAP to PACELC (Daniel Abadi, 2012)</b>: the "consistency or availability" dilemma quietly assumes the network is always partitioned; Abadi re-cuts it into "during a partition, trade availability against consistency; otherwise, trade latency against consistency," and the deadlock loosens. Unlike it: Nāgārjuna dismantles every position, while PACELC ends with a finer new one.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>Hegel turns contradiction from the boundary of knowledge into the built-in engine by which a concept advances itself.</li>
+<li>Sublation (Aufhebung) means cancelling, preserving, and elevating at once; "thesis-antithesis-synthesis" is a later schematic gloss.</li>
+<li>When two camps clash, don't pick a side: surface the unstated third term both presuppose, and the tension lifts the frame to a larger whole.</li>
+<li>The Yijing's dialectic is a rhythm, not a spiral: yin and yang root in each other, and every extreme gestates its own reverse.</li>
+<li>Yin-yang dialectic has no teleological endpoint; it sustains dynamic balance through perpetual alternation rather than an upward spiral.</li>
+<li>Marx turns dialectic right side up: history is driven by the structural contradiction between forces and relations of production.</li>
+<li>In any complex situation only a few principal contradictions drive direction, and the principal aspect of each can flip as conditions change.</li>
+<li>Nāgārjuna's four-cornered negation refutes is, is not, both, and neither in turn, concluding that every position is empty of self-nature.</li>
+<li>Madhyamaka dialectic dissolves even synthesis; contradiction serves to free the mind from clinging to any side, not to advance a concept.</li>
+<li>When a binary choice paralyzes you, first check whether the question reifies its object; deadlocks often loosen once the problem is re-cut.</li>
+</ol>
+</div>
 <!-- Deeper Thought -->
 <div class="resources">
   <h2>Deeper Thought</h2>

@@ -47,6 +47,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -222,6 +234,31 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 <div class="label">思考题</div>
 <div class="question">回看你本周最重要的一件事：它需要的是老子的退后、萨特的出手、甘地的不还手，还是王阳明的「先承认自己还没真懂」？</div>
 </div>
+</div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>神经科学 · 不刻意的自发性（森舸澜《Trying Not to Try》，2014）</b>：森舸澜用认知科学读「无为」：熟练动作交给自动系统时最流畅，一刻意盯着反而失手，运动员「卡壳」就是这样。不像在：这是个人技能的状态，老子首先讲统治者的克制。</li>
+<li><b>投资 · 交易越勤、收益越差（Barber 与 Odean，2000）</b>：两位金融学者分析了数万个美国散户账户，发现交易最频繁的那批家庭，扣除成本后的收益明显落后于市场；「治大国若烹小鲜」放进账户里同样成立。不像在：投资者的无为多半是把钱交给指数这类别人设计好的系统，老子的圣人自己就是设局的人。</li>
+<li><b>心理学 · 自我知觉理论（Daryl Bem，1967）</b>：人常常是看着自己做了什么，才推断出自己是谁、信什么，萨特「人是行动之和」在认知上也成立。不像在：Bem 描述的是我们如何认识自己，萨特讲的是我们是什么，并且要为之负责。</li>
+<li><b>生物进化 · 合作的演化（Robert Axelrod，1984）</b>：囚徒困境锦标赛的赢家「一报还一报」不先背叛、肯原谅、但必还手。甘地偏偏拿掉还手，换成不合作和自我承受。不像在：前者只算两人得失，萨提亚格拉哈要靠旁观者和对手的良知生效。</li>
+<li><b>心理学 · 执行意图（Peter Gollwitzer，1999）</b>：事先写下「如果遇到 X，我就做 Y」，能明显缩小「意图—行为差距」。像王阳明，只「知道」不算数；不像在：心理学把差距当执行问题来工程化，王阳明说做不到就是还没真知。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>老子的「无为」不是消极不动，而是不妄为：不以人为意志强行扭曲事物本有的走势。</li>
+<li>最好的治理像水，顺势而非逆势；高手在势未成形时介入，之后退后让万物自成。</li>
+<li>过度干预会扼杀系统的自组织，设计好环境再退后，秩序反而会自己长出来。</li>
+<li>萨特认为人没有现成本质，人就是其全部行动的总和，现实只存在于行动之中。</li>
+<li>未兑现为行动的意图和好心在存在论上等于零，不行动本身也是一种须负责的选择。</li>
+<li>甘地的萨提亚格拉哈拒绝暴力革命与奴性顺从，以承受而非施加苦难来抗争。</li>
+<li>非暴力的力量在于拒绝合作加道德感召，改变对手的收益结构，而不是在对方的力量场里比力气。</li>
+<li>王阳明的知行合一认为知与行是同一过程的两面，「知道却做不到」只说明还没真知道。</li>
+<li>知道何时该停下本身就是一种行，所以无为不是知行之外的例外，而是有智慧的行。</li>
+<li>AI 让执行近乎免费，但判断、价值与对结果的承担无法外包，「让 AI 做了」不等于「我做到了」。</li>
+</ol>
 </div>
 <div class="deep">
 <h2 data-tts="f584448c3bd0526e">深入思考</h2>

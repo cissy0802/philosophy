@@ -42,6 +42,18 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#a6a6a6;line-height:1.75}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -224,6 +236,30 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
   </div>
 </div>
 
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Psychology · The Wason selection task (Wason, 1966)</b>: four cards show E, K, 4 and 7; the rule is "if one side is a vowel, the other side is even." Which cards must you turn to test it? The answer is E and 7, yet fewer than one person in ten gets it; most turn the 4, hunting for confirmation. Like Popper: the mind reaches for confirmation, not refutation. Unlike: Cosmides (1989) found that recasting the same logic as a social contract, "who took the benefit without paying the cost," sharply raises accuracy, so falsifying may be an evolved cheater detector rather than general logic.</li>
+<li><b>Evolutionary biology · Punctuated equilibrium (Eldredge and Gould, 1972)</b>: in the fossil record species stay nearly unchanged for long stretches, then split off quickly in geologically brief windows. Like Kuhn: long normal science broken by short revolutions, not steady accumulation. Unlike: new species usually arise in small peripheral populations, and the old species need not be "persuaded"; they simply coexist or go extinct.</li>
+<li><b>Distributed systems · The Byzantine Generals Problem (Lamport et al., 1982)</b>: nodes can only relay messages to one another, and to tolerate f liars you need at least 3f+1 nodes. Like the Mohists' appeal to "the eyes and ears of the people": no single witness is trusted; reliability comes from many corroborating ones. Unlike: a consensus protocol never judges who is credible, it only counts votes, whereas Nyaya testimony turns precisely on the speaker's own reliability.</li>
+<li><b>Investing · Soros on fallibility</b>: shaped by Popper during his years at the London School of Economics, George Soros treats each investment thesis as a hypothesis awaiting refutation, decides in advance what signal would prove him wrong, and cuts the position when it appears. Like Popper: a judgment counts only once its falsifying condition is named. Unlike: markets are reflexive, since participants' beliefs move prices, so the object under test responds to the test; nature does not.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>The mark of science is falsifiability, not verification: a theory no possible observation could overturn has no scientific content.</li>
+<li>No number of white swans proves "all swans are white," yet one black swan refutes it, so induction cannot establish universal claims.</li>
+<li>A Popperian judgment starts by asking what evidence would prove it wrong, the direct antidote to confirmation bias.</li>
+<li>Most of the time scientists do normal science, solving puzzles within a paradigm and patching anomalies rather than abandoning theory.</li>
+<li>Only when anomalies pile up into crisis does a scientific revolution replace the old paradigm wholesale, like a gestalt flip.</li>
+<li>Kuhn's incommensurability means rival paradigms share no neutral observation language to settle disputes, so switching resembles conversion.</li>
+<li>The Mohist three tests ask of any claim: does it have a root in precedent, can people's eyes and ears verify it, and does enacting it truly benefit?</li>
+<li>The Nyaya school names four valid means of knowing: perception, inference, comparison, and reliable testimony.</li>
+<li>Large language models have almost no perception to fall back on; their output is mostly testimony and analogy, so flawed sources breed hallucination.</li>
+<li>Together the four yardsticks form one routine for any claim: trace the source, pass the three tests, seek refutation, audit the paradigm.</li>
+</ol>
+</div>
 <div class="card" style="background:#0c0a1d">
   <div class="label" style="color:#a29bfe;font-size:0.95rem">Going Deeper</div>
 

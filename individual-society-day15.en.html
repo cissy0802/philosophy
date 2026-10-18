@@ -48,6 +48,18 @@ details summary{font-size:0.96rem;font-weight:600;color:#c1c1d5;cursor:pointer;l
 details summary::before{content:"▸";position:absolute;left:0;color:#c39559;transition:transform 0.2s}
 details[open] summary::before{transform:rotate(90deg)}
 details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;padding-left:22px}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:0.5px}
   .container{padding:16px 14px 40px}
@@ -242,6 +254,30 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
   </div>
 </div>
 
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Evolution · The major transitions (John Maynard Smith and Eörs Szathmáry, 1995)</b>: When single cells became multicellular, each cell gave up independent reproduction in exchange for the survival of the whole, and mechanisms had to suppress "cheaters" that copy only themselves; cancer is the defector. Like Hobbes's surrender of rights for peace. Unlike it: no one sat down to sign; selection pressure wrote cooperation into the genome.</li>
+<li><b>Economics · Ostrom on the commons (Elinor Ostrom, 1990)</b>: Studying fisheries, pastures and irrigation communities, she found many groups that relied on neither a Leviathan nor privatization, but set their own rules, monitored one another and used graduated sanctions to sustain the commons for generations. Like Hobbes in granting that order needs enforcement; unlike him in that the enforcer grows inside the group, closer to Confucian ritual.</li>
+<li><b>Psychology · Social ties and mortality (Julianne Holt-Lunstad, 2010)</b>: A meta-analysis of 148 studies found that people with stronger social relationships had roughly 50% higher odds of survival. Like Durkheim: integration rewrites individual fates. Unlike him: Durkheim read group rates, while this lands in each person's body.</li>
+<li><b>Neuroscience · Empathic distress versus compassion (Olga Klimecki and Tania Singer, 2014)</b>: After empathy training, participants felt more negative affect, with stronger activity in the anterior insula and other "shared pain" regions; subsequent compassion training reversed that and boosted reward-related areas such as the ventral striatum. Like exchanging self and other, which means not drowning in another's pain but turning it into warm concern; unlike it in that the study covered brief training, while the bodhisattva path is a lifetime.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>Confucius holds that self-realization can only be completed in relationship: establishing others is the path to establishing oneself.</li>
+<li>Ritual without the inner empathy of benevolence is a hollow shell, and the ideal community coordinates differences rather than erasing them.</li>
+<li>Hobbes argues that without a common power to hold all in awe, self-interested equals fall into a war of every man against every man.</li>
+<li>Social contract theory treats society as an artifact, not a natural growth: individuals surrender natural rights to a sovereign in exchange for peace.</li>
+<li>Order survives only where it is enforced, so designing multi-agent systems or team governance should never assume goodwill will emerge on its own.</li>
+<li>Durkheim insists that social facts be studied as things: morality, language and religion exist outside the individual and exert coercive force.</li>
+<li>The study of suicide showed that even the most private act follows stable group rates set by social integration, not by personal will alone.</li>
+<li>Society is a reality of its own kind with emergent properties no individual has, as random molecules still yield a stable temperature.</li>
+<li>Mahayana Buddhism sees clinging to a separate self as the root of suffering and altruism as the practice that dissolves it; non-self removes selfish grasping, not responsibility.</li>
+<li>On the self-versus-society spectrum, contract theory sits at the individual end, social facts at the society end, and Buddhism dissolves the axis itself.</li>
+</ol>
+</div>
 <!-- Going Deeper -->
 <div class="resources">
   <h2>Going Deeper</h2>

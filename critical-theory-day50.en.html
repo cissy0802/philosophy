@@ -42,6 +42,18 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#a6a6a6;line-height:1.75}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -222,6 +234,30 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
   </div>
 </div>
 
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Psychology · System justification theory (John Jost and Mahzarin Banaji, 1994)</b>: the disadvantaged often defend the status quo harder than those who benefit from it, and the paper's title borrows the phrase "false consciousness." Like Marx's ruling ideas internalized by the ruled; unlike it, psychology traces the root to a need for certainty and order, without asking whose interest is served.</li>
+<li><b>Business · Goodhart's law (Charles Goodhart, 1975)</b>: once a measure becomes a target, it stops measuring well what it was meant to measure. Like instrumental reason pushing the number up by any "how" while forgetting the "why" it stood for; unlike it, Goodhart saw a fixable measurement failure, while Adorno located the sickness in reason itself.</li>
+<li><b>Buddhism · Yogācāra "perfuming" and "seeds"</b>: every act of body, speech and mind perfumes a seed into the storehouse consciousness (ālaya-vijñāna), which later colors how one sees the world, the same shape as Li Zehou's sedimentation. Unlike it, Yogācāra aims to transform consciousness into wisdom and purify the seeds; Li treats sedimentation as humanity's historical achievement, to be inherited with discernment.</li>
+<li><b>Distributed systems · N-version programming</b>: several teams build the same spec independently and outputs are compared, so disagreements expose faults no single version can see, much like Karatani's parallax. Yet Knight and Leveson's 1986 experiment found independently written versions often failed together on the same inputs: teams trained alike share blind spots, so parallax works only between truly incompatible standpoints. Unlike it, engineering ends in a majority vote; Karatani wants the gap itself.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>Alienation is the worker's separation from the product, from the activity of labor, and even from his own humanity, so he feels at home only outside work.</li>
+<li>Commodity fetishism makes relations between people appear, inverted, as relations between things, while the ruling ideas are ruling-class interests in disguise.</li>
+<li>The deepest domination makes the dominated feel things are simply how they should be; critique begins by seeing the "natural" as man-made.</li>
+<li>Adorno and Horkheimer argued that enlightenment reason narrowed into instrumental reason, asking "how" but never "why," and so turned back into myth.</li>
+<li>The culture industry pacifies the masses with standardized "pseudo-individuality," and today's personalized recommendation feed is close to its perfected form.</li>
+<li>The theory of sedimentation holds that the rational settles into the sensuous and the historical into the psyche, so "intuition" is history written into us.</li>
+<li>Li Zehou fused Marx's practice with Kant's subject and inverted "Chinese essence, Western use," producing a Chinese remaking of critical theory.</li>
+<li>Karatani's transcritique says a system's walls are invisible from inside, and truth appears only in the parallax between two incompatible standpoints.</li>
+<li>The four critiques combine into one operating system: interest audit, reclaiming the why, self-archaeology, and the parallax drill.</li>
+<li>Critique is not cynicism but seeing through a system's ideology first, then deciding whether to use it, reform it, or route around it.</li>
+</ol>
+</div>
 <!-- Deep Reflection -->
 <div style="margin-top:40px">
   <div class="label" style="color:#a29bfe;font-size:0.95rem;font-weight:700;letter-spacing:1.5px">DEEP REFLECTION</div>

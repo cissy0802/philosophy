@@ -49,6 +49,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -253,6 +265,31 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 <div class="label">思考题</div>
 <div class="question">拿你最近一个「想清楚再动」的判断来过堂：皮尔士问它有何可观察的差别，詹姆斯问它的兑现记录，杜威问最小实验是什么，王阳明问你做到了没有——哪一问你最答不上来？那里就是你该动手的地方。</div>
 </div>
+</div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>量子力学 · QBism（量子贝叶斯主义）</b>：Christopher Fuchs 等人把量子态读作行动者对测量后果的个人预期，意义全落在行动的后果上，像皮尔士的实用准则。不像的是：QBism 的概率属于单个行动者，皮尔士的意义要在探究者群体的公共检验里定下来。</li>
+<li><b>佛学 · 箭喻（《中部》第 63 经）</b>：鬘童子追问世界是否永恒、如来死后有无，佛陀拿中了毒箭却先打听射手姓名的人作比，拒绝作答。像在：不改变你该怎么做的问题，先搁置。不像在：佛陀没说这些问题无意义，只说它们无益于止息痛苦。</li>
+<li><b>心理学 · 实施意图（Peter Gollwitzer）</b>：「知道该做却没做」的意图—行为落差是心理学的老问题；Gollwitzer 发现把目标写成「如果遇到 X，我就做 Y」能明显提高执行率。不像在于：心理学把意图和行动当两段、要搭桥，王阳明根本不认这条缝，落差只说明那份知还不真。</li>
+<li><b>生物进化 · 「适应度胜过真相」（Donald Hoffman）</b>：认知科学家 Hoffman 用进化博弈模拟论证，自然选择奖励的是带来收益的知觉，而不是如实反映世界的知觉，我们看到的更像桌面图标而非底层电路。这像詹姆斯「有用即真」的进化版，却恰好把他混在一起的两样东西拆开：被选中的是「有用」，并不担保「为真」。</li>
+<li><b>分布式系统 · 最终一致性</b>：副本可以暂时各说各话，只要持续交换更新，终会收敛到同一个值；皮尔士在同一篇文章里把真理定义为一切探究者最终注定会同意的意见，结构相同。不像在于：最终一致只保证大家一样，不保证一样地对，皮尔士的收敛要靠实在来约束。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>实用主义的总问题：与其问一个观念是否符合实在，不如问它在实践中带来什么可观察的不同。</li>
+<li>皮尔士的实用准则：概念的全部意义就是它可设想的实践效果，说不出实践差别的区分是空的。</li>
+<li>溯因推理是从意外现象跳到一个能解释它的最佳假设，再用后果去检验这个假设。</li>
+<li>詹姆斯把真理看成过程：观念在经验中不断被证实、能引导顺利行动，才被「做成真」。</li>
+<li>「有用即真」的风险在于混淆两种有用：让人心安的有用，和预测得准的有用。</li>
+<li>思维起于真实的不确定情境，探究就是把它受控地转化为足以行动的确定情境。</li>
+<li>知识是工具而不是映照实在的镜子，这是反对「旁观者知识论」、主张「做中学」的根据。</li>
+<li>王阳明的知行合一：真正的知必然包含行，知而不行只是未知，做不到的懂不算懂。</li>
+<li>实用主义与心学都反对知行二分，分歧在行的标准：一个向外看经验后果，一个向内看良知笃实。</li>
+<li>佛陀的箭喻同样搁置不影响行动的形而上问题，标准却是能否止息痛苦，而非概念有无意义。</li>
+</ol>
 </div>
 <div class="deep">
 <h2 data-tts="275b0990cc7e2bb8">深入思考</h2>

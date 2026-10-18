@@ -47,6 +47,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(201,178,122,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#8b7355}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#4a4a4a;line-height:1.8}
+.crossx b{color:#8b7355}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.35);border-radius:12px;background:rgba(162,155,254,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.18);font-size:0.93rem;line-height:1.75;color:#2d3436}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -222,6 +234,30 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 <div class="label">思考题</div>
 <div class="question">面对此刻最大的不确定，你的默认姿态是哪一种——顺、安、爱、化？换用其余三种视角重看一遍，哪一步是你当下最缺的？</div>
 </div>
+</div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>心理学 · 控制点</b>：罗特 1966 年提出「控制点」：内控者相信结果取决于自己，外控者归于运气与他人。像在都把一切切成「我能决定的」与「不能的」两栏；不像在斯多葛恰恰不把结果划进内控——在我权能之内的只有判断与意愿，结果永远是「车」。</li>
+<li><b>领导力 · 斯托克代尔悖论</b>：柯林斯在《从优秀到卓越》中记下越战战俘斯托克代尔的经验：熬不过来的多是「圣诞节前就能出去」的乐观者，活下来的人既直面残酷现实、又不丢最终的信念。像孔子知命而仍尽义；不像在孔子连「终将胜出」也不押，义本身就是理由。</li>
+<li><b>生物进化 · 重放生命的录像带</b>：古尔德在《奇妙的生命》（1989）里设想把生命史的录像带倒回寒武纪重放，结论是每次结果都会不同，演化充满偶然；康威·莫里斯则以趋同演化反驳，认为大致轮廓会重现。尼采的永恒轮回恰好站在古尔德的反面：录像带重放，每一帧都分毫不差。像在都用「重放」做思想实验；不像在古尔德借它论证偶然，尼采借它逼你对必然表态——同一个画面，一个问「会不会一样」，一个问「你要不要它一样」。</li>
+<li><b>量子力学 · 决定论的演化与概率的测量</b>：薛定谔方程让波函数完全确定地演化，测量结果却只能按玻恩规则给出概率，两层叠在一起，既非纯粹宿命也非纯粹偶然。像业力的中道；不像在量子测量的随机被认为没有更深的「种子」，业力却坚持没有无因之果。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>斯多葛的控制二分法认为，在我们能力之内的只有判断与欲求，身体、财产、名声都不在其中。</li>
+<li>拴在车后的狗的比喻说明：结局相同，自由只在于是愉快地奔跑还是被拖着走。</li>
+<li>斯多葛的顺命不是消沉，而是把全部精力收回到唯一可控的领地——自己的回应。</li>
+<li>孔子把成败遇合归于「命」，把做不做该做的事归于「义」，君子尽义于内、安命于外。</li>
+<li>「知其不可而为之」意味着评判一生看过程质量，而不看由运气决定的单次结果。</li>
+<li>永恒轮回不是宇宙学断言，而是一块试金石：你愿不愿意此生原样重演无数次。</li>
+<li>尼采的 amor fati 比斯多葛更进一步，不只是接受必然，而是主动意愿它如其所是地重来。</li>
+<li>佛学的业力走中道：命运是往昔之业在因缘会遇时的成熟，非宿命，亦非偶然。</li>
+<li>业力保住了能动性：受过去之果的同时，当下每个行为都在播下未来的因。</li>
+<li>顺、安、爱、化四种姿态可以并用：控制切分、评价解耦、长程播种、终极过滤。</li>
+</ol>
 </div>
 <div class="deep">
 <h2 data-tts="26657c5ad3fc7cef">深入思考</h2>

@@ -44,6 +44,18 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#a6a6a6;line-height:1.75}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(143,120,64,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(136,113,57,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#ab9375}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(23,16,115,.35);border-radius:12px;background:rgba(23,16,115,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(23,16,115,.18);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -212,6 +224,32 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 <div class="question">你此刻正在设计的某条规则——给团队、孩子或 AI——它默认禁止还是默认许可？它指望被遵守，还是指望被内化？换一个象限来设计，会发生什么？</div>
 </div>
 </div>
+<div class="crossx">
+  <div class="label">越界 · 跨学科的联想</div>
+  <ul>
+    <li><b>心理学 · 布雷姆的心理抗拒理论（1966）</b>：人一旦觉得某项自由受威胁，反而更想要被禁的东西，所以「为你好」的劝阻常常适得其反。像密尔，家长式干涉自带代价；不像在于：密尔说即使干涉有效也不正当，布雷姆只解释干涉为何常常无效。</li>
+    <li><b>演化博弈论 · 梅纳德·史密斯的「资产者策略」</b>：鹰鸽博弈里，「是主人就打、是闯入者就让」能成为演化稳定策略，一个任意却人人认得的归属标记就省掉了争斗，正如名分已定则满市之兔无人敢取。不像在于：动物的「名分」是演化中自发长出的惯例，商鞅的名分靠国家颁布、以刑罚背书。</li>
+    <li><b>行为经济学 · 「罚款就是价格」（Gneezy &amp; Rustichini，2000）</b>：以色列海法的托儿所对迟接孩子的家长开始罚款，迟到反而增多，取消罚款后也没有回落。罚款把「让老师干等」的愧疚改写成「花钱买时间」的交易，正是「民免而无耻」：刑罚换来计算，挤掉了羞耻。不像在于：孔子只说政刑不足以使人有耻，这项实验显示，罚得太轻的政刑还会把原有的耻感一并拆掉。</li>
+    <li><b>佛学 · 律藏的「随犯随制」</b>：佛陀不预先立法，有比丘犯了事才制一条戒，条文明确、定期公开诵读，近于商鞅的定分；不像在于：戒律的终点是由戒生定、由定发慧，外在条文只是通往内在自觉的梯子。一套僧团制度同时装着本期纵轴的两端。</li>
+  </ul>
+</div>
+
+<div class="tk">
+  <div class="label">十条要点</div>
+  <ol class="takeaways">
+    <li>伯林把自由切成两种：消极自由是他人不得干涉的领域，积极自由是成为自己的主人。</li>
+    <li>积极自由最易被偷换：一旦国家或政党来定义「真正的你」，就有了强迫你自由的借口。</li>
+    <li>自由、平等、安全彼此冲突且不可通约，没有单一最优解，所以必须为个体守住一块不可侵犯的领地。</li>
+    <li>密尔的伤害原则：权力唯一正当的干涉理由是防止伤害他人，「为你好」从来不是充分理由。</li>
+    <li>「生活的实验」把多样的活法看成社会搜索更好生活方式的方法，因此异端必须被容忍。</li>
+    <li>商鞅的法重在可预期而非严厉：名分公开确定之后，圣王不必去争，贪盗也不敢去取。</li>
+    <li>指标定得太硬，人就只优化指标本身，不再优化规则真正想要的目标。</li>
+    <li>孔子指出，政令刑罚只换来表面服从的「民免而无耻」，德礼内化才能「有耻且格」、自觉归正。</li>
+    <li>政治自由可画成两轴图：横轴是权力该放过个人多少，纵轴是秩序靠外在的法还是内化的德。</li>
+    <li>海法托儿所对迟到罚款后迟到反增，说明刑罚会把愧疚改写成价格，挤掉原有的羞耻。</li>
+  </ol>
+</div>
+
 <div class="section" style="margin-top:36px">
 <div class="label" style="color:#a29bfe;font-size:0.95rem">深入思考</div>
 <details>

@@ -53,6 +53,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 .deep details{margin-bottom:12px;border-bottom:1px solid #202020;padding-bottom:10px}
 .deep summary{cursor:pointer;font-weight:600;color:#9383b3;font-size:0.96rem}
 .deep details div{margin-top:8px;font-size:0.92rem;color:#a6a6a6;line-height:1.75}
+.crossx{border:1px solid rgba(201,178,122,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(201,178,122,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#8b7355}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#4a4a4a;line-height:1.8}
+.crossx b{color:#8b7355}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.35);border-radius:12px;background:rgba(162,155,254,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.18);font-size:0.93rem;line-height:1.75;color:#2d3436}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -240,6 +252,30 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 <div class="label">思考题</div>
 <div class="question">盘点你与 AI 协作的一天：哪一刻是你在用工具，哪一刻是座架在框你、系统在推你、机心在算你？对「还剩多少由你决定」，你此刻的诚实答案是多少？</div>
 </div>
+</div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>商业 · 古德哈特定律（Charles Goodhart，1975）</b>：通行的说法是，一个指标一旦被当成目标，就不再是好指标。这是座架在管理里的样子：先规定可量化者才算真实，人和组织就照着指标长。不像的是，古德哈特式的药方是换一个更好的指标；海德格尔会说，换来换去仍在座架里，要守的是指标之外的留白。</li>
+<li><b>生物进化 · 红皇后假说（Leigh Van Valen，1973）</b>：物种必须不停进化，才能在一起进化的对手中间保住原位，这和埃吕尔的自主技术同构：没人想加速，停下就出局。不像在于，演化里没有谁能喊停；埃吕尔的保留区至少假定人还能留一块不跑的地。</li>
+<li><b>心理学 · 过度合理化效应（Lepper、Greene 与 Nisbett，1973）</b>：本来爱画画的幼儿，被事先许诺奖状再画，之后自由活动时去画的反而变少；外加的算计改写了原本的动机，正像机心挤走纯白。不像的是，实验里多出来的是奖励，庄子说光是机械本身就会养出算计。</li>
+<li><b>生物进化 · 内共生（Lynn Margulis，1967）</b>：线粒体原是被吞进细胞的细菌，每个真核细胞本来就是杂合体，正合赛博格「人从来不纯」的判断。不像的是，内共生的条款靠漫长演化磨合，没有谁去谈判；哈拉维要的是人在场，主动争夺规则的书写权。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>技术哲学的共同起点是反对技术中性论：工具一旦上手，就开始重写使用它的人。</li>
+<li>海德格尔认为技术的本质并不是技术性的东西，而是一种解蔽，也就是看待世界的方式。</li>
+<li>现代技术的「座架」把河流乃至人都逼索为随时可调用的持存物，「人力资源」一词就是症候。</li>
+<li>座架最深的暴力是遮蔽与世界相遇的其他方式，解药是为无法被指标捕获的领域刻意留白。</li>
+<li>埃吕尔认为技术已经自主：效率律令自我增殖，技术问题只用另一项技术解决，人只能事后追认。</li>
+<li>「不上车就落后」的焦虑是技术自主的结构性回声，可行的回应是划出不求效率的保留区。</li>
+<li>《赛博格宣言》主张人早已是机器与有机体的杂合，人/机、自然/文化的边界从来不是铁壁。</li>
+<li>边界被技术消解后成了可以重新谈判的政治，与 AI 融合时要追问这具合成身体里谁在写规则。</li>
+<li>庄子的汉阴丈人寓言指出：机械带来算计之事，算计之事养出算计之心，心的纯白随之丧失。</li>
+<li>与 AI 共处的清醒路径是在能力上做赛博格，在心性上守住一片不计算得失的纯白。</li>
+</ol>
 </div>
 <div class="deep">
 <h2 data-tts="24e73b1f49dde4b6">深入思考</h2>

@@ -48,6 +48,18 @@ details summary{font-size:0.96rem;font-weight:600;color:#c1c1d5;cursor:pointer;l
 details summary::before{content:"▸";position:absolute;left:0;color:#c39559;transition:transform 0.2s}
 details[open] summary::before{transform:rotate(90deg)}
 details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;padding-left:22px}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -226,6 +238,30 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
 <div class="label">思考题</div>
 <div class="question">你此刻最大的那份犹豫——它需要的是一次笛卡尔式验证、一次帕斯卡式下注、一份休谟式的对归纳的谦逊，还是被当作话头疑到底？你默认用的是哪一种，回避的又是哪一种？</div>
 </div>
+</div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>分布式系统 · 拜占庭容错（Lamport、Shostak、Pease，1982）</b>：笛卡尔的邪恶妖魔就是拜占庭故障假设：不只会出错，还有节点存心骗你。像在都先假设最坏的对手；不像在于，分布式系统不去找一块不可疑的基石，而是靠冗余投票：叛徒少于总数三分之一，诚实节点仍能达成一致。</li>
+<li><b>投资 · 凯利公式（John Kelly，1956）</b>：帕斯卡按期望值下注，凯利指出只看期望值会把人押到破产，下注比例该按长期对数增长来定。像在都把不确定变成算账；不像在于，帕斯卡的无穷收益让全押永远合理，凯利则要你永远留住下一把的本钱。</li>
+<li><b>心理学 · 米肖特的因果知觉（Albert Michotte，1946）</b>：一个色块撞上另一个、前者停后者走，人当场就「看见」了撞击，明知是动画也停不下来。像在都说因果是心加给世界的；不像在于，休谟说它靠反复的恒常联结养成，米肖特的实验里看一次就够，更像知觉自带的装置。</li>
+<li><b>复杂性科学 · 模拟退火（Kirkpatrick 等，1983）</b>：优化卡在局部最优时，先把「温度」调高、容许变差，才跳得出去，再慢慢降温收敛。大疑情像这次升温，让旧框架松动而不是原地精修；不像在于，退火靠随机扰动，禅门的疑是把全部力气压在一个话头上。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>笛卡尔的方法学翻转：怀疑不是瘫痪，而是锻造确定性的工具，挺过最严苛怀疑的才配做地基。</li>
+<li>用「邪恶妖魔」假设悬置感官、数学乃至外部世界之后，唯一不可疑的是正在怀疑的「我」必须存在。</li>
+<li>理性无法证明神是否存在，但不下注本身已是一种下注，人总得以某种姿态生活。</li>
+<li>帕斯卡赌注首次用决策论处理形而上学：证据不足时按回报的不对称性行动，不等证据充分。</li>
+<li>人从未看到原因迫使结果，因果只是大脑由恒常联结养成的习惯投射。</li>
+<li>内省只找到一束流动的知觉，找不到承载知觉的「我」；归纳同样没有逻辑保证。</li>
+<li>休谟的温和怀疑论承认理性能走的路很短，真正支撑生活的是习惯、情感与共同实践。</li>
+<li>禅宗看话禅把疑情当修行：抱住一个逻辑解不开的话头，疑到旧框架自己崩塌。</li>
+<li>大信、大疑、大愤缺一不可：无信则疑变虚无，无疑则信变盲从，无愤则二者只是态度。</li>
+<li>怀疑与信仰是同一种诚实的两面：诚实到底的怀疑，会筛出值得押上的信。</li>
+</ol>
 </div>
 <!-- 深入思考 -->
 <div class="resources">

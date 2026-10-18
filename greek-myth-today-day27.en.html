@@ -45,6 +45,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -233,6 +245,30 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
   </div>
 </div>
 
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>System dynamics · counterintuitive behavior of social systems</b>: Prometheus the forethinker paired with Epimetheus the afterthinker looks a lot like what Jay Forrester described in 1971: the consequences of an intervention surface only after traveling through delayed feedback loops, so we understand them in hindsight. The difference: the myth blames the cost on hubris, systems theory on the structure itself, no matter who steals the fire.</li>
+<li><b>Psychology · ironic process (the white bear study)</b>: The harder Oedipus flees, the more surely he meets the prophecy, the same shape as Daniel Wegner's 1987 white bear experiment: the more you try to suppress a thought, the more the mental process monitoring it drags it back into awareness. The difference: Oedipus lacks information; the suppressor lacks the ability to let go.</li>
+<li><b>Buddhism · Zen's way in daily chores</b>: Camus moves meaning from the summit to the pushing, and the layman Pang Yun wrote that supernatural power and its wondrous use are just "hauling water and carrying firewood," likewise making repetitive daily work the place where meaning happens. The difference: Camus keeps the tension of revolt, man forever facing the absurd; Zen wants the opposition itself to dissolve.</li>
+<li><b>Neuroscience · mirror self-recognition</b>: In 1970 Gordon Gallup used a mirror test to ask whether chimpanzees could recognize themselves. Narcissus at first fails it, taking the reflection for another youth; Ovid has him later realize "that one is me," yet he still cannot leave. The difference: in the test, recognition marks self-awareness; in the myth, the trap begins after recognition.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>The fire Prometheus steals is technē, and technology is an original-sin gift that brings humans near the gods and loads them with burdens only gods can bear.</li>
+<li>Forethought (Prometheus) and afterthought (Epimetheus) together make the human condition: we remake the world with foresight yet see the costs only afterward.</li>
+<li>Technology ethics is not "don't touch the fire" but keeping foresight and hindsight present at once, anticipating costs that surface only later.</li>
+<li>Camus reads Sisyphus as the emblem of the absurd: the universe offers no ready-made meaning, yet a lucid person can still commit fully to the pushing.</li>
+<li>Meaning lies not at the summit but in the pushing; happiness is a revolt the lucid make themselves, with no guarantee from gods, an afterlife, or descendants.</li>
+<li>The central mechanism of Oedipus the King is that the act of escaping fate becomes the very road by which fate arrives.</li>
+<li>Oedipus is blind to himself while sighted and truly sees only after blinding himself; our deepest blind spot usually sits where we evade hardest.</li>
+<li>Narcissus captured by an image and Echo stripped of her own voice stand for two modern ills: the excessive self and the vanished self.</li>
+<li>Algorithms and AI are a smoother pool of water; don't mistake flattery for growth, since a real self grows through friction with others who push back.</li>
+<li>Greek myth matters today not because anyone believes in Zeus but because it supplies a precise vocabulary for desire, labor, fate, and self-image.</li>
+</ol>
+</div>
 <div class="deep">
   <h2>Going Deeper</h2>
   <details><summary>Why did Greek myth, of all things, become the vocabulary of Western psychology?</summary>

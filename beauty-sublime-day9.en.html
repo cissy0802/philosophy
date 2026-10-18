@@ -50,6 +50,18 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
 .ladder .step .num{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:#887139;color:#ffffff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.78rem;padding:0 4px}
 .ladder .step .arrow{color:#c39559;flex-shrink:0}
 .ladder .step strong{color:#c1c1d5}
+.crossx{border:1px solid rgba(143,120,64,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(136,113,57,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#ab9375}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:rgba(162,155,254,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:0.5px}
   .container{padding:16px 14px 40px}
@@ -257,6 +269,30 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
   </div>
 </div>
 
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Evolutionary biology · the handicap principle vs. "the evolution of beauty"</b>: Biology hosts its own version of the beauty-equals-truth debate. Amotz Zahavi's 1975 handicap principle says a peacock's tail is beautiful because it is costly and cannot be faked, an honest signal of fitness. Richard Prum's <i>The Evolution of Beauty</i> (2017) replies that many ornaments are just female preference amplifying itself and need point to nothing. Alike in asking whether beauty vouches for reality; unlike in that evolution has no Beauty itself waiting at the top of the ladder.</li>
+<li><b>Psychology · verbal overshadowing</b>: In 1990 Schooler and Engstler-Schooler had people write a description of a face they had seen; afterwards they were worse at recognizing it, because words swapped a whole perception for coarse labels. Close to Zhuangzi's "the more you say, the less you hear"; unlike it, the experiment measures memory, while Zhuangzi means a whole way of perceiving the world.</li>
+<li><b>Information theory · compression progress</b>: J&uuml;rgen Schmidhuber explains beauty as a regularity an observer can capture in a shorter code, and interestingness as the moment that compression is improving. Alike in Kant's easy harmony of imagination and understanding; unlike in that Kant insists beauty pleases without a concept, while compression is precisely the hunt for a rule.</li>
+<li><b>Investing · the Lindy effect</b>: The Lindy effect, popularized by Nassim Taleb, says a book or technology that has survived longer can be expected to survive longer still: time itself is the evidence. Alike in wabi-sabi trusting only real time, never fake aging; unlike in that Lindy prizes endurance, while wabi-sabi cherishes what is passing away.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>In the <i>Symposium</i>, Plato turns beauty into a ladder that climbs from one beautiful body up to Beauty itself.</li>
+<li>Single beautiful things only participate in an eternal Beauty, so aesthetic experience is a path to truth, not consumption of pleasure.</li>
+<li>Zhuangzi places the highest beauty in nature's unspoken order, where human ornament and speech only subtract.</li>
+<li>"Great beauty does not speak" rejects not art but treating words as beauty: speak, then return to unnamed perception.</li>
+<li>For Kant, beauty pleases universally without a concept, through the free play of imagination and understanding.</li>
+<li>The sublime arises when imagination collapses before the infinite and reason rises, showing we can think beyond what we can sense.</li>
+<li>Generative AI is good at producing well-formed beauty but cannot produce the sublime, which needs a subject rebuilding itself after defeat.</li>
+<li>Wabi-sabi finds beauty in impermanence and imperfection; kintsugi fills cracks with gold so the wound itself becomes the beauty.</li>
+<li>Distressed furniture and vintage filters copy the form of traces; real wabi-sabi requires time that has actually passed.</li>
+<li>The four aesthetics form one compass: upward to abstraction, outward to perception, high to awe, deep to the human trace.</li>
+</ol>
+</div>
 <!-- Going Deeper -->
 <div class="resources">
   <h2>Going Deeper</h2>

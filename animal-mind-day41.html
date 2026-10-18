@@ -52,6 +52,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 .deep details{margin-bottom:12px;border-bottom:1px solid #202020;padding-bottom:10px}
 .deep summary{cursor:pointer;font-weight:600;color:#9383b3;font-size:0.96rem}
 .deep details div{margin-top:8px;font-size:0.92rem;color:#a6a6a6;line-height:1.75}
+.crossx{border:1px solid rgba(143,120,64,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(136,113,57,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#ab9375}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(23,16,115,.35);border-radius:12px;background:rgba(23,16,115,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(23,16,115,.18);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -244,6 +256,30 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 <div class="label">思考题</div>
 <div class="question">下一次面对一个「疑似有心」的存在——一只动物、一个 AI、一个沉默的人——你会先问「我能懂它吗」，还是先问「它算不算数」？两个问题的先后顺序，会不会改变你的对待方式？</div>
 </div>
+</div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>神经科学 · 人类回声定位</b>：盲人 Daniel Kish 靠舌头咔嗒声辨路；2011 年 Thaler 等人的 fMRI 研究发现，这类专家处理回声时动用视觉皮层。像在：人脑也能长出一种「声呐视角」；不像在：那仍是人身上的声呐，离「作为蝙蝠」还隔着一整个身体。</li>
+<li><b>分布式系统 · 两将军问题</b>：经不可靠信道，每次确认都要再被确认，共同知识永远凑不齐。像在：惠子的怀疑同样无限递归；不像在：工程上用超时重传，「够可信」就开工，正如庄子「我知之濠上」。</li>
+<li><b>心理学 · 心智知觉</b>：Gray 与 Wegner 等 2007 年发现，人们沿「能动性」「体验」两轴感知心智，判断谁不该受伤害主要看体验。像在：直觉暗合辛格的感受性判准；不像在：直觉打分未必对应真实的感受能力。</li>
+<li><b>意识科学 · 剑桥意识宣言</b>：2012 年神经科学家宣告，哺乳动物、鸟类及章鱼等都具备意识的神经基础。像在：「谁有心」进了证据清单，辛格的门槛被经验化；不像在：按内格尔，神经基础仍说不出「做章鱼」的滋味。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>一个有机体有意识，当且仅当「作为它存在」对它自己而言有某种感觉。</li>
+<li>科学越客观越要抹去视角，所以测尽一个心灵的数据，也不等于进入它的主观体验。</li>
+<li>内格尔的蝙蝠在今天变成 AI 之问：读出大模型全部权重，仍判断不了它有没有体验。</li>
+<li>辛格把道德地位的门槛从理性和语言移到感受性：凡能感受苦乐者就有利益。</li>
+<li>物种主义与种族主义同构：仅因物种不同就轻视其利益；要求的是平等考量，不是平等对待。</li>
+<li>「你不是我，怎知我不知」揭示他心怀疑可以无限自指，推到底会取消一切交流。</li>
+<li>庄子的「知鱼之乐」不靠逻辑推断，而靠物我交融的当下共在。</li>
+<li>六道轮回与「一切众生悉有佛性」取消人类中心，慈悲是认清众生一体后的自然流露。</li>
+<li>心之边界有两问：能否知他心、该否纳入道德圈；西方倾向精切边界，东方倾向消融边界。</li>
+<li>心智知觉研究显示，人们判断谁不该受伤害，主要看对方能否体验，而非多聪明能干。</li>
+</ol>
 </div>
 <div class="deep">
 <h2 data-tts="dc8204e11f87cb8e">深入思考</h2>

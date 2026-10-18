@@ -51,6 +51,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 .deep details{margin-bottom:12px;border-bottom:1px solid #202020;padding-bottom:10px}
 .deep summary{cursor:pointer;font-weight:600;color:#9383b3;font-size:0.96rem}
 .deep details div{margin-top:8px;font-size:0.92rem;color:#a6a6a6;line-height:1.75}
+.crossx{border:1px solid rgba(201,178,122,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(201,178,122,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#8b7355}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#4a4a4a;line-height:1.8}
+.crossx b{color:#8b7355}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.35);border-radius:12px;background:rgba(162,155,254,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.18);font-size:0.93rem;line-height:1.75;color:#2d3436}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -252,6 +264,30 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
   </div>
 </div>
 
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Business · Goodhart's law (Charles Goodhart, 1975)</b>: In its popular form, when a measure becomes a target it ceases to be a good measure. This is Enframing inside management: decree that only the quantifiable is real, and people and organizations grow to fit the metric. The difference: the Goodhart-style fix is a better metric; Heidegger would say swapping metrics keeps you inside Enframing, and what needs guarding is the space no metric reaches.</li>
+<li><b>Evolution · The Red Queen hypothesis (Leigh Van Valen, 1973)</b>: A species must keep evolving just to hold its place among co-evolving rivals, the same shape as Ellul's autonomous technique: nobody wants to speed up, but whoever stops is out. Unlike evolution, where no one can call a halt, Ellul's reserves assume a person can still keep one patch of ground where they do not run.</li>
+<li><b>Psychology · The overjustification effect (Lepper, Greene and Nisbett, 1973)</b>: Preschoolers who liked drawing, once promised a certificate for it, later chose to draw less in free play; an added calculation rewrote the original motive, much as the cunning heart crowds out pure simplicity. Unlike the experiment, where the extra ingredient is a reward, Zhuangzi says the machine alone is enough to breed calculation.</li>
+<li><b>Evolution · Endosymbiosis (Lynn Margulis, 1967)</b>: Mitochondria were once bacteria swallowed by a cell, so every eukaryotic cell has always been a hybrid, which fits the cyborg claim that humans were never pure. The difference: the terms of endosymbiosis were worked out by long evolution with no one negotiating, while Haraway wants humans present and actively fighting over who writes the rules.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>Philosophy of technology starts by rejecting technological neutrality: once a tool is in hand, it begins rewriting its user.</li>
+<li>Heidegger holds that the essence of technology is nothing technological but a mode of revealing, a way of seeing the world.</li>
+<li>Modern technology's Enframing turns rivers and even people into standing-reserve on call; the phrase "human resources" is the symptom.</li>
+<li>Enframing's deepest violence is concealing every other way of meeting the world; the antidote is deliberate space no metric can capture.</li>
+<li>Ellul argues technique has become autonomous: efficiency multiplies itself, each technical problem gets another technique, and humans ratify afterward.</li>
+<li>The fear of being left behind is a structural echo of autonomous technique; a workable answer is a reserve where efficiency is not the goal.</li>
+<li>A Cyborg Manifesto claims humans are already hybrids of machine and organism, and the human/machine and nature/culture walls were never solid.</li>
+<li>Once technology dissolves boundaries they become negotiable politics, so merging with AI means asking who writes the rules inside the composite body.</li>
+<li>Zhuangzi's parable of the old gardener says machines bring calculating affairs, those breed a calculating heart, and the heart's pure simplicity is lost.</li>
+<li>A clear-eyed way to live with AI is to be a cyborg in capability while keeping a region of the heart that never calculates gains and losses.</li>
+</ol>
+</div>
 <div class="deep">
   <h2>For Deeper Thought</h2>
   <details><summary>Both Heidegger and Ellul see technology as an "autonomous force," but one speaks of a "mode of revealing" and the other of a "social system"—whose diagnosis fits AI better?</summary><div>They are complementary. Heidegger's "Enframing" explains why AI predetermines everything (people, relationships, meaning) as computable data, touching the <strong>cognitive layer</strong>; Ellul's "technical autonomy" explains why the AI race cannot stop and why efficiency-logic auto-captures institutions, touching the <strong>systemic layer</strong>. One asks "how does it make us see the world," the other "can we still hit the brakes"—one concerns meaning, the other power; neither alone is complete.</div></details>

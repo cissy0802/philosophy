@@ -44,6 +44,18 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#a6a6a6;line-height:1.75}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(143,120,64,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(136,113,57,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#ab9375}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(23,16,115,.35);border-radius:12px;background:rgba(23,16,115,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(23,16,115,.18);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -212,6 +224,31 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 <div class="question">回想你最近一次重要的「理解」（一份材料、一个人、一段 AI 回答）：你停在了哪一步——还原了原意？体认了处境？坦承了前见？还是真正把它炼成了自己的判断？缺的那一步，正是你的功课。</div>
 </div>
 </div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>神经科学 · 镜像神经元</b>：1990 年代初，里佐拉蒂团队在猕猴脑中发现，看别人抓取和自己抓取会激活同一批神经元，后来常被用来支持「靠内部模拟读懂他人」。像在：狄尔泰的「重新体验」似乎有了一个神经底座；不像在：镜像神经元模拟的是一个动作，狄尔泰要重活的却是一整段生命的意义。</li>
+<li><b>信息论 · 香农的切割</b>：1948 年香农开篇就声明，信息的语义与工程问题无关，只计算符号能否被准确送达。像在：这正是狄尔泰「解释／理解」那条界线，从工程一侧划下；不像在：香农主动搁置意义换来可计算性，狄尔泰则要替意义守住地盘。</li>
+<li><b>心理学 · 确认偏误</b>：1960 年沃森的 2-4-6 实验里，多数人只举符合自己猜想的例子，很少去试能推翻它的。像在：「六经注我」丢掉训诂根基后，正是这样只挑印证；不像在：象山的本心自认是普遍天理，而非一己偏好。</li>
+<li><b>佛学 · 筏喻</b>：佛陀说法如筏，渡河之后便该放下，《金刚经》说「法尚应舍」。像在：经典只是工具，归宿在觉悟者自身，与「六经皆我注脚」同构；不像在：佛学连「我」也要放下，象山却以本心为最后的根据。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>诠释学追问理解的本性：意义是在文本里等着被恢复，还是在读者身上被生成。</li>
+<li>狄尔泰划界：自然科学从外部做因果解释，精神科学从内部重新体验他人生命的表达。</li>
+<li>书信和法典都是生命的客观化，理解就是穿过这些痕迹，回到注入其中的鲜活体验。</li>
+<li>伽达默尔翻转启蒙：前见不是理解的障碍，而是理解得以启动的前结构。</li>
+<li>理解不是还原作者原意，而是解释者与文本两个视域交融，生成一个更大的新视域。</li>
+<li>朱熹的读书法先训诂、再章句、后义理，以虚心涵泳克制成见，让文本先说话。</li>
+<li>陆九渊主张心即理：读经是唤醒本已具足的本心，经典只是自身觉悟的注脚。</li>
+<li>六经注我一旦脱离训诂根基，就容易堕为只挑印证、把偏见当洞见。</li>
+<li>文本一极与读者一极在欧亚各自独立出现，说明这道张力是诠释活动的普遍骨架。</li>
+<li>完整的理解可以分四步走：虚心还原原意，体认说话者处境，坦承自身前见，最后内化为判断力。</li>
+</ol>
+</div>
+
 <!-- 深入思考 -->
 <div style="margin-top:40px">
 <div class="label" style="color:#a29bfe;font-size:0.95rem;font-weight:700;letter-spacing:1.5px">深入思考</div>

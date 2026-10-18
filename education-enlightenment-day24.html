@@ -47,6 +47,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -222,6 +234,30 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 <div class="label">思考题</div>
 <div class="question">回想你正在帮助（或亲身进行）的一段学习：此刻它最缺哪把钥匙——诘问、时机、留白，还是真实的「做」？如果只允许改一个变量，你会改哪个？</div>
 </div>
+</div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>神经科学 · 奖赏预测误差（Wolfram Schultz，1997）</b>：多巴胺神经元只对预期与结果之间的落差放电，意料之中的事几乎激不起反应，学习靠误差驱动；苏格拉底的诘问就是先制造落差。不像在于：大脑的更新悄无声息，诘问却逼人清醒地承认自己不懂。</li>
+<li><b>佛学 · 禅门「啐啄同时」</b>：雏鸡在壳内啄叫「啐」，母鸡在壳外应啄叫「啄」，早一刻晚一刻都不成，这正是「不愤不启」的时机学。不像的是，禅师等的是一次打破分别心的顿悟，孔子等的是学生能举一反三、顺着推下去。</li>
+<li><b>生物进化 · 人类的长童年（Alison Gopnik）</b>：发展心理学家 Gopnik 认为，人类童年格外漫长，是被保护起来的探索期：孩子像高温阶段的模拟退火，随机乱试、广撒假设，成年后才收敛到高效利用。卢梭的「浪费时间」由此得到一个演化理由。不像在于：卢梭说天性是善的，Gopnik 只说它对物种有用，不谈善恶。</li>
+<li><b>商业 · 精益创业的「构建—测量—学习」（Eric Ries，2011）</b>：先做最小可行产品，用真实反馈检验假设，再修正方向，和杜威「困惑→假设→行动中检验→反省」几乎是同一个回路。不像的是，创业循环检验的是市场，杜威要改造的是做事之人自己的经验。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>苏格拉底的产婆术把教师比作产婆：教师自己不产出真理，只用诘问帮学习者把理解分娩出来并加以检验。</li>
+<li>理解是学习者主动重建的，未经自己分娩的「知识」只是死记的意见，换个场合就用不出来。</li>
+<li>因材施教的文本源头是同一个问题给出相反答案：子路冒进就让他退，冉有退缩就推他进。</li>
+<li>孔子要等学生求而未得、卡在临界点时才点拨，教育从学习者的求知状态出发，而不是从教师的进度出发。</li>
+<li>卢梭的消极教育做减法：儿童不是缩小的大人，教育先保护天性、防住恶习，而不是抢着灌输知识和道德。</li>
+<li>无目的的游戏与发呆有教育价值，排得过满的日程和过早的优化会扼杀孩子的好奇心。</li>
+<li>杜威认为教育不是为未来生活做准备，而是生活本身；学习是困惑、假设、行动中检验、反省的探究过程。</li>
+<li>「做中学」不是动手玩，而是在解决真实问题中让经验产生意义，这一步无法外包给任何人或 AI。</li>
+<li>四种教育观合成一套学习的操作系统：诘问定方向，愤悱定时机，留白定节律，真实项目定载体。</li>
+<li>答案泛滥的时代获取信息贬值，稀缺的是亲自困惑和亲手做的过程，AI 该当产婆和脚手架，而不是替人学。</li>
+</ol>
 </div>
 <div class="deep">
 <h2 data-tts="a009be534a2a25d2">深入思考</h2>

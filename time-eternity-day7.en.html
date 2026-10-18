@@ -45,6 +45,18 @@ details summary{font-size:0.96rem;font-weight:600;color:#c1c1d5;cursor:pointer;l
 details summary::before{content:"▸";position:absolute;left:0;color:#c39559;transition:transform 0.2s}
 details[open] summary::before{transform:rotate(90deg)}
 details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;padding-left:22px}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem}
   .container{padding:16px 14px 40px}
@@ -229,6 +241,31 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
     <div class="label">Reflection</div>
     <div class="question">Of these four lenses, which is your default mode? Which is most neglected? If you spent a week patching the most neglected one, where in your schedule would the change show up most visibly?</div>
   </div>
+</div>
+
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Neuroscience · the three-second present</b>: Experiments by the German psychologist Ernst Pöppel and others suggest the brain binds events within roughly two to three seconds into a single experienced "now." Like Augustine, this gives the present a thickness that the mind stretches open; unlike him, it is only a few seconds of integration, nowhere near a distension of memory and expectation spanning a life.</li>
+<li><b>Distributed systems · Lamport clocks</b>: Leslie Lamport's 1978 paper showed that a distributed system has no trustworthy global clock; events can be ordered only by the "happened-before" relation between them. Like Nāgārjuna, time reduces to a web of mutual dependence; unlike him, Lamport's relation has a fixed direction and can be computed, while Nāgārjuna denies inherent existence even to the relation.</li>
+<li><b>Evolution · replaying the tape of life</b>: In <i>Wonderful Life</i> (1989), Stephen Jay Gould imagined rewinding evolution and playing the tape again: a different world would grow. This echoes Bergson's creative evolution, where what comes downstream cannot be deduced from upstream and time irreversibly produces novelty; the difference is that Gould stresses contingency, Bergson an inner vital impulse.</li>
+<li><b>Biology · circadian rhythm</b>: The 2017 Nobel Prize in Physiology or Medicine went to Hall, Rosbash and Young for uncovering the molecular clockwork: protein levels in each cell rise and fall once a day, internalizing the beat of the Earth's rotation. Like the Yijing's buyi, the constant lives inside the change; unlike it, the body clock drifts and must be reset by daylight every day.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>For Augustine, time is not in the external world but is the mind's distension across memory, attention and expectation (distentio animi).</li>
+<li>Asking what God did "before" creation is a mistaken question: time arrived with created things, and God dwells in an eternity outside time.</li>
+<li>The present of past things is memory, the present of present things is sight, and the present of future things is expectation, all held in present consciousness.</li>
+<li>Nāgārjuna uses the four-cornered negation against the claim that the three times are real: past, present and future arise only in mutual reference, none with inherent existence.</li>
+<li>Time is not a container to be used up but a web of dependent origination; "I have no time" hides an assumption that time is a thing.</li>
+<li>Clock time is a spatialized, homogeneous, divisible measure; durée is real time, qualitative and indivisible.</li>
+<li>In durée the previous moment is not replaced but permeates the present and organizes into a new whole, so time irreversibly creates novelty.</li>
+<li>The "yi" of the Yijing carries three meanings: bianyi, everything changes; buyi, the laws of change hold constant; jianyi, those laws can be grasped simply.</li>
+<li>Western eternity lies outside time, while the Yijing's buyi lives inside change itself as change's own rhythm.</li>
+<li>The four views of time complement rather than exclude each other: mental distension, relational web, qualitative durée and the constant within change form one operating system for time.</li>
+</ol>
 </div>
 
 <!-- Deep questions -->

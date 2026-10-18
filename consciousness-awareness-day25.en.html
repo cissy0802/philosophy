@@ -50,6 +50,19 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(201,178,122,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#ab9375}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.35);border-radius:12px;background:rgba(162,155,254,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.18);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
+
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -246,6 +259,32 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
     <div class="label">Reflection</div>
     <div class="question">Having read four views of consciousness, return to yourself: the awareness reading this very line — can you describe its directedness, see the seeds behind it, ask why it feels like anything, and abide in it for one second?</div>
   </div>
+</div>
+
+<div class="crossx">
+  <div class="label">Crossovers</div>
+  <ul>
+    <li><b>Neuropsychology · Blindsight</b>: In 1974 Weiskrantz and colleagues reported patients with damage to primary visual cortex who insisted they saw nothing in part of the visual field, yet, forced to guess, pointed to a light there far above chance. Chalmers pries function apart from experience; in the clinic some people actually live inside that gap. Alike: the processing is there, the feeling is not. Unlike: blindsight function is degraded and partial, whereas a philosophical zombie must be functionally flawless.</li>
+    <li><b>Quantum physics · Relational quantum mechanics</b>: Rovelli proposed in 1996 that a physical quantity has a definite value only relative to another system; there is no state outside all relations. That echoes Husserl's intentionality: no consciousness without an object, no object that appears to no one. Unlike: Rovelli's "observer" can be any physical system and needs no consciousness at all.</li>
+    <li><b>Distributed systems · Event sourcing</b>: Current state is not stored on its own but rebuilt by replaying a log of past events, and every new action is appended to the log. Yogācāra's loop, in which seeds give rise to manifest activity and activity plants new seeds, has the same shape: the world before you is old experience replayed. Unlike: the log is append-only and immutable, while practice aims to transform the seeds themselves.</li>
+    <li><b>Investing · Graham's "Mr. Market"</b>: In <i>The Intelligent Investor</i> (1949), Mr. Market moodily quotes a new price every day, and you may trade or simply watch. A thought is like that quote; seeing it does not oblige you to follow it, and that is the gap mindfulness opens. Unlike: Graham has you judge the quote against intrinsic value, while mindfulness sets aside even the judging.</li>
+  </ul>
+</div>
+
+<div class="tk">
+  <div class="label">Ten takeaways</div>
+  <ol class="takeaways">
+    <li>Intentionality means consciousness is always consciousness of something, so subject and object cannot be separated.</li>
+    <li>Husserl's epoché suspends judgment about whether the world exists in order to describe how things actually appear.</li>
+    <li>Yogācāra holds that every object we experience is a transformation of consciousness, never a world outside the mind.</li>
+    <li>Among the eight consciousnesses, the ālaya stores all seeds while manas constantly mistakes the ālaya for a self.</li>
+    <li>Chalmers separates the easy problems of function from the hard problem of why any processing is felt at all.</li>
+    <li>A conceivable philosophical zombie shows experience is not entailed by function, so fluent AI self-report proves nothing.</li>
+    <li>The Satipaṭṭhāna Sutta defines mindfulness as non-judgmental, non-clinging awareness of body, feelings, mind, and phenomena.</li>
+    <li>Suffering lies in identifying with thoughts, and seeing a thought arise opens a gap of choice between stimulus and reaction.</li>
+    <li>Blindsight patients locate lights they say they cannot see, showing that processing and experience can come apart clinically.</li>
+    <li>The West asks what consciousness is, the East trains how to abide in it, and first-person practice can settle what theory cannot.</li>
+  </ol>
 </div>
 
 <div class="deep">

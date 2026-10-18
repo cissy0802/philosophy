@@ -44,6 +44,18 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#a6a6a6;line-height:1.75}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -211,6 +223,30 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 <div class="label">思考题</div>
 <div class="question">挑一件你从未质疑过的日常安排（一个 KPI、一条家规、一个信息源），依次过四道工序：谁的利益？谁定的「为何」？哪段历史积淀让你觉得它自然？换到对立立场看它是什么样？——过完之后，你还会照旧执行吗？</div>
 </div>
+</div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>心理学 · 系统合理化理论（John Jost 与 Mahzarin Banaji，1994）</b>：处境不利的人常比受益者更卖力地为现状辩护，两人的论文标题直接借用了「虚假意识」一词。像马克思说的统治思想被被统治者内化；不像在：心理学把根源归于人对确定和秩序的需要，不追问是谁的利益。</li>
+<li><b>商业 · 古德哈特定律（Charles Goodhart，1975）</b>：一项指标一旦成为考核目标，就不再能好好度量它原本要度量的东西。像工具理性只顾「如何」把数字做高，忘了数字代表的「为何」；不像在：古德哈特视之为可修补的度量故障，阿多诺认为病根在理性本身。</li>
+<li><b>佛学 · 唯识的「熏习」与「种子」</b>：唯识宗说身口意的每次造作都会熏成种子、藏入阿赖耶识，日后成为人看世界的底色，和李泽厚的积淀同构。不像在：唯识要转识成智、净化这些种子；李泽厚把积淀视为人类历史的成果，要辨别着继承。</li>
+<li><b>分布式系统 · N 版本编程</b>：几支团队按同一规格各写一版程序再比对输出，分歧处暴露单一版本自己看不见的缺陷，像柄谷的视差。但 Knight 与 Leveson 1986 年的实验发现，独立开发的版本常在同样的输入上一起出错，思路相近的团队共享盲点；视差要起效，立场得真正不相容。不像在：工程最后投票取多数，柄谷要的是落差本身。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>异化是劳动者与产品、与劳动活动、乃至与自己的人性相分离，只在劳动之外才感到自在。</li>
+<li>商品拜物教让人与人的社会关系颠倒地表现为物与物的关系，统治思想则是统治阶级利益的伪装。</li>
+<li>最深的支配是让被支配者觉得本该如此，批判的第一步是看穿「自然」其实是「人为」。</li>
+<li>阿多诺与霍克海默认为，启蒙理性窄化为只问「如何」、不问「为何」的工具理性，最终反噬为新神话。</li>
+<li>文化工业用标准化的「伪个性」批量安抚大众，今天千人千面的推荐信息流几乎是它的完成态。</li>
+<li>积淀说主张理性积淀在感性中、历史积淀在心理中，人自以为的「直觉」其实是历史写进去的。</li>
+<li>李泽厚把马克思的实践与康德的主体熔于一炉，又以「西体中用」翻转「中体西用」，完成批判理论的中国再造。</li>
+<li>柄谷行人的跨越性批判认为体系内看不见体系的墙，真理只在两个不相容立场之间的「视差」中现形。</li>
+<li>四种批判可合成一套操作系统：利益追问、目的夺回、自我考古、视差演练。</li>
+<li>批判不是愤世，而是先看穿系统的意识形态，再决定用它、改它还是绕开它。</li>
+</ol>
 </div>
 <!-- 深入思考 -->
 <div style="margin-top:40px">

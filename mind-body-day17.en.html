@@ -43,6 +43,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(201,178,122,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#8b7355}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#4a4a4a;line-height:1.8}
+.crossx b{color:#8b7355}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.35);border-radius:12px;background:rgba(162,155,254,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.18);font-size:0.93rem;line-height:1.75;color:#2d3436}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem}
   .container{padding:16px 14px 40px}
@@ -231,6 +243,31 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
     <div class="label">Reflection</div>
     <div class="question">If "mind uploading" were truly on the table, which view of mind and body would you default to when deciding whether to sign? Would the other three flip your answer?</div>
   </div>
+</div>
+
+<div class="crossx">
+  <div class="label">Crossovers</div>
+  <ul>
+    <li><b>Quantum mechanics · Wigner's consciousness-causes-collapse</b>: Descartes' interaction problem resurfaced in 1961, when the physicist Eugene Wigner, in "Remarks on the Mind-Body Question," proposed that an observer's consciousness collapses the wave function, so mind acts directly on matter. The likeness: both give an immaterial mind a lever on matter, with measurement standing in for the pineal gland. The difference: Wigner later abandoned the idea, and mainstream physics needs no consciousness to complete a measurement.</li>
+    <li><b>Biology · Autopoiesis (Maturana and Varela)</b>: A living cell keeps replacing its own molecules while holding on to one organization, alive only through a continuous flow of matter, a process rather than a thing, just like Zhuangzi's fire. The difference: autopoiesis is about a system maintaining itself, while Zhuangzi's fire must pass from this log to the next, so the stress falls on transmission, not self-maintenance.</li>
+    <li><b>Neuroscience · Patient H.M.'s mirror drawing (Brenda Milner, 1962)</b>: H.M., unable to form new memories, practiced mirror drawing for days and kept improving, yet each time said he had never done it: a clean case of Merleau-Ponty's body that knows. The difference: neuroscience assigns this knowledge to a separate memory system, drawing yet another line inside the brain, whereas Merleau-Ponty meant the whole body engaged with its world.</li>
+    <li><b>Distributed systems · Live migration of virtual machines</b>: A Cartesian mind resembles a virtual machine: its running state can be fully serialized and moved from one physical host to another without interruption, which is exactly what mind uploading imagines. The difference: a VM's state is separated from its hardware by design, whereas whether a brain's state and hardware can be cut that cleanly is the very premise dualism never proved.</li>
+  </ul>
+</div>
+<div class="tk">
+  <div class="label">Ten takeaways</div>
+  <ol class="takeaways">
+    <li>Descartes splits reality into mind (thinking substance) and body (extended substance), two essentially different substances: classic mind-body dualism.</li>
+    <li>Dualism leaves the interaction problem: how an unextended mind moves a physical body, which locating it in the pineal gland never explained.</li>
+    <li>"The body is firewood, the spirit is fire; the wood burns out but the fire passes on": Zhuangzi treats spirit as a process continuing in the flux of qi.</li>
+    <li>The fire is neither identical to one log nor able to exist apart from wood, so the image is neither dualism nor reduction of mind to body.</li>
+    <li>"I am my body": for Merleau-Ponty the body is not an object steered by the mind but our very way of being in the world.</li>
+    <li>The body schema is pre-reflective bodily knowledge; catching a falling cup or a blind person's cane shows perception comes before "I think."</li>
+    <li>Yogacara holds that body and mind are both appearances of one stream of consciousness, dissolving Descartes' interaction problem at its root.</li>
+    <li>The store-consciousness holds seeds that manifest body and world, and manas grasps that flow as a self, so the sense of self is constructed.</li>
+    <li>The four views form a spectrum from split to union (dualism, process, embodiment, non-duality), useful for auditing, legacy, embodiment, and loosening boundaries.</li>
+    <li>Amnesic patient H.M. got better at mirror drawing without remembering any practice: a case of the body knowing what words cannot tell.</li>
+  </ol>
 </div>
 
 <div class="deep">

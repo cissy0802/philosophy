@@ -43,6 +43,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(143,120,64,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(136,113,57,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#ab9375}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(23,16,115,.35);border-radius:12px;background:rgba(23,16,115,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(23,16,115,.18);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -233,6 +245,30 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
   </div>
 </div>
 
+<div class="crossx">
+  <div class="label">Crossovers</div>
+  <ul>
+    <li><b>Distributed systems · Raft's single leader</b>: al-Fārābī's virtuous city resembles the Raft consensus algorithm (2014): every node follows one leader, as the heart governs the body. The difference: any Raft node can become leader and a lost one is simply re-elected; al-Fārābī's ruler stands by virtue and revelation, and his city has no protocol for swapping hearts.</li>
+    <li><b>Neuroscience · Sensory deprivation</b>: in 1954 John Lilly built the flotation isolation tank at the US National Institute of Mental Health, nearly turning the Floating Man into a real experiment. The likeness: both strip away the senses to see what is left of the self. The difference: deprived subjects rarely reach a lucid "I am"; they get hallucinations and blurred body boundaries, a hint that the everyday sense of self is partly sustained by a steady stream of sensory input.</li>
+    <li><b>Buddhism · Momentariness</b>: al-Ghazālī's Ashʿarite school held that God re-creates the world at every instant, which mirrors the Abhidharma doctrine of momentariness: things are not enduring substances but strings of moments with no inner necessity binding one to the next. The difference: Buddhism has no creator, and succession runs on dependent conditions; al-Ghazālī hands it to God's will.</li>
+    <li><b>Evolution · Multilevel selection</b>: Sober and D. S. Wilson (1998) argued that selfish members win within a group, while more cohesive groups win between groups. The rise and fall of ʿaṣabiyya is a tug-of-war between these two levels: in hardship, competition between groups dominates; in affluence, self-interest spreads within. The difference: Ibn Khaldūn describes culture and character over generations, not gene frequencies.</li>
+  </ul>
+</div>
+<div class="tk">
+  <div class="label">Ten takeaways</div>
+  <ol class="takeaways">
+    <li>Between the 8th and 14th centuries, Baghdad's House of Wisdom translated and advanced Greek texts, making the Islamic world a global center of philosophy and science.</li>
+    <li>Al-Fārābī treats the virtuous city as an organism whose health depends on the whole cooperating toward one highest good, not on who holds power.</li>
+    <li>The "Second Teacher" fuses philosopher-king and prophet: the ruler grasps truth by reason and translates it for the public through imagination, that is, revelation.</li>
+    <li>Avicenna separates essence from existence: all things are merely possible existents, and only the Necessary Existent has existence as its essence.</li>
+    <li>The Floating Man thought experiment holds that, stripped of all senses and body, a person would still affirm their own existence, so self-awareness does not depend on the body.</li>
+    <li>The Incoherence of the Philosophers argues that we observe only fire followed by burning cotton, never the necessity of causation itself.</li>
+    <li>Al-Ghazālī's occasionalism credits every burning to God's direct creation, and his causal skepticism precedes Hume's by about seven hundred years.</li>
+    <li>Dynasties rise and fall on group solidarity (ʿaṣabiyya), which is forged in hardship and dissolved by affluence over roughly three generations.</li>
+    <li>Ibn Khaldūn's science of civilization explains history through economics, geography and group psychology, nearly five centuries before Comte named sociology.</li>
+    <li>Denying metaphysical necessity and seeking empirical regularity do not conflict: the first rejects "A must cause B," the second describes "A tends to accompany B."</li>
+  </ol>
+</div>
 <div class="deep">
   <h2>Going Deeper</h2>
   <details><summary>Al-Ghazālī almost single-handedly weakened the eastern Islamic philosophical tradition. Was this a victory for thought, or a loss for civilization?</summary><div>Both are true. As thought, he defended God's free will, and his critique of causation even anticipated Hume — a deepening, not a regression. But as an institutional consequence, pure speculative philosophy was marginalized in the East and natural inquiry lost some of its drive. This shows that "depth of thought" and "openness of a civilization" need not move together.</div></details>

@@ -49,6 +49,18 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -215,6 +227,31 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
     · <strong>海德格尔（本真召唤）</strong>：让死亡成为照亮生命的探照灯——有限性逼出选择，选择构成本真。<br/>
     · <strong>佛学（动力学解脱）</strong>：看穿"我"与"生死"皆为缘起——熄灭驱动力，自由不在彼岸，就在此时此刻。<br/>
     四种姿态可以并用而非互斥：伊壁鸠鲁先卸除恐惧（解除当下情绪占用）；庄子把视野放大（避免被局部得失牵动）；海德格尔加压（提醒有限性，激活承诺）；佛学解锁底层（让所有视角自身也成为可放下的）。这是一套从浅到深的"生死操作系统"——AI 可以延展寿命，但不会代替你穿越这套内功。在工具空前强大的时代，"如何面对结束"这件事，反而成为最不可外包的核心能力。</p>
+</div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>心理学 · 影响偏差（Daniel Gilbert 与 Timothy Wilson）</b>：人总高估坏事发生后自己会痛多深、痛多久，低估了心理的自愈力；伊壁鸠鲁也说，怕的那份丧失感多半不会如期到来。不像在：吉尔伯特说痛会来，只是更轻更短；伊壁鸠鲁说死亡时连承受者都不在。</li>
+<li><b>生物发育 · 细胞凋亡（Kerr、Wyllie、Currie，1972 年命名）</b>：胚胎的手指是靠指间细胞按程序死去才分开的，「方生方死」在发育里是字面事实：没有局部的死，就没有完整的形。不像在：凋亡服务于个体存活，庄子的齐物不让死替生打工。</li>
+<li><b>心理学 · 恐惧管理理论（Greenberg、Pyszczynski、Solomon，1986）</b>：数百项实验显示，被提醒自己会死的人，会更用力地捍卫所属群体的世界观、更排斥异己。像海德格尔的「常人」：人借群体躲开死亡。不像在：海德格尔要人直面死亡、从常人中脱身，实验里的死亡提醒却把人往群体里推得更深。</li>
+<li><b>商业 · 事前验尸（Gary Klein，2007）</b>：项目开工前先假设它已经彻底失败，让团队倒推失败原因，能揪出平时没人敢说的风险。像「先行进入死亡」：从终点回看此刻。不像在：事前验尸是为了躲开失败，海德格尔的死亡躲不开，只能认领。</li>
+<li><b>分布式系统 · 混沌猴子（Netflix）</b>：Netflix 故意在生产环境随机杀掉服务器，逼系统不依赖任何一台机器，服务在节点不断生灭中延续，像「无我而相续」。不像在：工程师要的是服务永不停止，佛学要的恰是让驱动轮回的执取停下来。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>伊壁鸠鲁的论证：我们存在时死亡未到，死亡来时我们已不在，所以死亡与我们无关。</li>
+<li>恐惧死亡是一个范畴错误：把「不存在」想象成一种还需要有人去承受的痛苦。</li>
+<li>卢克莱修的对称论证：没人为出生前的漫长缺席痛苦，死后的缺席是同一种「我之缺席」。</li>
+<li>庄子「鼓盆而歌」不是无情：他先承认悲伤，再把生死看成气聚成形、形散归气的四时相变。</li>
+<li>「方生方死，方死方生」：每一刻都有一部分自己在死去、一部分在新生，生死是同一过程的两个相位。</li>
+<li>海德格尔说，死亡是此在最本己、无可关联、不可超越、确知却何时无定的可能性。</li>
+<li>先行进入死亡，才能把人从「常人」的麻木中唤回，逼出真正属于自己的选择。</li>
+<li>佛学的轮回不是不变的灵魂换身体，而是无明与执取推动的五蕴聚散模式一再重启。</li>
+<li>涅槃不是去往另一个地方，而是熄灭执取这股驱动力；大乘因此说生死即涅槃。</li>
+<li>四种姿态可以依次并用：先卸除恐惧，再放大视野，然后用有限性加压，最后连这些视角也放下。</li>
+</ol>
 </div>
 <!-- 深入思考 -->
 <div class="resources">

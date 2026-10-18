@@ -42,6 +42,18 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#a6a6a6;line-height:1.75}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(143,120,64,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(136,113,57,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#ab9375}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.35);border-radius:12px;background:rgba(162,155,254,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.18);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:0.5px}
   .container{padding:16px 14px 40px}
@@ -222,6 +234,31 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
   </div>
 </div>
 
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Quantum mechanics · Is the wavefunction real or bookkeeping?</b> Plato's question returns in physics: is the wavefunction a state of the world itself (psi-ontic), or a record of our knowledge about it (psi-epistemic)? The 2012 PBR theorem of Pusey, Barrett and Rudolph ruled out a large class of pure-bookkeeping models under certain assumptions. The difference: physicists can narrow their dispute with theorems and experiments, while no experiment yet exists for whether numbers exist.</li>
+<li><b>Distributed systems · FLP impossibility</b>: Brouwer refuses to infer existence from the absence of a counterexample; in an asynchronous network, a missing heartbeat does not prove a node is dead. Fischer, Lynch and Paterson showed in 1985 that if even one process may crash, no deterministic algorithm can guarantee consensus. Alike in demanding a positive witness; unlike in that FLP is stuck on time, Brouwer on infinity.</li>
+<li><b>Evolution · Climbing Mount Improbable</b>: Dawkins used this 1996 image to show that complex organs like the eye are climbed step by step through countless small improvements, much as each doubling of the polygon in circle-cutting shrinks the error a little. The difference: Liu Hui had a definite circle to approach, while evolution has no target and often stalls on a local peak.</li>
+<li><b>Neuroscience · Bees that know zero</b>: in 2018 Howard, Dyer and colleagues reported in Science that bees trained to choose the smaller number ranked a blank card below one, as if placing zero on a number line. Alike in treating nothing as a comparable quantity; unlike in that bees only rank, far from writing rules for computing with zero, and some researchers think they were merely tracking reward frequency.</li>
+<li><b>Business · Goodhart's law</b>: when a measure becomes a target, it ceases to be a good measure; every KPI system misses part of what it means to capture, the same shape as a formal system that always has true statements beyond its reach. The difference: Goodhart failures come from people gaming the metric, while Gödel's incompleteness holds even when nobody is playing any game.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>Platonism holds that mathematical objects exist independently of the mind, so mathematics is discovered and every drawn circle is a copy of the perfect one.</li>
+<li>The unreasonable effectiveness of mathematics is often cited for realism, while the brain's innate number sense hints that numbers may be intuitions carved by evolution.</li>
+<li>After Russell's paradox triggered the foundational crisis, formalism treated mathematics as a symbol game that need only be proved consistent.</li>
+<li>Brouwer's intuitionism holds that only what can be constructed exists, and so rejects the law of excluded middle for infinite sets.</li>
+<li>Gödel's incompleteness theorems show that any sufficiently strong consistent formal system has unprovable truths and cannot prove its own consistency.</li>
+<li>The decision problem has a negative answer: no mechanical procedure can decide every mathematical statement, which gives computability a boundary.</li>
+<li>Liu Hui's circle-cutting method doubles the sides of an inscribed polygon to approach the circle, the closest Chinese mathematics came to the idea of a limit.</li>
+<li>The Chinese procedure tradition centers on executable algorithms, where what can be computed is what is real, converging with constructivism.</li>
+<li>In 628 Brahmagupta first treated zero as a number with rules of operation, and division by zero was later read as an unchanging infinite quantity.</li>
+<li>Mathematical zero and Buddhist emptiness share the Sanskrit root shunya, and both recast nothing as the condition that lets structure stand.</li>
+</ol>
+</div>
 <div class="card" style="background:#0c0a1d">
   <div class="label" style="color:#a29bfe;font-size:0.95rem">Deeper Reflections</div>
 

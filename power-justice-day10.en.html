@@ -45,6 +45,18 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -229,6 +241,31 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
   </div>
 </div>
 
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Evolutionary biology · Worker policing in honeybees (Ratnieks &amp; Visscher, 1989)</b>: In a hive, workers eat eggs laid by other workers so that only the queen reproduces; "each doing its own work" is kept up by everyone watching everyone. The difference: what holds this division of labor together is kinship arithmetic, not the reason that knows the good which Plato demanded.</li>
+<li><b>Behavioral economics · Real people behind the veil (Frohlich &amp; Oppenheimer, 1992)</b>: Lab groups chose distribution rules without knowing which income bracket they would land in; most did not pick "help the worst-off only" but "maximize the average, subject to a floor." The likeness: people behind the veil do protect the weak. The difference: real people are far less pessimistic about risk than Rawls assumed.</li>
+<li><b>Business · Goodhart's law (Charles Goodhart, 1975)</b>: Once a measure becomes a target, it stops telling you the truth, and Han Feizi's "matching names to realities" is a race against exactly this. The difference: Han Feizi trusted that technique kept hidden in the ruler's breast could stay ahead of ministers' gaming; Goodhart's point is that any watched metric decays sooner or later.</li>
+<li><b>Distributed systems · Byzantine fault tolerance (Lamport, Shostak &amp; Pease, 1982)</b>: The protocol assumes no node is honest by default, and as long as fewer than a third of nodes are malicious, the system still reaches agreement; it is the engineering version of "institutions even bad people cannot abuse." The difference: BFT spreads trust across every node with no exceptions, whereas Han Feizi's law, technique and position all converge on a single ruler, and the ruler himself is the one point of failure nothing can tolerate.</li>
+<li><b>Psychology · System justification theory (Jost &amp; Banaji, 1994)</b>: People often defend an existing order that works against them, reading "this is how things are" as "this is how things should be." The likeness with Mencius: legitimacy really does live in the minds of the governed. The difference: Mencius expected hearts to leave a tyrant naturally, while psychology finds people withdraw their mandate far more slowly.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>Plato defines justice as structural harmony: the city's three classes and the soul's three parts each do their own work without overstepping.</li>
+<li>Ruling is treated as a craft that requires true knowledge, which yields the philosopher-king, yet expert rule also needs to be constrained.</li>
+<li>Rawls holds that justice is fairness: good rules are the ones people would accept behind a veil of ignorance, not knowing who they will be.</li>
+<li>The difference principle says economic inequality is justified only when it most benefits the least advantaged members of society.</li>
+<li>Legalism treats power as mechanism: law is public and predictable, technique audits names against realities, and authority comes from the position itself.</li>
+<li>Good institutions should not bet on rulers being good people; they should keep even mediocre or bad rulers from doing harm.</li>
+<li>Mencius grounds legitimacy in the people's hearts: a tyrant who abandons benevolence is a mere "lone fellow," and killing him is no regicide.</li>
+<li>Legitimacy flows bottom-up and can be revoked; rule held up by oppression is an unstable equilibrium that collapses once expectations flip.</li>
+<li>The four views combine into one test of any power: does it keep to its role, would you design it behind the veil, would it break in bad hands, would those affected still grant the mandate?</li>
+<li>Byzantine fault tolerance keeps a system working when a minority of nodes misbehave, while Han Feizi's system funnels everything into the ruler as a single point of failure.</li>
+</ol>
+</div>
 <!-- Going deeper -->
 <div class="resources">
   <h2>Going Deeper</h2>

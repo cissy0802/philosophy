@@ -59,6 +59,18 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -261,6 +273,30 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
   </div>
 </div>
 
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Complexity science · the sandpile model (Bak, Tang &amp; Wiesenfeld, 1987)</b>: Grains drop one by one, the slope creeps toward a critical state, and a single grain suddenly sets off an avalanche that sweeps the whole pile. Like Zhu Xi's sudden integration, the jump comes from long accumulation. The difference: avalanche size is unpredictable and leads to no understanding, while integration fuses scattered principles into one whole.</li>
+<li><b>Neuroscience · the somatic marker hypothesis (Antonio Damasio, 1994)</b>: Patients with damage to the ventromedial prefrontal cortex pass reasoning tests yet can deliberate endlessly over something as small as picking a date for an appointment; judgment depends on emotional signals from the body. Like liangzhi, knowing comes before reasoning. The difference: somatic markers are learned from experience, while liangzhi is said to be innate in everyone.</li>
+<li><b>Distributed systems · thrashing and admission control (Peter Denning, 1968)</b>: Load too many processes at once and memory pages in and out so fast that the machine is frantically busy yet gets almost nothing done; the fix is to cap concurrency first. Like the three trainings, blocking inputs comes before steady concentration. The difference: throttling only restores efficiency, while the wisdom that follows discipline and concentration is a change in kind, not just speed.</li>
+<li><b>Investing · resulting (Annie Duke, <i>Thinking in Bets</i>, 2018)</b>: The former professional poker player warns against judging a decision by whether one hand won, and asks instead what was known and how it was reasoned at the time. Like Epictetus's dichotomy of control, you answer only for your judgment. The difference: Duke still pursues long-run expected value, while the Stoics hold external outcomes to be neither good nor bad in themselves.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>Zhu Xi's investigation of things means exhausting the principle of thing after thing through reading, handling affairs, and observation.</li>
+<li>Sudden integration is not a one-off flash but the moment gradual accumulation fuses scattered principles into a whole.</li>
+<li>Wang Yangming stared at bamboo for seven days in vain, then realized in exile at Longchang that principle lies within the mind, not in things.</li>
+<li>Extending innate knowing means wiping away selfish desire so an awareness that already knows good from evil can shine.</li>
+<li>The unity of knowing and acting holds that true knowledge is already in action; to know and not act is not yet to know.</li>
+<li>The Buddhist three trainings form a dependent ladder: discipline gives rise to concentration, concentration to wisdom, and the order cannot be reversed.</li>
+<li>Discipline quiets the disturbances of body and speech, concentration focuses the mind, and wisdom sees impermanence and non-self.</li>
+<li>Epictetus's dichotomy of control: judgment, desire, and response are up to us; body, reputation, and outcomes are not.</li>
+<li>People are disturbed not by things but by their opinions of things, so mastering judgment means mastering the only territory truly one's own.</li>
+<li>All four views of cultivation assume the mind is shaped by training; they differ only in starting from accumulation, action, sequence, or containment.</li>
+</ol>
+</div>
 <!-- Going Deeper -->
 <div class="resources">
   <h2>Going Deeper</h2>

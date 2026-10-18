@@ -52,6 +52,18 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
 .ladder .step .num{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:#887139;color:#ffffff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.82rem}
 .ladder .step .arrow{color:#c39559;flex-shrink:0}
 .ladder .step strong{color:#c1c1d5}
+.crossx{border:1px solid rgba(143,120,64,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(136,113,57,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#ab9375}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:rgba(162,155,254,.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -244,6 +256,30 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
 <div class="label">思考题</div>
 <div class="question">这四向中，你最强的是哪一向？最弱是哪一向？补齐最弱那一向，会如何改变你的工作、家庭与审美生活？</div>
 </div>
+</div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>生物进化 · 累赘原理与「美的演化」</b>：扎哈维 1975 年的累赘原理说，孔雀尾巴美在昂贵、造不了假，是健康的诚实信号，近乎「美＝真」；普鲁姆 2017 年的《美的演化》反驳：许多装饰只是雌性偏好自我放大，可以什么都不指向。像在都追问美是否为真实背书；不像在演化没有阶梯顶端的「美自身」。</li>
+<li><b>心理学 · 言语遮蔽效应</b>：1990 年的一项实验让人先用文字描述看过的脸，事后认脸反而更差——语言把整体知觉换成了粗糙标签。像庄子的言多则亏；不像在实验只测记忆，庄子谈的是整个感知方式。</li>
+<li><b>信息论 · 压缩进步理论</b>：施密德胡伯把美解释为能用更短编码把握的规律，把有趣解释为压缩正在进步的那一刻。像康德说的想象力与知性轻松合拍；不像在康德坚持美无概念，压缩恰恰是在找规则。</li>
+<li><b>投资 · 林迪效应</b>：一本书、一项技术存活得越久，预期还能存活越久——时间本身成了证据。像侘寂只认真的时间、不认做旧；不像在林迪看重耐久，侘寂珍惜的却是正在消逝。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>柏拉图在《会饮篇》里把美写成一架阶梯，从单一肉体之美逐级上升到美自身。</li>
+<li>个别美物只是分有了永恒不变的美自身，所以审美不是消费愉悦，而是通往真知的路。</li>
+<li>庄子把最高的美放在自然不言说的秩序里，人的雕饰与言说反而是一种亏损。</li>
+<li>「大美不言」并不反对艺术，它反对以言为美，要求说完之后回到不命名的感知。</li>
+<li>康德认为美是无概念却普遍令人愉悦的，来自想象力与知性的自由协调。</li>
+<li>崇高发生在想象力面对无限而溃败之时，理性随后站起，人发现自己能思超出所能感。</li>
+<li>生成式 AI 擅长产出合形式的美，却生不出需要主体在溃败处重建的崇高。</li>
+<li>侘寂在无常、不完美、不圆满里看见美，金缮把裂痕填金，让创伤本身成为美。</li>
+<li>做旧家具和做旧滤镜只模仿痕迹的形式，真正的侘寂需要真实流逝过的时间。</li>
+<li>四种美学合成一张罗盘：向上训练抽象，向外恢复感知，向高分清敬畏，向深守护人的痕迹。</li>
+</ol>
 </div>
 <!-- 深入思考 -->
 <div class="resources">

@@ -42,6 +42,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -231,6 +243,30 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 </div>
 
 <!-- Deep Reflection -->
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Distributed systems · Queueing and utilization</b>: In queueing theory, as a server's utilization approaches 100%, average waiting time climbs steeply (proportional to ρ/(1−ρ) in the M/M/1 model); a system keeps turning only if some capacity is left idle, like the hollow hub of Laozi's wheel. The difference: idle capacity is a calculable margin, while Laozi's non-being is also the source from which things arise.</li>
+<li><b>Neuroscience · The default mode network (Marcus Raichle et al., 2001)</b>: When the brain is "doing nothing," it is not idle: a set of regions becomes more active, linked to memory, mind-wandering and self-reflection, so empty time is doing work. The difference: the default mode network is a kind of busyness, not Laozi's emptiness.</li>
+<li><b>Neuroscience · The omitted-stimulus response</b>: Drop one beat from a regular rhythm and the brain fires a clear electrical response at the moment the beat should have come: absence is felt directly, just as Sartre says Pierre's absence from the café is not a later inference. The difference: the brain's response is an automatic prediction error, while Sartre derives the freedom of consciousness from absence.</li>
+<li><b>Psychology · Awe (Dacher Keltner and Jonathan Haidt, 2003)</b>: They define awe as the emotion of facing something vast that forces us to revise what we know, often with a sense of a smaller self, close to Heidegger's wonder that lifts us out of everyday routine. The difference: awe is usually triggered by vast things like starry skies or mountains, while Heidegger's wonder comes only after all beings have slipped away.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>Laozi's "non-being gives use": the hub turns and the vessel holds because they are hollow, so the empty part is what works.</li>
+<li>Non-being in the Daodejing has two layers: the undifferentiated Dao gives rise to all things, and hollowness gives objects their function.</li>
+<li>Nāgārjuna's emptiness means "no intrinsic nature," not nonexistence: lacking fixed essences, things can arise dependently and change.</li>
+<li>"Emptiness is also empty": even the view of emptiness must be let go, and avoiding both being and non-being is the Middle Way.</li>
+<li>Relational quantum mechanics holds that quantum objects have properties only in interactions, a close echo of emptiness as lack of intrinsic nature.</li>
+<li>In the basic mood of anxiety, beings as a whole slip away, and one first wonders that there are beings at all rather than nothing.</li>
+<li>Sartre says consciousness "is what it is not and is not what it is," unlike the stone, which is solid being-in-itself.</li>
+<li>Consciousness can say "no" to what is given, and this gap of nothingness is the root of human freedom and the burden of self-creation.</li>
+<li>Facing the same lack of fixed self, Buddhist no-self leads toward letting go, while Sartre's nothingness leads toward taking responsibility.</li>
+<li>Laozi, Nāgārjuna, Heidegger and Sartre share one thesis: nothingness is not mere lack but the condition that lets being stand.</li>
+</ol>
+</div>
 <div class="deep">
   <h2>Deeper Reflection</h2>
 

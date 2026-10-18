@@ -47,6 +47,18 @@ details summary{font-size:0.96rem;font-weight:600;color:#c1c1d5;cursor:pointer;l
 details summary::before{content:"▸";position:absolute;left:0;color:#c39559;transition:transform 0.2s}
 details[open] summary::before{transform:rotate(90deg)}
 details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;padding-left:22px}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -219,6 +231,31 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
 <div class="question">这四种语言观中，你目前默认用得最熟练的是哪一种？最被忽视的是哪一种？补齐它会如何改变你和 AI 协作的方式？</div>
 </div>
 </div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>心理学 · 俄语里的两种蓝</b>：俄语把浅蓝 goluboy 和深蓝 siniy 当成两个基本色词。Winawer、Boroditsky 等人 2007 年发现，俄语者分辨跨越这条界线的两块蓝比不跨界时更快，英语者没有这种差别；让被试同时默记一串数字，优势就消失。像公孙龙：名怎么切，眼睛就怎么分。不像在：语言只让反应快了一点，并没有改掉人能看见的颜色。</li>
+<li><b>投资 · 古德哈特定律</b>：经济学家 Charles Goodhart 1975 年指出，一个统计规律一旦被拿来当调控目标，就会失灵。这是"执指为月"的制度版：KPI、市盈率、增长率都是手指。不像禅宗的是，管理者扔不掉手指，只能常换手指，再亲自去看月。</li>
+<li><b>生物进化 · 群体思维</b>：Ernst Mayr 批评生物学里的"类型思维"——以为每个物种背后有一个理想本质，个体只是它的走样版本；他主张物种就是一群各不相同的个体。这和"家族相似"同构：没有共同本质，只有交叠的相似。不像在：物种还有共同祖先和能否交配这条硬线，"游戏"一词没有家谱。</li>
+<li><b>量子力学 · 关系诠释</b>：物理学家 Carlo Rovelli 1996 年提出，量子系统的属性只相对于另一个系统才有确定值，不存在脱离一切关系的绝对状态。像德里达：没有自身在场的终极所指，只有关系。不像在：物理学仍要求各视角能用实验比对，算出可检验的数字；延异则让意义永远推迟、无处结算。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>"白马非马"不是诡辩："马"命的是形，"白马"命的是形加色，两个名指的属性集合不同。</li>
+<li>名与实之间没有一一对应，语言怎么分类，就划定了我们能看见的边界。</li>
+<li>禅宗以指指月：语言是指向真理的手指，把手指当成月亮的人，月和指都丢了。</li>
+<li>"不立文字"不是反智，而是警告：文字一旦被崇拜，就从工具退化成偶像。</li>
+<li>维特根斯坦晚年推翻自己早期的图像论，主张一个词的意义就是它在语言中的用法。</li>
+<li>各种"游戏"之间没有共同本质，只有交叠的家族相似，但每个语言游戏内部的规则依然严格。</li>
+<li>德里达的"延异"糅合差异与延迟：意义只从能指之间的差异中产生，并且永远被推迟。</li>
+<li>"文本之外别无他物"不是否认世界存在，而是说我们没有跳出语言去把握世界的位置。</li>
+<li>大模型只靠语言的差异关系运作、从未看见世界，恰好成了四种语言观的反向验证。</li>
+<li>指标一旦被当作目标就会失灵（古德哈特定律），这是"执指为月"在管理和投资里的版本。</li>
+</ol>
+</div>
+
 <!-- 深入思考 -->
 <div class="resources">
 <h2 data-tts="99641e14a19033ff">深入思考</h2>

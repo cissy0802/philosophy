@@ -48,6 +48,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(143,120,64,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(136,113,57,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#ab9375}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(23,16,115,.35);border-radius:12px;background:rgba(23,16,115,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(23,16,115,.18);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -244,6 +256,32 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 <div class="label">Reflection</div>
 <div class="question">Open today's feed: which items would survive Plato's "test of Forms" and Baudrillard's "anchor test"? And which of your anxieties, seen through Zhuangzi's and Huayan's eyes, could simply be set down?</div>
 </div>
+</div>
+
+<div class="crossx">
+  <div class="label">Crossovers</div>
+  <ul>
+    <li><b>Evolutionary biology · Mayr's "population thinking"</b>: The biologist Ernst Mayr named Platonic "typological thinking" as what Darwin had to overthrow: a species has no ideal type; what is real is the variation among individuals, and the "typical" member is a statistical abstraction. Alike in splitting type from instance; unlike in flipping which is real: for Plato the Form is real, for Mayr the variation is real and the type is the shadow.</li>
+    <li><b>Neuroscience · lucid-dream experiments</b>: In the early 1980s Stephen LaBerge at Stanford had sleepers move their eyes in a prearranged pattern, signaling "I know I'm dreaming" from inside the dream to the sleep lab. Alike in touching the dream/waking border; unlike in that the experiment proves the two can be told apart, while Zhuangzi asks us to let the border go.</li>
+    <li><b>Investing &amp; management · Goodhart's law</b>: In 1975 the economist Charles Goodhart observed that a statistical measure, once made a policy target, stops reliably tracking what it used to measure. Alike in signs drifting loose from their referents; unlike in that Goodhart assumes the original is still there and a new metric can re-anchor it, while Baudrillard says the original is gone.</li>
+    <li><b>Quantum mechanics · entanglement</b>: Two entangled particles have a definite joint state while neither has one alone; properties hold only in the relation, close to "nothing exists by itself." Unlike in that entanglement is monogamous: the more strongly a particle is entangled with one partner, the less it can share with others, whereas each jewel in Indra's Net reflects all the rest at once.</li>
+  </ul>
+</div>
+
+<div class="tk">
+  <div class="label">Ten takeaways</div>
+  <ol class="takeaways">
+    <li>Plato held that everything the senses show us is a copy of the Forms, and only the unchanging world of Forms is real.</li>
+    <li>Art is a copy of a copy: a painted bed imitates the carpenter's bed, which imitates the Form of bed, two steps from reality.</li>
+    <li>The prisoners in the allegory of the cave see only shadows on the wall all their lives and take the shadows for all of reality.</li>
+    <li>The butterfly dream shows that from inside experience you cannot prove whether you are awake or dreaming; the border is not absolute.</li>
+    <li>Zhuangzi's "not knowing" is not a defect to overcome but the freedom that comes from letting go of a single true reality.</li>
+    <li>Baudrillard inverts Plato: the problem is no longer copies straying from an original, but an original that has vanished, leaving signs circulating among signs.</li>
+    <li>The hyperreal means the map precedes the territory: signs no longer represent reality but come before it and replace it.</li>
+    <li>When AI-generated content flows back into the training data of the next models, the hyperreal turns from metaphor into engineering fact.</li>
+    <li>The Huayan school's Indra's Net teaches unobstructed interpenetration: each jewel reflects all others, and no phenomenon exists by itself.</li>
+    <li>Against deepfakes, telling true from false is only the first lesson; the deeper one is neither naive belief nor nihilistic dismissal.</li>
+  </ol>
 </div>
 
 <div class="deep">

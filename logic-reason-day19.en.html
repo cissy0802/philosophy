@@ -43,6 +43,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -233,6 +245,30 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
   </div>
 </div>
 
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Psychology · the Wason selection task</b>: In 1966 Peter Wason asked people to test rules like "if a card has a vowel on one side, it has an even number on the other." Most turned only the cards that could confirm it; typically fewer than one in ten picked the card that could refute it. The Hetuvidyā demand that the reason be absent from every dissimilar case reads like an advance correction of that blind spot. The difference: the experiment exposes a human instinct, while Hetuvidyā makes hunting for counter-cases a hard rule of valid inference.</li>
+<li><b>Distributed systems · TLA+ verification</b>: In 2015 Amazon engineers described modeling distributed protocols in Leslie Lamport's TLA+ and letting a model checker exhaust every state, which surfaced deep bugs in designs such as DynamoDB that testing rarely reaches. Like Aristotle, it ignores content and checks only whether the structure can reach a bad state. Unlike him, it says nothing about whether the model matches the real system, just as form cannot vouch for true premises.</li>
+<li><b>Neuroscience · the split-brain "interpreter"</b>: Michael Gazzaniga found that the left hemisphere of split-brain patients instantly invents a fluent reason for actions the right hemisphere started without its knowledge. Like the principle of sufficient reason, the brain cannot tolerate "no reason." Unlike it, Leibniz wanted the real why; the interpreter settles for any story that sounds right.</li>
+<li><b>Evolution · fitness versus truth</b>: Natural selection scores traits only by their consequences, the same logic as the Mohist third gauge of "application." The difference: the cognitive scientist Donald Hoffman argues from this that selected perceptions need not track reality, so "useful" and "true" can come apart, whereas the Mohists assume that benefit to the people is enough to vouch for truth.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>The necessity of an inference comes from its form, not its content: with the right structure, any terms can be swapped and the conclusion still holds.</li>
+<li>Aristotle replaced concrete terms with the variables A, B, C, separating the skeleton of an argument from its flesh for the first time.</li>
+<li>Many AI "hallucinations" are not factual errors but formal invalidity: the premises are true, yet the conclusion does not follow.</li>
+<li>Hetuvidyā requires an inference to have three members, thesis, reason and example, so that every step is anchored in a real instance.</li>
+<li>The rule that the reason must be absent from all dissimilar cases means validity rests not on many confirmations but on zero counter-examples.</li>
+<li>The principle of sufficient reason holds that no fact is true without a reason why it is so and not otherwise.</li>
+<li>Leibniz's dream of "Calculemus," settling every dispute by calculation, is the founding fantasy of computer science and AI.</li>
+<li>The Mohist Three Gauges test a claim against historical precedent, direct experience, and its actual consequences in use.</li>
+<li>The four logics chain into one pipeline against the plausible-but-wrong: extract the skeleton, seek counter-examples, trace the reason, check the consequences.</li>
+<li>The brain's "interpreter" fluently invents reasons for actions it does not understand, one more proof that fluency is not validity.</li>
+</ol>
+</div>
 <div class="deep">
   <h2>Going Deeper</h2>
   <details><summary>Aristotle's pure formal logic vs. Hetuvidyā's "must have an example" — which is closer to real reasoning?</summary><div>Pure form's strength is universality and mechanizability — this gave us the computer; its price is silence about "where the premises come from," so a formally valid argument can rest on absurd premises. Hetuvidyā's "example" forcibly nails reasoning back to reality, but relies on the inductive premise of "pervasion" (Hume would ask: on what grounds?). Perhaps the two are a division of labor: form governs "is the structure right," the example governs "is the content true," and real reasoning needs both fused.</div></details>

@@ -46,6 +46,18 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -260,6 +272,31 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
   </div>
 </div>
 
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Psychology · learned helplessness (Maier &amp; Seligman, 2016)</b>: "I had no choice" can be learned. In the early experiments, dogs given inescapable shocks later failed to escape even when they could. Fifty years on, the two authors revised the story: passivity is the brain's default, and what must be learned is the sense that one has control. Like Sartre, freedom only counts once it is claimed; unlike him, psychology treats the retreat as a conditioned response to be retrained, not as bad faith one must answer for.</li>
+<li><b>Investing · Save More Tomorrow (Thaler &amp; Benartzi, 2004)</b>: Employees committed in advance to raise their retirement saving rate at each pay raise, and participants went from 3.5% to 13.6% in under four years. Like Xunzi's ritual, it rewrites outcomes with structure rather than willpower; unlike it, the plan rides inertia instead of trying to transform nature.</li>
+<li><b>Neuroscience · affect labeling (Lieberman et al., 2007)</b>: Putting a word such as "angry" or "afraid" to an emotional face dampened amygdala response. This echoes Spinoza's claim that a passion ceases to be a passion once we form a clear idea of it; the difference is that a label suffices here, while Spinoza asks us to see its causes.</li>
+<li><b>Complexity science · deterministic chaos (Lorenz, 1963)</b>: Fully deterministic equations can yield trajectories no one can forecast; only the shape of the attractor is knowable. Like Spinoza, necessity does not mean foreknowledge; unlike him, chaos says the details will never be computed, even where reason grasps the overall order.</li>
+<li><b>Psychology · choice blindness (Johansson &amp; Hall, 2005)</b>: When experimenters secretly swapped the photo a participant had chosen, most failed to notice and explained why they had picked the one they never chose. Like no-self, the reason-giving chooser is assembled after the fact; unlike Buddhism, the experiment only exposes the story, while Buddhism asks you to keep acting once you see through it.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>Existence precedes essence: humans have no prewritten script, and a lifetime of choices makes them what they are.</li>
+<li>For Sartre, humans are condemned to be free, and every "I had no choice" is an act of bad faith.</li>
+<li>Anxiety in the face of choice is not a disease but the body heat of freedom, the sense of legislating for oneself.</li>
+<li>Xunzi's claim that human nature is bad is a structural judgment: left unchecked, self-interest leads to strife and disorder.</li>
+<li>Artifice (wei) means deliberate construction: teachers, ritual and institutions turn biological drives into social reason, and that is where freedom comes from.</li>
+<li>Spinoza defines freedom as the understanding of necessity; "I could have done otherwise" is an illusion born of not seeing our causes.</li>
+<li>Once an emotion is understood as a clear idea, a person moves from passive passion to active understanding.</li>
+<li>Dependent origination does not take sides between freedom and determinism; it shows that the self said to bear freedom is a temporary gathering of conditions.</li>
+<li>No-self does not cancel causality or responsibility; it drops self-grasping and lets action flow on within its conditions.</li>
+<li>The four views form an operating system for freedom: waking up to responsibility, designing structures, seeing causes, and loosening the grip of the self.</li>
+</ol>
+</div>
 <!-- Going Deeper -->
 <div class="resources">
   <h2>Going Deeper</h2>

@@ -45,6 +45,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(201,178,122,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#c9b27a}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#b4b4c4;line-height:1.8}
+.crossx b{color:#c9b27a}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.35);border-radius:12px;background:rgba(162,155,254,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.18);font-size:0.93rem;line-height:1.75;color:#c1c1d5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -220,6 +232,31 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 <div class="label">思考题</div>
 <div class="question">你此刻最想「获得」的那样东西——用四种觉醒观重看：它究竟需要被加上，还是去掉某层遮蔽（渴爱、噪声、人设、执取）之后，它本来就在？</div>
 </div>
+</div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>商业 · 丰田的「五个为什么」</b>：大野耐一要求出了故障连问五次为什么，从症状一路追到根因，和四圣谛从「苦」追到「集」是同一个诊断动作。不像在于：五问追到的根因多在流程里，改掉就好；集谛追到的渴爱就在追问者自己心里，诊断者本身就是病人。</li>
+<li><b>免疫学 · 克隆选择学说（Jerne 1955，Burnet 1957）</b>：身体不是等抗原来了才照着造抗体，而是早就备好海量的抗体库，抗原只负责把合身的那一种挑出来扩增；外物只管唤起，这正是「学习即回忆」的结构。不像在于：抗体库是基因随机重组出来的，不是灵魂对理念的旧知，也谈不上「真理」。</li>
+<li><b>神经科学 · 记忆再巩固（Nader 等，2000）</b>：一段恐惧记忆被重新唤起时会暂时变得不稳定，这时才能被改写；不去碰它，它就原样留着。荣格的阴影是同一个结构：先请进意识，才谈得上整合。不像在于：再巩固改的是一条具体记忆，阴影是一整块被拒认的人格。</li>
+<li><b>神经科学 · 默认模式网络</b>：走神、反刍、琢磨「我怎么样」时活跃的一组脑区；Brewer 等 2011 年发现资深冥想者这组脑区活动更低，像「本来无一物」的减法在脑里留下的痕迹。不像在于：这组脑区也管回忆和设想未来，减下去的只是绕着自我打转的那部分。</li>
+<li><b>投资 · 芒格的「反过来想」</b>：芒格说他们的长期优势来自始终避免犯蠢，而不是努力变聪明，和合奏卡片「去掉什么比加上什么更要紧」同构。不像在于：芒格的减法是为了复利收益，觉醒的减法外面没有一个账户等着结算。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>四圣谛是一套医学式结构：苦是病，渴爱是病因，苦可灭是预后，八正道是药方。</li>
+<li>痛苦的根源不在外境，而在内在的渴爱与执取；解脱靠可操作的修行，不靠祈求或神恩。</li>
+<li>神经科学区分「想要」与「喜欢」：奖赏系统驱动人不停追逐，得到时的满足却迅速归零。</li>
+<li>柏拉图的回忆说主张学习即回忆，觉醒是被好问题引导着想起本已知道的真理。</li>
+<li>《美诺篇》里，苏格拉底只靠提问，就让没学过几何的奴隶推出了正方形倍积定理。</li>
+<li>荣格的个体化不是变得完美，而是把被压抑的阴影整合进意识，成为完整而非分裂的人。</li>
+<li>否认阴影的人反被阴影操控，承认并接纳它，才能让它松动。</li>
+<li>慧能的顿悟说认为本性本自清净，觉悟是遮蔽松脱时的当下顿见，不是渐次拂拭的阶梯。</li>
+<li>顿悟像一次认知相变：翻转在瞬间，却以长期渐修蓄势为前提，常在大脑松弛时发生。</li>
+<li>四种觉醒观的共同结构是：阻碍人的多是遮蔽而非匮乏，觉醒在于去掉什么，而不是加上什么。</li>
+</ol>
 </div>
 <div class="deep">
 <h2 data-tts="42b7b417cd7ba3f9">深入思考</h2>

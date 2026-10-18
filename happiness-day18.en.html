@@ -43,6 +43,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(201,178,122,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#8b7355}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#4a4a4a;line-height:1.8}
+.crossx b{color:#8b7355}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.35);border-radius:12px;background:rgba(162,155,254,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.18);font-size:0.93rem;line-height:1.75;color:#2d3436}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -233,6 +245,30 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
   </div>
 </div>
 
+<div class="crossx">
+  <div class="label">Crossovers</div>
+  <ul>
+    <li><b>Complexity science · Dissipative structures</b>: Happiness as activity rather than state resembles the dissipative structures of Ilya Prigogine (Nobel Prize in Chemistry, 1977)—whirlpools, flames, cells, whose order exists only while energy keeps flowing through and vanishes when it stops. The difference: a dissipative structure only persists, while Aristotle's activity must also be excellent, and can be done better or worse.</li>
+    <li><b>Distributed systems · Safety and liveness</b>: In 1977 Leslie Lamport split system properties into safety (nothing bad ever happens) and liveness (something good eventually happens). Schopenhauer's happiness is pure safety: the absence of pain is enough. Aristotle demands liveness: good activity keeps happening. The neat part is how each is judged—a safety violation shows up in a finite stretch, but liveness can only be judged over the whole run, just as one swallow does not make a summer. The difference: a life is not an infinite run, and its ending is itself up for judgment.</li>
+    <li><b>Evolutionary biology · Designed for discontent</b>: Schopenhauer's blind, insatiable will has a version without metaphysics in evolution: an animal that stayed satisfied would stop foraging and mating, so natural selection favors minds that want again soon after getting. The likeness: discontent is a mechanism, not a malfunction. The difference: evolution has no will, only the outcome of selection, so nothing follows about life being suffering by nature.</li>
+    <li><b>Neuroscience · Default mode network</b>: The default mode network, described by Marcus Raichle and colleagues in 2001, is active during mind-wandering and self-referential thought and quiets during focused external tasks. Confucius's self-forgetting joy looks like this network falling silent; the Buddhist second arrow looks like it idling in rumination. The difference: brain regions show only less thinking about oneself, not whether the absorbing task is worth doing.</li>
+  </ul>
+</div>
+<div class="tk">
+  <div class="label">Ten takeaways</div>
+  <ol class="takeaways">
+    <li>Happiness is activity of the soul in accordance with virtue: a verb rather than a noun, something enacted and never possessed.</li>
+    <li>Aristotle's function argument holds that the human good is the excellent use of reason, measured across a complete life.</li>
+    <li>Confucian happiness is not freedom from worry but a meaningful devotion so absorbing that one forgets food and worry alike.</li>
+    <li>The joy of Confucius and Yan Hui does not depend on circumstances: Yan Hui kept his joy in a mean alley because it lay in the Way.</li>
+    <li>For Schopenhauer happiness is essentially negative, merely the temporary absence of pain, while pain alone is positive.</li>
+    <li>All willing springs from lack, so life swings like a pendulum between the pain of wanting and the boredom of having.</li>
+    <li>The Arrow Sutta splits suffering in two: bodily pain is the first arrow from the world, mental anguish the second we fire at ourselves.</li>
+    <li>Liberation does not abolish the first arrow; it inserts a gap of awareness between the two so the second is never fired.</li>
+    <li>The four views form one operating system: clear away the illusion of possession, stop the second arrow, pursue excellent activity, and give it direction.</li>
+    <li>Happiness as the absence of pain resembles a safety property; happiness as good activity that keeps happening resembles liveness, judged only over a whole life.</li>
+  </ol>
+</div>
 <div class="deep">
   <h2>Going Deeper</h2>
   <details><summary>Aristotle's "happiness = excellent activity" vs. Schopenhauer's "happiness = absence of pain" — which fits your experience?</summary><div>Aristotle defines positively: happiness is the "presence" of a certain activity; Schopenhauer defines negatively: happiness is only the "temporary absence" of pain. The former explains "why we're happy doing what we love," the latter "why we go flat soon after getting what we wanted." Perhaps each is half right — in flow, Aristotle holds; in the hollowness just after a desire is met, Schopenhauer holds. Ask yourself: does your happiness come more from "the presence of activity" or "the absence of pain"?</div></details>

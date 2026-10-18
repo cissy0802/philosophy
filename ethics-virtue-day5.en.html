@@ -46,6 +46,18 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -258,6 +270,31 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
     <div class="label">Question to Sit With</div>
     <div class="question">Next time you face a knotted moral dilemma, run all four lenses in turn. Which is the one you most often skip? Add it back — the decision will become more robust.</div>
   </div>
+</div>
+
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Psychology · Deliberate practice (Ericsson et al., 1993)</b>: Expert performance comes mostly from years of focused, feedback-rich practice on one's weak spots, the same habituation route as "we become just by doing just acts." Unlike it: deliberate practice hones a single skill, while Aristotle trains the whole person, down to what one wants.</li>
+<li><b>Evolutionary biology · Capuchins refusing cucumber (Brosnan &amp; de Waal, 2003)</b>: When a partner gets a grape for the same task, a capuchin handed cucumber will refuse it or throw it away. A sense of unfairness predates rational argument, like a distant ancestor of Mencius's sprout of right and wrong. Unlike it: the monkeys protest only when they themselves lose out, whereas the four sprouts are first stirred on behalf of others.</li>
+<li><b>Neuroscience · Dual-process moral judgment (Joshua Greene et al., 2001)</b>: fMRI showed that pushing a man off a footbridge to save five engages emotion-related brain regions more strongly than pulling a trolley lever, and people more often refuse. Greene took this to mean deontological "thou shalt not" is largely emotion-driven while utilitarian sums rely on controlled reasoning. The irony: Kant wanted to strip morality free of feeling.</li>
+<li><b>Buddhism · Equanimity (upekkha)</b>: The fourth of the immeasurables asks for equal regard toward all beings, near or far, tearing down graded affection just as Mozi's "regard others' persons as your own" does. Unlike it: Mozi's reason is mutual benefit, a ledger one can tally; the Buddhist reason is letting go of self-clinging, with meditation turning equal regard into a felt reality.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>Aristotle defines virtue as the mean between excess and deficiency, calibrated case by case by practical wisdom.</li>
+<li>Virtue is built by repetition: doing just acts makes a person just, and good character becomes a trained second nature.</li>
+<li>The mean is not a mediocre compromise but a situational optimum that shifts with object, timing, and intensity.</li>
+<li>Mencius's doctrine of the four sprouts holds that compassion, shame, deference, and moral judgment are innate in everyone.</li>
+<li>The child-at-the-well thought experiment strips away every outside motive, and the uncalculated jolt that remains is conscience itself.</li>
+<li>Moral cultivation is not poured in from outside; it means extending innate sprouts and recovering a heart buried by desire.</li>
+<li>Kant's categorical imperative demands maxims that universalize without contradiction and treat persons as ends, never merely as means.</li>
+<li>Deontology's strength is refusing to sacrifice individuals for "the greater good"; its cost is rigidity in cases like the murderer at the door.</li>
+<li>Mozi's impartial care gives others' welfare the same weight as one's own and blames graded affection for the world's strife.</li>
+<li>Virtue, intuition, rules, and consequences are not rival options; mature ethical judgment usually draws on all four at once.</li>
+</ol>
 </div>
 
 <!-- Going Deeper -->

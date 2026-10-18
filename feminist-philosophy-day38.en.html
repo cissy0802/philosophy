@@ -47,6 +47,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(143,120,64,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(136,113,57,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#ab9375}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(23,16,115,.35);border-radius:12px;background:rgba(23,16,115,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(23,16,115,.18);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -257,6 +269,32 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
     <div class="label">Reflection</div>
     <div class="question">Which "universal standard" did you take for granted today—about ability, morality, or gender—that is really one situation's view quietly crowned? Run it past all four perspectives in turn: does it still stand?</div>
   </div>
+</div>
+
+<div class="crossx">
+  <div class="label">Crossovers</div>
+  <ul>
+    <li><b>Psychology · stereotype threat</b>: Spencer, Steele, and Quinn (1999) found that telling women a math test showed gender differences was enough to lower their scores — the gaze of others shaping a person into "the Other" on the spot. The likeness: one becomes what one is seen as. The difference: the experiment captures a momentary effect in a single test, and its size has since been disputed, while Beauvoir describes a lifelong historical situation.</li>
+    <li><b>Neuroscience · dual-process moral judgment</b>: Joshua Greene (2001) used fMRI on trolley dilemmas and found that "up close and personal" cases such as pushing someone recruit emotional brain regions more, while cool calculation runs on another track — morality was never a single voice. The likeness: Gilligan's two voices. The difference: Greene tends to trust the calculating track more, exactly the ranking Gilligan rejects.</li>
+    <li><b>Quantum mechanics · the observer in measurement</b>: Bohr insisted that any account of a quantum phenomenon must include the measuring apparatus; there is no "objective state" apart from the experimental arrangement. The likeness: Harding puts the knower on the examination table too. The difference: in physics all observers are on equal footing, while Harding holds that marginal standpoints can see blind spots the dominant view misses.</li>
+    <li><b>Evolutionary biology · cooperative breeding</b>: in <i>Mothers and Others</i> (2009) the anthropologist Sarah Blaffer Hrdy argues that human infants were raised by many hands — mothers, fathers, grandmothers, older siblings — and that mind-reading and empathy may have evolved from this. The likeness: Laozi raises nurturing to the root of heaven and earth. The difference: the evolutionary evidence shows that care was never assigned to mothers alone.</li>
+  </ul>
+</div>
+
+<div class="tk">
+  <div class="label">Ten takeaways</div>
+  <ol class="takeaways">
+    <li>Feminist philosophy is an epistemological revolution: when one group's experience becomes the standard of "universal humanity," neutrality turns into hidden bias.</li>
+    <li>Beauvoir holds that one is not born but becomes a woman: femininity is not a biological essence but a situation shaped by history and society.</li>
+    <li>Man sets himself up as the Subject and defines woman as the Other relative to him; because that position is constructed, it can be refused.</li>
+    <li>Kohlberg's stages of moral development took the justice orientation as the only yardstick, so women's care orientation scored as "lower."</li>
+    <li>The ethics of care centers on relationship, responsibility, and contextual narrative: a second moral voice, as mature as the ethics of justice.</li>
+    <li>There is no "view from nowhere": all knowledge is situated, and claiming value-neutrality only hides where the observer stands.</li>
+    <li>Harding's strong objectivity puts the knower's own social situation under scrutiny too, a path to better objectivity rather than to relativism.</li>
+    <li>Laozi's "mysterious female" and "keeping to the feminine" elevate yielding, low-lying, receptive power, but the feminine here is a metaphor for the Dao, not woman's essence.</li>
+    <li>Assigning softness or care to one sex falls into the essentialist trap; care should be an ethical capacity everyone learns.</li>
+    <li>"Algorithmic neutrality" is weak objectivity's newest mask: when a system claims to be objective and neutral, ask whose view it is.</li>
+  </ol>
 </div>
 
 <div class="deep">

@@ -42,6 +42,18 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#a6a6a6;line-height:1.75}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(143,120,64,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(136,113,57,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#ab9375}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(23,16,115,.35);border-radius:12px;background:rgba(23,16,115,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(23,16,115,.18);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem}
   .container{padding:16px 14px 40px}
@@ -220,6 +232,32 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
     <div class="label">Reflection</div>
     <div class="question">Take one rule you are designing right now — for a team, a child, or an AI. Does it default to prohibition or to permission? Does it count on being obeyed, or on being internalized? What changes if you redesign it from the opposite quadrant?</div>
   </div>
+</div>
+
+<div class="crossx">
+  <div class="label">Crossovers</div>
+  <ul>
+    <li><b>Psychology · Brehm's reactance theory (1966)</b>: When people feel a freedom is threatened, they want the forbidden thing more, so "for your own good" often backfires. Like Mill, it says paternalism carries a cost; unlike Mill, who holds that interference is illegitimate even when it works, Brehm only explains why it so often fails.</li>
+    <li><b>Evolutionary game theory · Maynard Smith's "Bourgeois" strategy</b>: In the hawk-dove game, "fight if you are the owner, yield if you are the intruder" can be an evolutionarily stable strategy: an arbitrary but universally recognized mark of ownership removes the fight, just as fixed shares leave a market full of hares untouched. The difference: animal "shares" are conventions that evolve on their own, while Shang Yang's are decreed by the state and backed by punishment.</li>
+    <li><b>Behavioral economics · "A Fine Is a Price" (Gneezy &amp; Rustichini, 2000)</b>: When day-care centers in Haifa, Israel, began fining parents who picked up their children late, late pickups rose, and stayed high after the fine was removed. The fine turned the guilt of keeping teachers waiting into a purchase of extra time: exactly "evading punishment without shame," calculation crowding out conscience. The difference: Confucius only says punishment cannot instill shame; the experiment shows a weak penalty can dismantle the shame that was already there.</li>
+    <li><b>Buddhism · the Vinaya's case-by-case rules</b>: The Buddha laid down no code in advance; a precept was made only after a monk committed an offense, then stated plainly and recited publicly at regular assemblies, close to Shang Yang's fixed shares. Unlike Legalism, the discipline aims at concentration and then wisdom; the written rules are only a ladder toward inner awareness. One monastic institution holds both ends of this week's vertical axis.</li>
+  </ul>
+</div>
+
+<div class="tk">
+  <div class="label">Ten takeaways</div>
+  <ol class="takeaways">
+    <li>Berlin splits liberty in two: negative liberty is the zone others may not enter, positive liberty is being one's own master.</li>
+    <li>Positive liberty is the easiest to pervert: once a state or party defines "the real you," it has a pretext to force you to be free.</li>
+    <li>Liberty, equality, and security conflict and are incommensurable, so with no single optimum an inviolable personal zone must be protected.</li>
+    <li>Mill's harm principle: the only legitimate reason to exercise power over someone is to prevent harm to others, never their own good.</li>
+    <li>"Experiments of living" treat diverse ways of life as society's search for better ones, which is why dissent must be tolerated.</li>
+    <li>Shang Yang's law aims at predictability, not severity: once shares are publicly fixed, sages need not contend and thieves dare not steal.</li>
+    <li>When a metric is set too rigidly, people optimize the metric itself instead of the goal the rule was meant to serve.</li>
+    <li>Confucius holds that edicts and punishments buy compliance without shame, while virtue and ritual, internalized, bring shame and self-correction.</li>
+    <li>Political liberty can be drawn on two axes: how far power must leave the individual alone, and whether order rests on external law or internalized virtue.</li>
+    <li>Fining late parents at Haifa day-care centers increased lateness, showing that a penalty can turn guilt into a price and crowd out shame.</li>
+  </ol>
 </div>
 
 <div class="section" style="margin-top:36px">

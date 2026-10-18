@@ -46,6 +46,18 @@ details summary{font-size:0.96rem;font-weight:600;color:#c1c1d5;cursor:pointer;l
 details summary::before{content:"▸";position:absolute;left:0;color:#c39559;transition:transform 0.2s}
 details[open] summary::before{transform:rotate(90deg)}
 details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;padding-left:22px}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -225,6 +237,31 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
 <div class="label">思考题</div>
 <div class="question">你此刻最大的那个矛盾——它需要被扬弃到更高层级（黑格尔），被当作节律接住（易经），被识别为主要矛盾去攻坚（马克思），还是它的提问方式本身就该被拆掉（龙树）？</div>
 </div>
+</div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>神经科学 · 预测编码（Rao 与 Ballard，1999）</b>：大脑不断拿预测去碰感觉输入，真正往上传、驱动模型更新的是两者对不上的「预测误差」，像黑格尔把矛盾当作推进概念的发动机。不像在：大脑要把误差压到最小、回到稳态，黑格尔的矛盾却要把整个框架顶到更高一层。</li>
+<li><b>复杂性科学 · 捕食者—猎物振荡（Lotka 1925、Volterra 1926）</b>：狐狸多了兔子就少，兔子少了狐狸挨饿减少，兔子又回升，两条曲线永远错位起伏，正是「亢极必反」的节律。不像在：这是两个物种在外部相克，易经说的是阴中本就含阳。</li>
+<li><b>商业 · 约束理论（Goldratt《目标》，1984）</b>：一条产线的产出只由唯一的瓶颈决定，在非瓶颈环节使劲多半白费；瓶颈打通后约束会转移到别处，必须重新找。这几乎是「主要矛盾」加「主要方面会翻转」的工厂版。不像在：瓶颈能用产能数字量出来，主要矛盾是一对力量的张力，要靠判断，且常落在生产关系而非机器上。</li>
+<li><b>心理学 · 认知解离（Steven Hayes 的接纳承诺疗法）</b>：不和念头争对错，只练习看见「我此刻有一个念头」，从而松开对它的粘着；像龙树不给第五种立场，目的是解放而非胜出。不像在：ACT 只改变人与念头的关系，并不主张念头本身无自性。</li>
+<li><b>分布式系统 · 从 CAP 到 PACELC（Daniel Abadi，2012）</b>：「一致性还是可用性」的二选一，默认网络分区时时都在发生；Abadi 把问题重切为「分区时在可用与一致间取舍，平时在延迟与一致间取舍」，死结随之松开。不像在：龙树拆到底不留立场，PACELC 拆完给出更细的新立场。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>黑格尔把矛盾从认识的边界翻转为概念自我推进的内置发动机。</li>
+<li>「扬弃」同时意味着取消、保存与提升，「正反合」只是后人的图式化概括。</li>
+<li>两派相争时不必选边，追问双方共同预设却未言明的第三项，张力会把框架推向更高整全。</li>
+<li>易经的辩证是节律而非螺旋：阴阳互根，任何极端都在孕育自己的反面。</li>
+<li>阴阳辩证没有目的论终点，只在永恒互替中维持动态平衡，有别于螺旋上升。</li>
+<li>马克思把辩证法颠倒过来，推动历史的是生产力与生产关系之间的结构性矛盾。</li>
+<li>复杂局面里只有少数主要矛盾真正驱动方向，而主要矛盾的主要方面会随条件翻转。</li>
+<li>龙树的四句否定逐一驳倒有、无、亦有亦无、非有非无，结论是一切立场皆无自性。</li>
+<li>中观辩证连「综合」也解构，矛盾的作用是让意识不粘住任何一边，而不是推进概念。</li>
+<li>被二元选择卡死时，先检查问题是否把对象实体化，困局常在问题被重新切分后松开。</li>
+</ol>
 </div>
 <!-- 深入思考 -->
 <div class="resources">

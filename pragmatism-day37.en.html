@@ -47,6 +47,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -263,6 +275,31 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
   </div>
 </div>
 
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Quantum mechanics · QBism (Quantum Bayesianism)</b>: Christopher Fuchs and colleagues read a quantum state as an agent's personal expectations about the consequences of measuring, so its meaning lies entirely in the consequences of action, much like Peirce's maxim. The difference: QBist probabilities belong to a single agent, while Peirce's meaning is settled by a community of inquirers testing in public.</li>
+<li><b>Buddhism · The parable of the arrow (Majjhima Nikaya 63)</b>: When Malunkyaputta demands to know whether the world is eternal and whether the Tathagata exists after death, the Buddha declines, comparing him to a man shot with a poisoned arrow who will not let it be pulled out until he learns the archer's name. Alike: questions that change nothing about what you should do get set aside. Unlike: the Buddha never calls them meaningless, only useless for ending suffering.</li>
+<li><b>Psychology · Implementation intentions (Peter Gollwitzer)</b>: The intention–behavior gap, knowing what to do and not doing it, is an old problem in psychology; Gollwitzer found that recasting a goal as "if X happens, I will do Y" markedly raises follow-through. The difference: psychology treats intending and acting as two stages needing a bridge, while Wang denies the gap exists; a gap only shows the knowing was not yet genuine.</li>
+<li><b>Evolution · "Fitness beats truth" (Donald Hoffman)</b>: Using evolutionary game simulations, the cognitive scientist Hoffman argues that natural selection rewards perceptions that pay off, not perceptions that report the world accurately; what we see is more like desktop icons than the circuitry beneath. It reads like an evolutionary version of James's "useful is true," yet it pries apart exactly the two things James ran together: what gets selected is the useful, with no guarantee of the true.</li>
+<li><b>Distributed systems · Eventual consistency</b>: Replicas may disagree for a while, but as long as they keep exchanging updates they converge on one value; in the same essay Peirce defines truth as the opinion fated to be ultimately agreed to by all who investigate, the same structure. The difference: eventual consistency guarantees only that everyone agrees, not that they agree correctly, whereas Peirce's convergence is constrained by reality.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>Pragmatism's master question: instead of asking whether an idea matches reality, ask what observable difference it makes in practice.</li>
+<li>Peirce's pragmatic maxim: a concept's whole meaning is its conceivable practical effects, and a distinction naming no practical difference is empty.</li>
+<li>Abduction leaps from a surprising fact to the best hypothesis that would explain it, then tests that hypothesis by its consequences.</li>
+<li>James treats truth as a process: an idea is made true as experience keeps verifying it and it guides action smoothly.</li>
+<li>The danger in "useful is true" is conflating two kinds of usefulness: what soothes us and what predicts accurately.</li>
+<li>Thinking begins in a real indeterminate situation, and inquiry is its controlled transformation into one determinate enough to act on.</li>
+<li>Knowledge as a tool rather than a mirror of reality grounds both the attack on the spectator theory of knowledge and "learning by doing."</li>
+<li>Wang Yangming's unity of knowing and acting: genuine knowing already contains acting, so knowing without doing is not yet knowing.</li>
+<li>Pragmatism and the School of Mind both reject the knowing–acting split but differ on the standard: outward experiential results versus inward moral earnestness.</li>
+<li>The Buddha's parable of the arrow also sets aside metaphysical questions that change no action, but judges them by whether they end suffering, not by whether they mean anything.</li>
+</ol>
+</div>
 <div class="deep">
   <h2>Deeper Reflection</h2>
   <details><summary>Wang struck through the knowing–acting split three centuries before pragmatism. Great minds thinking alike, or a surface resemblance?</summary><div>A surface resemblance with a different soul. Both reject the spectator theory and tie true knowing to action; the difference is the criterion of "acting." Pragmatism faces outward, anchored in publicly verifiable experiential consequences; Wang faces inward, anchored in the moral earnestness of conscience. The former asks "does it work?"; the latter, "does it accord with conscience?" The former might count any "effective" act as true, the latter carries a built-in moral anchor — but its weakness is the lack of external public testing.</div></details>

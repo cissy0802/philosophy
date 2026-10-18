@@ -46,6 +46,18 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(143,120,64,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(136,113,57,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#ab9375}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(23,16,115,.35);border-radius:12px;background:rgba(23,16,115,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(23,16,115,.18);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -218,6 +230,32 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 <div class="question">"什么是真实"——这四种回答里，你默认站在哪一边？下一次被信息流、身份焦虑或情绪裹挟时，换用另外三种视角，你的反应会有什么不同？</div>
 </div>
 </div>
+<div class="crossx">
+  <div class="label">越界 · 跨学科的联想</div>
+  <ul>
+    <li><b>生物进化 · 霍夫曼的感知接口理论</b>：认知科学家唐纳德·霍夫曼用演化博弈模拟论证「适应度胜过真相」：自然选择调出的感知像电脑桌面图标，只求好用，不求如实。像洞穴之影，我们看到的不是实在本身。不像在于：柏拉图相信能走出洞穴见到理念；霍夫曼认为根本没有界面之外的位置可站。</li>
+    <li><b>分布式系统 · 拜占庭将军问题（Lamport 等，1982）</b>：先假设节点会任意撒谎，再问还有什么能确定，和笛卡尔的「恶魔」同一个思路：按最坏的对手设计。不像在于：拜占庭容错靠多数诚实节点投票取信（至少 3f+1 个节点才能容 f 个叛徒）；笛卡尔只有自己一个节点，只能从「我在怀疑」自举。</li>
+    <li><b>心理学 · 橡胶手错觉（Botvinick &amp; Cohen，1998）</b>：同步轻刷藏起的真手和眼前的橡胶手，几分钟后人会觉得橡胶手是自己的。身体的边界能被改写，近乎庄子的物化。不像在于：实验里这是要被纠正的错觉；庄子把边界流动当作逍遥的起点。</li>
+    <li><b>复杂性科学 · 普里戈金的耗散结构（1977 年诺贝尔化学奖）</b>：漩涡、对流胞靠持续流入的能量维持形状，水分子一直在换，形态却稳定，正是「过程而非实体」。不像在于：漩涡没有执着可破；五蕴说要看空的，恰是心对这团过程起的「我」的执取。</li>
+  </ul>
+</div>
+
+<div class="tk">
+  <div class="label">十条要点</div>
+  <ol class="takeaways">
+    <li>洞穴之喻把世界分成两层：流变的现象界只是影子，永恒的理念界才是真实。</li>
+    <li>在柏拉图看来，认识是转身离开感官的影子、朝向理念之光的攀升。</li>
+    <li>庄周梦蝶不是诡辩：梦与醒从内部无法分辨，主客二分随之松动。</li>
+    <li>「物化」指万物相互转化，「我」只是大化流行中的一个临时形态。</li>
+    <li>笛卡尔怀疑一切，却发现「正在怀疑」本身无法被怀疑：我思，故我在。</li>
+    <li>「我思」把哲学的基石从外部世界搬回内在意识，开启了近代哲学的主体转向。</li>
+    <li>五蕴说把「我」拆成色、受、想、行、识五种不断生灭的过程，其中没有固定的自我。</li>
+    <li>佛学的「空」不是「没有」，而是无自性：没有不依赖他物而独立存在的本质。</li>
+    <li>四种存在观可合成一套工具：表象怀疑、最小锚定、身份松绑、过程拆解。</li>
+    <li>恶魔怀疑与拜占庭容错是同一思路：先假设对手会任意撒谎，再看什么还站得住。</li>
+  </ol>
+</div>
+
 <!-- 深入思考 -->
 <div class="resources">
 <h2 data-tts="bb10d029c9024c9d">深入思考</h2>

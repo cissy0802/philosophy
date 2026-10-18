@@ -43,6 +43,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(201,178,122,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#8b7355}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#4a4a4a;line-height:1.8}
+.crossx b{color:#8b7355}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.35);border-radius:12px;background:rgba(162,155,254,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.18);font-size:0.93rem;line-height:1.75;color:#2d3436}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -231,6 +243,31 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 </div>
 </div>
 
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Neuroscience · Memory reconsolidation (Nader, Schafe and LeDoux, 2000)</b>: Each time rats recalled a fear memory, the memory briefly became unstable and had to be stored again, and it came back altered. Like: "warming the old" itself reshapes the old, so every review is a small act of amending. Unlike: reconsolidation is an unconscious biochemical process, while Confucius means deliberate, repeated savoring aimed at a new reading.</li>
+<li><b>Business · The innovator's dilemma (Clayton Christensen, 1997)</b>: The better incumbents serve their current customers' metrics, the likelier they are to miss a disruptive technology that starts out cruder, much as normal science files anomalies under noise. Unlike: disruption wins on cost and new markets, a new paradigm on explanatory power and the conversion of a scientific community.</li>
+<li><b>Distributed systems · The strangler fig pattern (Martin Fowler, 2004)</b>: Instead of rewriting a legacy system, you grow new services along its old interfaces and retire old modules one by one: reform by amendment. Unlike: an engineering migration must stay behavior-compatible, whereas a Kuhnian revolution guarantees no commensurability at all.</li>
+<li><b>Psychology · Core beliefs in cognitive therapy (Aaron Beck, 1960s)</b>: Beck had clients trace automatic thoughts back to core beliefs formed early in life and then test them one by one, much like a genealogical audit of inherited values. Unlike: cognitive therapy asks whether a belief fits the facts; Nietzsche asks what kind of life it serves.</li>
+<li><b>Evolution · Exaptation (Gould and Vrba, 1982)</b>: Feathers may first have evolved for warmth or display and only later been put to use for flight; new functions often borrow old structures, which bears out the claim that tradition is the womb of innovation. Unlike: evolution has no intent, while Chan's leaving the raft is a person consciously setting the tool down.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>Innovation is not creation from nothing but a new reading grown from steeping oneself in tradition: warm the old to know the new.</li>
+<li>Confucius's "transmitting, not creating" already contains reform, since each dynasty inherited the rites and knowingly amended them.</li>
+<li>Human culture accumulates through a ratchet effect, so innovation is essentially the recombination of an existing stock of knowledge.</li>
+<li>Kuhn holds that science alternates between puzzle-solving normal science and revolutions triggered by piled-up anomalies, rather than accumulating linearly.</li>
+<li>Rival paradigms are incommensurable: a paradigm shift replaces not just the answers but the very definition of what counts as a problem.</li>
+<li>Nietzsche's genealogy shows that values taken as self-evident have histories and origins, so renewal begins by asking what a value is worth.</li>
+<li>The revaluation of all values is not the endpoint of nihilism: smashing old idols clears ground for self-legislation and new values.</li>
+<li>Linji's "kill the Buddha" destroys no Buddha; it cuts attachment to every authoritative concept, so that not even the highest authority becomes an idol.</li>
+<li>Tradition is a raft for crossing and a finger pointing at the moon; its deepest transmission is living judgment, not enshrined words.</li>
+<li>Tradition is not the opposite of innovation but its womb; what matters is how deeply you understand it when you amend or surpass it.</li>
+</ol>
+</div>
 <div class="deep">
   <h2>For Deeper Reflection</h2>
   <details><summary>Confucius's "warming the old to know the new" is gradual reform; Kuhn's "incommensurable" paradigm revolution is rupture. Is innovation continuous or discontinuous?</summary><div>Perhaps these are the same process at different scales. Kuhn's "revolution" looks like rupture from inside, yet across the long history of science it is still cumulative (a new paradigm absorbs the working parts of the old). The real divide: are old and new "commensurable"? Confucius trusts that "one thread runs through my Way" (commensurable); Kuhn stresses incommensurability — it turns on whether you believe in a "Way" that transcends any specific paradigm.</div></details>

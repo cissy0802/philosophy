@@ -44,6 +44,18 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#a6a6a6;line-height:1.75}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(143,120,64,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(136,113,57,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#ab9375}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.35);border-radius:12px;background:rgba(162,155,254,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.18);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -211,6 +223,30 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 <div class="label">思考题</div>
 <div class="question">你此刻正身处哪个「不容动摇的框架」（公司制度、行业共识、某个 AI 工具链）？在它之内，你是像四人那样把理性推到极致，还是把框架当成了不思考的借口？</div>
 </div>
+</div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>心理学 · 海特的社会直觉模型</b>：海特（Jonathan Haidt）2001 年提出，道德判断多由直觉先定，推理随后才来为它找理由，好比情绪的狗摇着理性的尾巴。像「我信，以求理解」：结论在前，论证在后。不像在：安瑟伦公开声明信仰先行，还接受高尼罗的反驳；海特的被试却真心以为自己是推理出来的。</li>
+<li><b>分布式系统 · 证书信任链</b>：HTTPS 证书一级担保一级，链条不能无穷上溯，最后必须停在一张自签名的根证书上，它不再被任何人担保，结构上正是「第一推动者」。不像在：根证书是厂商预装的约定，可吊销、可更换；阿奎那的第一因却是必然的，换不掉。</li>
+<li><b>发育生物学 · 细胞分化</b>：人体几乎每个细胞都带着同一套基因组，却只表达各自那一段，分化成神经、肌肉、皮肤；格登 1962 年用蝌蚪肠细胞的核培育出新蝌蚪，证明分化不丢信息。像「理一分殊」；不像在：基因组本身是物质，更近于「气」而非「理」。</li>
+<li><b>认知心理学 · 沃森选择任务</b>：沃森（Peter Wason）1966 年设计的四卡规则检验题里，多数人只翻能证实规则的卡，很少去翻可能藏着反例的那张，答对者常不到一成。人脑默认跳过的，正是「异品遍无」这一相。不像在：法称把它立为有效推理的必要条件，实验揭示的是心智的默认偏差。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>安瑟伦的本体论证明只凭「不可设想有更大者」这个概念，先验地推出上帝必然存在。</li>
+<li>康德以「存在不是谓词」反驳本体论证明：概念内部再自洽，也不保证指涉真实。</li>
+<li>自洽是必要的但从不充分，越是内部完美闭环的论证，越要拉去接受经验检验。</li>
+<li>阿奎那的「五路」是后验论证，从经验世界的运动、因果与偶然反推第一推动者。</li>
+<li>理性可及的真理与唯启示可及的真理不会矛盾，因为真理只有一个源头。</li>
+<li>朱熹的「理气」二分中，理是既为法则又为价值的所以然与所当然，气是构成万物的质料。</li>
+<li>「理一分殊」如月印万川：同一个总理，体现在万物各自的理之中。</li>
+<li>法称只承认现量与比量两种可靠知识来源，推理是否有效全看「因三相」。</li>
+<li>「异品遍无性」要求理由在一切反例中都不出现：可信与否，看它经不经得起反例搜索。</li>
+<li>经院的精髓是戴着镣铐的精确：框架内可以极致严密，同时要知道何时质疑框架本身。</li>
+</ol>
 </div>
 <div class="card" data-tts="d43b25bb455c9f54" style="background:#0c0a1d">
 <div class="label" style="color:#a29bfe;font-size:0.95rem">深入思考</div>

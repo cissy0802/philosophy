@@ -43,6 +43,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(201,178,122,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#c9b27a}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#b4b4c4;line-height:1.8}
+.crossx b{color:#c9b27a}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.35);border-radius:12px;background:rgba(162,155,254,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.18);font-size:0.93rem;line-height:1.75;color:#c1c1d5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -229,6 +241,31 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 <div class="label">Reflection</div>
 <div class="question">Which cosmic picture is your default — things, number, relation, or process? Re-examine your most important current decision under the other three assumptions: how would the conclusion change?</div>
 </div>
+</div>
+
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Neuroscience · The number sense</b>: the evidence Stanislas Dehaene gathered in <i>The Number Sense</i> (1997) shows that infants and monkeys can tell quantities apart, and that the parietal cortex has regions devoted to numerosity, a neural shadow of "nothing can be known without number." The difference: this innate sense is approximate, telling 8 from 16 but not 8 from 9, while Pythagoras wanted exact whole-number ratios.</li>
+<li><b>Evolutionary biology · Cleavage of the zygote</b>: a fertilized egg splits into two, then four, then eight, the same doubling series as "the two modes give rise to the four images, the four images to the eight trigrams," one cell recursively dividing into a whole body. The difference: division alone yields a ball of identical cells; form needs gene regulation and positional signals to make cells differentiate, whereas each split in the Yijing brings a new quality with it.</li>
+<li><b>Distributed systems · Full replica nodes</b>: every full node in a blockchain holds the entire ledger, so any one node can reconstruct the network's whole history, like each pearl in Indra's Net reflecting the whole net. The difference: replicas are copies of one dataset, brought into line slowly by a consensus protocol across network delay, always with a before and after; the pearls mirror one another at once, reflection within reflection, and none of them is the "original."</li>
+<li><b>Complexity science · Dissipative structures</b>: Ilya Prigogine won the 1977 Nobel Prize in Chemistry for his theory of dissipative structures: whirlpools, flames and living things keep their order only while energy and matter flow through them, and fall apart when the flow stops, a case of being constituted by becoming. The difference: a dissipative structure is a thermodynamic description with no inner point of view, while each of Whitehead's actual occasions actively prehends its past.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>The Pythagoreans held that number is not a tool for counting but the principle of all things, and the cosmos is knowable because it is built of number and proportion.</li>
+<li>Harmonious tones correspond to simple whole-number ratios (2:1 for the octave, 3:2 for the fifth), the starting point of "all is number."</li>
+<li>Deep learning encodes images, language and sound as high-dimensional vectors, a modern form of "all is number," yet meaning and ethics refuse to fit into a vector.</li>
+<li>The Yijing pictures the cosmos unfolding from taiji through repeated yin-yang splitting, the binary doubling series 1, 2, 4, 8.</li>
+<li>Endless complexity can grow from the recursive iteration of one minimal rule, and robust systems likewise rest on a few composable primitives.</li>
+<li>The Huayan school pictures reality as Indra's Net, where each jewel reflects every other jewel: one is all, and all is one.</li>
+<li>Dharma-realm dependent origination is a relational ontology: nothing exists on its own, and the basic unit of reality is mutual containment.</li>
+<li>For Whitehead, the final units of the cosmos are "actual occasions" that arise and perish in a moment: to be is to become.</li>
+<li>Treating the world as a heap of static objects is what process philosophy calls the "fallacy of misplaced concreteness."</li>
+<li>The four cosmologies of number, generation, relation and process all reject the commonsense picture of the cosmos as isolated, static, ready-made things.</li>
+</ol>
 </div>
 
 <div class="deep">

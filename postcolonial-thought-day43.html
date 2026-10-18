@@ -44,6 +44,18 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#a6a6a6;line-height:1.75}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -212,6 +224,32 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 <div class="question">下一次你采用一个「最先进」的模型、框架或标准时，试着走完四步：我在它的中心—边缘结构里处于什么位置？它的叙事是谁写的？我有没有顺手内化了「我不行」？它的「用」背后带进了什么「体」？——哪一步你最容易跳过？</div>
 </div>
 </div>
+<div class="crossx">
+  <div class="label">越界 · 跨学科的联想</div>
+  <ul>
+    <li><b>复杂性科学 · 优先连接（Barabási 与 Albert，1999）</b>：新节点更爱连向已有大量连接的枢纽，网络自发长出少数中心、大片边缘，和杜塞尔的中心—边缘是同一张图。不像在于：模型里的中心靠早到和累积，杜塞尔说的中心靠征服与遮蔽他者造出来。</li>
+    <li><b>心理学 · 习得性无助（Seligman 与 Maier，1967）</b>：狗反复遭受无法逃避的电击后，出口打开也不再尝试，像法农笔下内化的自卑。不像在于：两人 2016 年修正说，被动其实是默认反应，真正要学会的是「我能掌控」；法农也强调那道目光来自殖民结构，不是个人经历学来的。</li>
+    <li><b>神经科学 · 预测编码</b>：大脑用先验去预测、去「看」，强先验会把新数据同化成预期，就像东方主义的范畴先于东方本身。不像在于：大脑的先验会被预测误差不断修正；萨义德描述的话语却擅长把反例吸收成「例外」，越用越牢。</li>
+    <li><b>生物进化 · 内共生（Margulis，1967）</b>：线粒体原是被吞入的细菌，宿主借来它的产能之「用」，自己的「体」也随之被彻底改写，正合严复的体用一源。不像在于：内共生是亿万年的互利共演，没有哪一方在争夺定义权。</li>
+  </ul>
+</div>
+
+<div class="tk">
+  <div class="label">十条要点</div>
+  <ol class="takeaways">
+    <li>杜塞尔认为现代性始于 1492 年的征服：先有「我征服」，才有笛卡尔式的「我思」。</li>
+    <li>现代性不是欧洲理性的自我展开，而是把非欧世界变成被遮蔽的他者之后的产物。</li>
+    <li>「跨现代性」把解放的起点放在被排除者和边缘者身上，既不回到前现代，也不顺从西方现代。</li>
+    <li>法农从精神科临床看到，殖民最深的伤在心理：被殖民者用殖民者的目光审判自己。</li>
+    <li>政治独立若不伴随心理与文化的去殖民，只是更换主人；自由要靠重建主体、创造「新人」。</li>
+    <li>萨义德指出，西方关于「东方」的学问并非中立认识，而是为殖民统治提供正当性的话语。</li>
+    <li>再现即权力：被谁描述、按谁的范畴归类，决定了一个人在世界秩序中的位置。</li>
+    <li>「中学为体，西学为用」想只借强者的科技政制，同时保住自己的纲常根本。</li>
+    <li>严复反驳体用本是一物：牛体配负重，马体配致远，借来的「用」必然带着它的「体」。</li>
+    <li>面对强势他者，出路不在整体拒斥或全盘照收，而在看清每项「用」背后的「体」并主动改造消化。</li>
+  </ol>
+</div>
+
 <div class="section" style="margin-top:36px">
 <div class="label" style="color:#a29bfe;font-size:0.95rem">深入思考</div>
 <details>

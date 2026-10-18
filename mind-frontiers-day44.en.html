@@ -42,6 +42,18 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#a6a6a6;line-height:1.75}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -224,6 +236,30 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
   </div>
 </div>
 
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Neuroscience · Blindsight (Lawrence Weiskrantz, 1970s)</b>: Patients with damaged visual cortex say they see nothing in half the visual field, yet when forced to guess they locate a light far above chance: a partial, real-life philosophical zombie, with processing but no reported experience. The difference: blindsight function is degraded, while Chalmers's zombie is functionally identical.</li>
+<li><b>Evolution · Convergent evolution (octopus and human eyes)</b>: Cephalopods and vertebrates independently evolved similar camera eyes, one function realized in two lineages, which is multiple realizability in the wild. The difference: in detail the octopus's photoreceptors face the light and leave no blind spot, while ours do not; the finer you slice the function, the harder it is to call it the same state.</li>
+<li><b>Complexity science · Conway's Game of Life (1970)</b>: A few rules for cells living and dying produce patterns that glide across the grid, a whole that seems more than its parts. But a glider can be derived step by step from the rules, which makes it weak emergence; Strawson denies precisely that experience could arise this way from rules with no experience in them.</li>
+<li><b>Neuroscience · The split-brain interpreter (Michael Gazzaniga)</b>: When a split-brain patient's right hemisphere sees an instruction and the hand obeys, the left hemisphere, unaware of the cause, instantly invents a fluent reason; Gazzaniga calls it the left-brain interpreter. The verses' second transformation, "deliberation," is manas, likewise a mechanism that keeps narrating the stream as a self. The difference: the interpreter is a brain function to be described, while manas's grasping at a self is what practice aims to transform.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>Explaining attention, memory and report are the "easy problems"; why those functions come with subjective experience is the hard problem of consciousness.</li>
+<li>Chalmers's philosophical zombie, an atom-for-atom duplicate with no inner life, is not self-contradictory, so physical facts do not logically entail experience.</li>
+<li>However lifelike an AI's behavior and self-reports, they belong to the functional level and cannot in principle settle whether it has inner experience.</li>
+<li>Functionalism defines a mental state by its causal role in a system, not by the material that makes it up.</li>
+<li>Multiple realizability means one mental state could run on human brains, octopus nerves or silicon chips, the philosophical premise of mind uploading.</li>
+<li>Searle's Chinese Room answers functionalism: a person producing correct Chinese by rule still does not understand Chinese, so correct function need not bring understanding.</li>
+<li>Strawson rejects strong emergence: experience cannot spring from the wholly non-experiential, so serious physicalism leads to panpsychism.</li>
+<li>Physics describes only what matter does, never what it intrinsically is; panpsychism fills that gap, and its weak point is the combination problem.</li>
+<li>Yogācāra holds that experience perfumes the store consciousness as seeds that later manifest as new experience, so the world you experience is manifested by consciousness.</li>
+<li>Yogācāra's seeds and manifestation parallel predictive processing in neuroscience, where the brain generates perception from priors and the senses mainly correct errors.</li>
+</ol>
+</div>
 <div class="section" style="margin-top:36px">
   <div class="label" style="color:#a29bfe;font-size:0.95rem">Going Deeper</div>
 

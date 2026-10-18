@@ -42,6 +42,18 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#a6a6a6;line-height:1.75}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -220,6 +232,32 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
     <div class="label">Reflection</div>
     <div class="question">The next time you adopt a "state-of-the-art" model, framework, or standard, walk the four steps: where do I sit in its center–periphery structure? Who wrote its narrative? Have I quietly internalized an "I can't"? What "substance" rides in behind its "function"? — Which step are you most likely to skip?</div>
   </div>
+</div>
+
+<div class="crossx">
+  <div class="label">Crossovers</div>
+  <ul>
+    <li><b>Complexity science · Preferential attachment (Barab&aacute;si &amp; Albert, 1999)</b>: new nodes prefer to link to hubs that already have many links, so a network grows a few centers and a vast periphery on its own &mdash; the same picture as Dussel's center and periphery. The difference: in the model, hubs win by arriving early and compounding; Dussel's center was made by conquest and by concealing the Other.</li>
+    <li><b>Psychology · Learned helplessness (Seligman &amp; Maier, 1967)</b>: dogs given repeated inescapable shocks stopped trying to escape even once an exit opened, much like Fanon's internalized inferiority. The difference: in 2016 the two revised the theory &mdash; passivity is the default response, and what must be learned is &ldquo;I have control&rdquo;; Fanon, too, insists the gaze comes from colonial structure, not from personal experience alone.</li>
+    <li><b>Neuroscience · Predictive coding</b>: the brain sees by predicting from priors, and a strong prior assimilates new data into what it expects &mdash; just as Orientalism's categories come before the Orient itself. The difference: the brain's priors keep being corrected by prediction error, while the discourse Said describes absorbs counterexamples as &ldquo;exceptions&rdquo; and grows sturdier with use.</li>
+    <li><b>Evolution · Endosymbiosis (Margulis, 1967)</b>: mitochondria began as swallowed bacteria; the host borrowed their energy as a &ldquo;function,&rdquo; and its own &ldquo;substance&rdquo; was rewritten in the process &mdash; Yan Fu's point that ti and yong are one. The difference: endosymbiosis is eons of mutual coevolution, with no side fighting for the power to define.</li>
+  </ul>
+</div>
+
+<div class="tk">
+  <div class="label">Ten takeaways</div>
+  <ol class="takeaways">
+    <li>Dussel dates modernity to the conquest of 1492: the &ldquo;I conquer&rdquo; came before the Cartesian &ldquo;I think.&rdquo;</li>
+    <li>Modernity is not the self-unfolding of European reason but the product of turning the non-European world into a concealed Other.</li>
+    <li>&ldquo;Transmodernity&rdquo; places the starting point of liberation with the excluded and the marginal, neither returning to the premodern nor submitting to Western modernity.</li>
+    <li>Fanon saw in his psychiatric practice that colonialism's deepest wound is psychological: the colonized judge themselves through the colonizer's eyes.</li>
+    <li>Political independence without decolonizing mind and culture only swaps masters; freedom means rebuilding the subject and creating a &ldquo;new man.&rdquo;</li>
+    <li>Said shows that Western scholarship on &ldquo;the Orient&rdquo; was not neutral knowledge but a discourse that legitimized colonial rule.</li>
+    <li>Representation is power: who describes you, and with whose categories, decides your place in the world order.</li>
+    <li>&ldquo;Chinese learning as substance, Western learning as function&rdquo; hoped to borrow the West's technology and institutions while keeping China's ethical core intact.</li>
+    <li>Yan Fu replied that substance and function are one thing: an ox's body bears loads, a horse's body runs far, and borrowed function carries its own substance.</li>
+    <li>Facing a dominant Other, the way forward is neither wholesale rejection nor swallowing whole, but seeing the substance behind each function and actively reshaping it.</li>
+  </ol>
 </div>
 
 <div class="section" style="margin-top:36px">

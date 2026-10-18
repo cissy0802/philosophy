@@ -44,6 +44,18 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#a6a6a6;line-height:1.75}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(143,120,64,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(136,113,57,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#ab9375}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.35);border-radius:12px;background:rgba(162,155,254,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.18);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -211,6 +223,31 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 <div class="label">思考题</div>
 <div class="question">你最近一次被一段「漂亮话」说服——它能过哪几关：指称清楚吗、名实相符吗、可检验吗、边界明确吗？四关全过的话，它还只是漂亮话吗？</div>
 </div>
+</div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>神经科学 · 卡普格拉妄想（Capgras delusion）</b>：病人认得出妻子的脸，却坚信她是冒充者；Ellis 与 Young（1990）的解释是，视觉识别通路完好，带来熟悉感的情感通路断了。像在：同一个指称，呈现方式缺了一路，认知就全变；不像在：弗雷格的「意义」是公共的，不是私人感受。</li>
+<li><b>心理学 · 合取谬误（Tversky 与 Kahneman，1983）</b>：被试判断「琳达是银行职员且是女权主义者」比「琳达是银行职员」更可能，可前者只是后者的子集。这正是白马与马的关系：内涵越丰富，外延越窄。不同在于方向相反：公孙龙刻意守住这道区别，被试却被生动的内涵牵着走，把外延忘了；同一道缝，一边是逻辑上较真，一边是直觉上偷懒。</li>
+<li><b>生物进化 · 物种是个体（Ghiselin 1974，Hull 1978）</b>：这两位生物哲学家主张，「马」这个物种不是一个类，而是一条有起点、会灭绝的谱系，更像一个具体的个体，而非永恒的共相。像在：同样不承认「马之为马」独立存在；不像在：它靠的是演化史，不是语言分析。</li>
+<li><b>量子力学 · 海森堡 1925 年的矩阵力学</b>：他抛开看不见的电子轨道，只用可观测的谱线频率和强度重写理论，与「意义即检验方法」同一路数。不像在：据海森堡回忆，爱因斯坦当面反驳他，是理论决定我们能观测什么；观测离不开理论，这和可证实原则后来撞上的整体论难题是同一堵墙。</li>
+<li><b>神经科学 · 侧抑制（Hartline，1967 年诺贝尔奖）</b>：鲎眼的每个感光单元会压低邻居的反应，于是边缘被放大，轮廓靠「压掉旁边」画出来。像遮诠：边界由排除他者而成；不像在：神经元仍对光有正面响应，陈那却连正面的所指都不承认。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>二十世纪的语言转向把许多千年老问题诊断为语言的病：不是答案错，而是问题本身没意义。</li>
+<li>弗雷格把语义劈成两层：指称是所指的对象，意义是对象被给予的方式。</li>
+<li>「晨星是暮星」有信息而「晨星是晨星」没有，因为两者指称都是金星，意义却不同。</li>
+<li>「白马非马」说的是概念不同一：马命形，白马命形加色，内涵外延皆异，并非说白马不属于马。</li>
+<li>公孙龙的白马之辩与弗雷格的概念与对象之别，撞上的是同一道裂缝：谓述与指称之分。</li>
+<li>可证实原则主张，陈述的意义就是它被经验证实的方法；原则上不可检验的句子不是错，而是无认知意义。</li>
+<li>卡尔纳普认为形而上学表达的是生命情调，本该交给艺术，却误穿了陈述真理的外衣。</li>
+<li>可证实原则按自己的标准也无法被证实，而整体论表明单个命题无法孤立地接受检验。</li>
+<li>陈那的遮诠说认为名言靠排除他者立义，共相并非实有：说「牛」，实即「非非牛」。</li>
+<li>分辨真话与漂亮胡话可过四关：指称清楚吗、名实相符吗、可检验吗、边界明确吗。</li>
+</ol>
 </div>
 <div class="card" data-tts="55ff4efb395b5cc1" style="background:#0c0a1d">
 <div class="label" style="color:#a29bfe;font-size:0.95rem">深入思考</div>

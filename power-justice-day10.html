@@ -47,6 +47,18 @@ details div{margin-top:10px;font-size:0.92rem;color:#a6a6a6;line-height:1.75;pad
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -218,6 +230,31 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 <div class="label">思考题</div>
 <div class="question">你此刻手中最大的一份权力（职位、算法、话语权、父母身份），能同时通过四道检验吗——它守分吗（柏拉图）？蒙上无知之幕你还会这样设计吗（罗尔斯）？换个坏人来用它会崩吗（韩非）？被它影响的人还愿意授权给你吗（孟子）？</div>
 </div>
+</div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>生物进化 · 蜜蜂的「工蜂监管」（Ratnieks 与 Visscher，1989）</b>：蜂群里，工蜂会吃掉别的工蜂偷产的卵，让繁殖只归蜂后，「各守其分」靠全体互相看守来维持。不像在：撑起这套分工的是亲缘利益的算账，不是柏拉图要的、懂得何为善的理性。</li>
+<li><b>行为经济学 · 把真人放进无知之幕（Frohlich 与 Oppenheimer，1992）</b>：实验小组在不知自己会拿哪档收入时商定分配规则，多数组没选「只照顾最差者」，而选「平均收入最大化，外加一条底线」。像在：幕后的人确实会给弱者托底；不像在：真人对风险没有罗尔斯设想的那么悲观。</li>
+<li><b>商业 · 古德哈特定律（Charles Goodhart，1975）</b>：一项指标一旦变成考核目标，就不再能如实反映情况，韩非的「循名责实」一直在和它赛跑。不像在：韩非相信藏在胸中的「术」能始终领先臣下的钻营，古德哈特的意思是，被盯上的指标迟早失真。</li>
+<li><b>分布式系统 · 拜占庭容错（Lamport、Shostak 与 Pease，1982）</b>：协议不假设每个节点都诚实，只要作恶节点少于三分之一，系统仍能达成一致，这是「坏人也无法作恶的制度」的工程版。不像在：拜占庭容错把信任摊给全体节点，谁都不例外；韩非的法术势却全部汇向君主一人，君主本人正是那个没人能容错的单点。</li>
+<li><b>心理学 · 系统合理化理论（Jost 与 Banaji，1994）</b>：人们常会替对自己不利的现有秩序辩护，把「现状如此」读成「本该如此」。像孟子，合法性确实活在被统治者心里；不像在：孟子以为民心会自然离开暴君，心理学发现人心收回授权要慢得多。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>柏拉图把正义定义为结构和谐：城邦三阶层与灵魂三部分各守其分、互不僭越。</li>
+<li>统治被看作需要真知的技艺，由此推出哲人王，但专家治理同样需要被约束。</li>
+<li>罗尔斯主张正义即公平：好规则是人们在无知之幕后、不知自己将是谁时也会同意的规则。</li>
+<li>差异原则规定，经济不平等只有在最有利于社会中最不利者时才算正当。</li>
+<li>法家把权力当作机制问题：法要公开可预期，术用来核对名实，势来自君位本身。</li>
+<li>好制度不该赌统治者是好人，而要让中人之主甚至坏人用它也难以作恶。</li>
+<li>孟子认为权力的合法性来自民心，丧失仁义的暴君只是独夫，诛之不算弑君。</li>
+<li>合法性自下而上、可被收回，靠压迫维持的统治是一旦预期翻转就骤然崩塌的不稳定均衡。</li>
+<li>四种权力观合成一套检验：守分吗，蒙上无知之幕还会这样设计吗，换个坏人会崩吗，被影响者还愿授权吗。</li>
+<li>拜占庭容错让系统在少数节点作恶时照常运转，韩非的制度却把一切汇向君主这个单点。</li>
+</ol>
 </div>
 <!-- 深入思考 -->
 <div class="resources">

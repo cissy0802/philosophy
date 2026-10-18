@@ -47,6 +47,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -222,6 +234,30 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
 <div class="label">思考题</div>
 <div class="question">此刻的你，最像哪个形象——正在盗火、正在推石、正在逃避、还是正在照水？换用其余三面镜子看自己，你会看到什么？</div>
 </div>
+</div>
+<div class="crossx">
+<div class="label">越界 · 跨学科的联想</div>
+<ul>
+<li><b>系统动力学 · 社会系统的反直觉行为</b>：先见的普罗米修斯配上后见的厄庇墨透斯，像极了福里斯特 1971 年描述的「社会系统的反直觉行为」：干预的后果要绕过延迟的反馈回路才显形，所以人总是事后才看懂。不像在：神话把代价归于僭越之心，系统论归于结构本身，换谁去盗火都一样。</li>
+<li><b>心理学 · 反讽过程（白熊实验）</b>：俄狄浦斯越逃越撞上预言，和韦格纳 1987 年的白熊实验同构：越想压住某个念头，负责监控它的那道心理程序就越把它拉回意识。不像在：俄狄浦斯缺的是信息，压抑念头的人缺的是放手。</li>
+<li><b>佛学 · 禅宗的日用即道</b>：加缪把意义从山顶迁回推石的过程，庞居士偈云「神通并妙用，运水及搬柴」，同样把重复的日常当作意义的现场。不像在：加缪保留反抗的张力，人与荒诞始终对峙；禅宗要的是对立本身消融。</li>
+<li><b>神经科学 · 镜像自我识别</b>：盖洛普 1970 年用镜子测试检验黑猩猩能否认出镜中是自己。那喀索斯起初没通过，把倒影当成另一个少年；奥维德让他后来认出「那就是我」，却仍走不开。不像在：测试里认出即标志自我意识，神话却说认出之后困局才开始。</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">十条要点</div>
+<ol class="takeaways">
+<li>普罗米修斯盗来的火就是 technē，技术是让人接近神、也让人背上神之重负的「原罪式礼物」。</li>
+<li>先见的普罗米修斯与后见的厄庇墨透斯合起来，正是人类处境：有远见改造世界，却总在事后才看清代价。</li>
+<li>技术伦理不是别碰火，而是让先见与后见同时在场，预先想清事后才会显形的代价。</li>
+<li>加缪把西西弗斯读成荒诞的象征：宇宙没有现成意义，人仍可清醒地投入推石本身。</li>
+<li>意义不在山顶而在推的过程里，幸福是清醒者亲手造出的反抗，不靠神、来世或子孙担保。</li>
+<li>《俄狄浦斯王》的核心机关是：逃避命运的行动，恰恰成了命运实现的途径。</li>
+<li>俄狄浦斯视力健全时看不见自己，刺瞎双眼后才真正看见；最深的盲点常在最用力回避之处。</li>
+<li>那喀索斯被影像俘获、厄科丧失自己的声音，一个是过度的自我，一个是消失的自我。</li>
+<li>算法和 AI 是更光滑的水面，别把迎合当成长，真实的自我在与会反驳你的他者碰撞中长出。</li>
+<li>希腊神话的当代意义不在信不信宙斯，而在提供一套谈论欲望、劳作、命运与影像的精确词汇。</li>
+</ol>
 </div>
 <div class="deep">
 <h2 data-tts="77763dd37cf328ef">深入思考</h2>

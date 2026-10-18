@@ -42,6 +42,18 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#a6a6a6;line-height:1.75}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(143,120,64,.45);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:rgba(136,113,57,.07)}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#ab9375}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.35);border-radius:12px;background:rgba(162,155,254,.05)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.18);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -222,6 +234,30 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
   </div>
 </div>
 
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Psychology · Haidt's social intuitionist model</b>: Jonathan Haidt proposed in 2001 that moral judgments are mostly fixed by intuition first, with reasoning arriving afterward to justify them, the emotional dog wagging its rational tail. Like "faith seeking understanding": conclusion first, argument second. Unlike: Anselm openly declares that faith leads and welcomes Gaunilo's rebuttal, while Haidt's subjects sincerely believe they reasoned their way there.</li>
+<li><b>Distributed systems · Certificate chains of trust</b>: each HTTPS certificate is vouched for by the one above it; the chain cannot climb forever and must stop at a self-signed root certificate that nobody vouches for, structurally a First Mover. Unlike: a root is a convention preinstalled by vendors, revocable and replaceable, while Aquinas's First Cause is necessary and cannot be swapped out.</li>
+<li><b>Developmental biology · Cell differentiation</b>: nearly every cell in the body carries the same genome yet expresses only its own portion, becoming nerve, muscle, or skin; in 1962 John Gurdon raised new tadpoles from the nuclei of tadpole gut cells, showing differentiation loses no information. Like "one Principle, many manifestations." Unlike: the genome is itself matter, closer to qi than to li.</li>
+<li><b>Cognitive psychology · The Wason selection task</b>: in Peter Wason's 1966 four-card rule test, most people turn only the cards that could confirm the rule and rarely the one that could hide a counter-example; often fewer than one in ten get it right. What the mind skips by default is exactly the third mark, absence from dissimilar cases. Unlike: Dharmakīrti makes it a requirement of valid inference, while the experiment exposes a default bias.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>Anselm's ontological argument derives God's necessary existence a priori from the bare concept of that than which nothing greater can be conceived.</li>
+<li>Kant answered the ontological argument with "existence is not a predicate": however coherent a concept is, coherence never guarantees real reference.</li>
+<li>Coherence is necessary but never sufficient; the more perfectly closed an argument is, the more it needs empirical testing.</li>
+<li>Aquinas's Five Ways argue a posteriori, from motion, causation, and contingency in the world back to a First Mover.</li>
+<li>Truths reachable by reason and truths given only by revelation cannot contradict each other, because truth has a single source.</li>
+<li>In Zhu Xi's li-qi dualism, li is the principle that is at once natural law and moral norm, and qi is the material force composing all things.</li>
+<li>"One Principle, many manifestations" works like one moon in ten thousand rivers: a single universal order appears in each thing's own principle.</li>
+<li>Dharmakīrti admits only perception and inference as sources of valid knowledge, and judges every inference by the three marks of a valid reason.</li>
+<li>A valid reason must be absent from every counter-example, so its credibility depends on surviving the search for counter-examples.</li>
+<li>The essence of scholasticism is precision in shackles: be rigorous inside the framework while knowing when to question the framework itself.</li>
+</ol>
+</div>
 <div class="card" style="background:#0c0a1d">
   <div class="label" style="color:#a29bfe;font-size:0.95rem">Going Deeper</div>
 

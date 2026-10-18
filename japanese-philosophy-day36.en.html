@@ -47,6 +47,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -254,6 +266,30 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
   </div>
 </div>
 
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Neuroscience · the left-brain "interpreter" (Gazzaniga's split-brain studies)</b>: A split-brain patient's right hemisphere sees a snow scene and the left hand picks a shovel; the left hemisphere, which never saw the snow, instantly invents a tidy reason. Like Nishida: "why I did it" is often ratified after the fact. Unlike: the interpreter is one storytelling module in the brain, while Nishida's pure experience is the reality prior to brains and to the subject–object split itself.</li>
+<li><b>Investing · the time value of options (Merton, 1973)</b>: Exercising an American call on a non-dividend stock early never pays: the moment you cash it in, the remaining value of possibility drops to zero. Like Kuki's iki: keeping possibility open is itself worth something. Unlike: an option must settle at expiry, whereas iki is defined by never being consummated.</li>
+<li><b>Evolution · niche construction (Odling-Smee, Laland and Feldman, 2003)</b>: Beavers dam a river, and the reshaped river in turn selects among their offspring. Like Watsuji's fūdo: the environment is not backdrop but constitution. Unlike: niche construction stresses that organisms remake their environment too, while Watsuji's climate leans toward shaping temperament one way.</li>
+<li><b>Psychology · affect labeling (Lieberman et al., 2007)</b>: In fMRI studies, picking the word "angry" for an angry face dampens the amygdala's response: naming changes the experience named. Like Suzuki's soku-hi: concepts are never neutral, they fix their objects. Unlike: psychology uses labeling as a tool for regulating emotion, whereas soku-hi first strips the label away and only then names again.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>The shared ambition of the Kyoto School was to grow philosophy out of Japan's own experience rather than merely translating the West.</li>
+<li>Nishida Kitarō held that undivided "pure experience," prior to the subject–object split, is the sole reality; self and object are abstracted afterwards.</li>
+<li>The self is not the premise of experience but its product: first comes the flow of experience, then the "I."</li>
+<li>Kuki Shūzō used phenomenology to dissect the Edo aesthetic of iki, a fusion of allure, pride and resignation that both tempts and restrains.</li>
+<li>The essence of iki is maintaining possibility without consummating it; once the tension is cashed out, iki collapses.</li>
+<li>Watsuji Tetsurō answered Heidegger with aidagara: humans are beings of "betweenness," and ethics lives in the relational field, not the isolated mind.</li>
+<li>The theory of fūdo holds that climate, geography and community shape temperament, so the mind is never placeless.</li>
+<li>Suzuki's "logic of soku-hi" holds that true affirmation must first negate the concept that fixes a thing, or it is mere prejudice.</li>
+<li>Zen is not anti-intellectual mysticism but direct experience prior to conceptual cutting, returning to distinctions without being bound by them.</li>
+<li>The Kyoto School modeled "creative translation": neither imitation nor nativism, but using one tradition's tools to awaken another's silent insights.</li>
+</ol>
+</div>
 <div class="deep">
   <h2>Going Deeper</h2>
   <details><summary>Nishida's "pure experience" and Suzuki's "soku-hi" both point to "before conceptual division" — are they the inward and outward faces of one insight?</summary><div>Yes — the Kyoto School and Zen share a root. Nishida turns inward, systematizing "subject–object undividedness" into philosophy; Suzuki turns outward, piercing concepts with the paradox of "soku-hi." One constructs, one deconstructs, but both point to the same place: reality precedes, and exceeds, language's cutting of it. The difference is in method, not in what is seen.</div></details>

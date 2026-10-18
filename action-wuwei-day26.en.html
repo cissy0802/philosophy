@@ -45,6 +45,18 @@ header .subtitle{margin-top:6px;font-size:0.88rem;color:#ab9375}
 nav.bottom{text-align:center;margin-top:40px;padding:20px}
 nav.bottom a{display:inline-block;color:#a29bfe;text-decoration:none;font-size:0.95rem;padding:10px 24px;border:1px solid #171073;border-radius:24px;transition:all 0.2s}
 nav.bottom a:hover{background:#171073;color:#ffffff}
+.crossx{border:1px solid rgba(201,178,122,.35);border-radius:12px;padding:16px 24px 6px;margin:36px 0 22px;background:#0f0c1a}
+.crossx .label,.tk .label{font-size:0.95rem;font-weight:700;letter-spacing:1.5px;margin-bottom:4px}
+.crossx .label{color:#ab9375}
+.crossx ul{list-style:none;margin:0;padding:0}
+.crossx li{margin:12px 0;font-size:0.93rem;color:#aeaeae;line-height:1.8}
+.crossx b{color:#c39559}
+.tk{margin:28px 0 36px}
+.tk .label{color:#a29bfe;margin-bottom:12px}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(162,155,254,.28);border-radius:12px;background:#0b0920}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(162,155,254,.14);font-size:0.93rem;line-height:1.75;color:#bcc3c5}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a29bfe}
 @media(max-width:600px){
   header h1{font-size:1.45rem;letter-spacing:1px}
   .container{padding:16px 14px 40px}
@@ -233,6 +245,31 @@ nav.bottom a:hover{background:#171073;color:#ffffff}
   </div>
 </div>
 
+<div class="crossx">
+<div class="label">Crossovers</div>
+<ul>
+<li><b>Neuroscience · effortless spontaneity (Edward Slingerland, <i>Trying Not to Try</i>, 2014)</b>: The sinologist reads wu wei through cognitive science: skilled action flows best when handed to fast, automatic systems, and falters the moment you watch it too closely, as when an athlete chokes. The difference: this describes an individual's skill state, while Laozi speaks first of a ruler's restraint.</li>
+<li><b>Investing · trading is hazardous to your wealth (Barber &amp; Odean, 2000)</b>: Studying tens of thousands of US retail brokerage accounts, the two economists found that the households trading most often trailed the market clearly after costs. "Govern a large state as you would cook a small fish" holds for a portfolio too. The difference: an investor's non-action usually means handing money to a system someone else designed, such as an index, whereas Laozi's sage is the one who sets up the system.</li>
+<li><b>Psychology · self-perception theory (Daryl Bem, 1967)</b>: People often infer who they are and what they believe by watching what they have done, so Sartre's "you are the sum of your acts" holds for self-knowledge as well. The difference: Bem describes how we come to know ourselves; Sartre says what we are, and that we must answer for it.</li>
+<li><b>Evolution · the evolution of cooperation (Robert Axelrod, 1984)</b>: The winner of Axelrod's prisoner's-dilemma tournaments, tit-for-tat, never defects first, forgives easily, and always retaliates. Gandhi keeps the first two and drops exactly the third, putting non-cooperation and self-suffering in its place. The difference: tit-for-tat counts only gains between two players, while satyagraha works through bystanders and a shift in the opponent's conscience.</li>
+<li><b>Psychology · implementation intentions (Peter Gollwitzer, 1999)</b>: The intention-behavior gap is an old problem in psychology, and Gollwitzer found that writing down "if X happens, I will do Y" markedly raises follow-through. Like Wang Yangming, it treats mere knowing as not enough; unlike him, it sees the gap as an execution problem to engineer, while Wang says failing to act means you never truly knew.</li>
+</ul>
+</div>
+<div class="tk">
+<div class="label">Ten takeaways</div>
+<ol class="takeaways">
+<li>Laozi's wu wei is not passivity but non-forcing: refusing to twist things against their own momentum by sheer will.</li>
+<li>The best governance is like water, going with the grain; the skilled intervene before momentum forms, then step back and let things complete themselves.</li>
+<li>Over-intervention strangles a system's self-organization; design the environment, step back, and order tends to grow on its own.</li>
+<li>For Sartre, humans have no ready-made essence: a person is the sum of their acts, and reality exists only in action.</li>
+<li>Intentions and good will never carried into action count as zero, and not acting is itself a choice one must answer for.</li>
+<li>Gandhi's satyagraha rejects both violent revolt and servile submission, resisting by enduring suffering rather than inflicting it.</li>
+<li>The power of non-violence lies in non-cooperation plus moral appeal, which changes the opponent's payoff structure instead of matching force with force.</li>
+<li>Wang Yangming's unity of knowing and acting treats them as two sides of one process, so "knowing but not doing" means not yet truly knowing.</li>
+<li>Knowing when to stop is itself a form of acting, so non-action is not an exception to knowing-and-acting but a wise kind of acting.</li>
+<li>AI makes execution nearly free, but judgment, values, and ownership of results cannot be outsourced: "the AI did it" is not "I did it."</li>
+</ol>
+</div>
 <div class="deep">
   <h2>Going Deeper</h2>
   <details><summary>Are Laozi's "non-action" and Sartre's "engagement" fundamentally opposed?</summary>
